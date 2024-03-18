@@ -3,7 +3,8 @@
   <!-- container/input mouse -->
   <div @wheel="handleMouseWheel" class=" w-screen bg-black">
 
-
+<div class="relative">
+  <div><img src="../assets/palloncino.png" alt="" class="absolute bottom-[-100px] z-50 right-[50px] w-[80px]  animazione"></div>
     <div class="relative">
 
       <!-- nav carta -->
@@ -51,7 +52,7 @@
           <img src="../assets/sedia.png" alt="" class="w-[400px] mt-[-40px] ml-[50px] ">
 </div>
 
-<div><img src="../assets/palloncino.png" alt="" class="absolute bottom-[60px] right-[20px] w-[80px] translate-[bottom-0] duration-500"></div>
+
 
 
 
@@ -107,7 +108,7 @@
 
 
 
-
+</div>
 
 
 
@@ -269,5 +270,20 @@ body::-webkit-scrollbar {
 
 body {
   overflow-y: hidden;
+}
+
+.animazione {
+  animation-name: palloncino;
+ 
+  animation-duration: 15s;
+}
+
+@keyframes palloncino {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 1500px;
+  }
 }
 </style>
