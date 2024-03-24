@@ -143,7 +143,7 @@
 
           <!-- project -->
           <div v-if="project" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold text-red-400">
+            <div class=" text-[25px] font-semibold text-white">
               Lorem ipsum, dolor sit amet consectetur
               adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
               provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
@@ -153,7 +153,7 @@
 
           <!-- contacts -->
           <div v-if="contacts" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold text-green-200">
+            <div class=" text-[25px] font-semibold text-white">
               Lorem ipsum, dolor sit amet consectetur
               adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
               provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
@@ -266,7 +266,7 @@ export default {
     scendi() {
       console.log(`top-[${this.ctt}px]`);
 
-      if (this.ctt >= 0 && this.ctt <= 5310) {
+      if (this.ctt >= 0 && this.ctt <= 5210) {
         this.ctt += 50;
         const element = document.getElementById(this.customId);
         element.classList.remove('top-[0px]');
@@ -487,7 +487,7 @@ export default {
         }
 
         /* B */
-      } else if (this.ctt > 5060 && this.ctt <= 5310) { /* +300 - 50 */
+      } else if (this.ctt > 5060 && this.ctt <= 5210) { /* +300 - 50 */
         this.opacitys = 1;
         this.nobar4 = false
         this.bar4 = true
