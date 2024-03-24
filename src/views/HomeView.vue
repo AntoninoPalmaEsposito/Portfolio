@@ -115,8 +115,12 @@
       </div>
 
       <!-- 2 homeview -->
-      <div class=" h-[85vh] w-screen ">
-        <div :id="bluu" :class="opacity" class="opacity-[0] duration-1000">
+      <div class=" h-[85vh] w-screen flex ">
+     
+       
+
+        <!-- opacity container -->
+        <div :id="bluu" :class="opacity" class="w-[80%] opacity-[0] duration-1000 ">
 
           <!-- Dev. profile -->
           <div v-if="devP" class="h-[500px] absolute  top-0 p-[300px] ">
@@ -126,13 +130,7 @@
                 Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
                 provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-                voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-                voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi
               </div>
-
-              <div class="h-[400px] w-[20px] bg-slate-500 rounded-[50px]"></div>
             </div>
 
             <div class="flex justify-center items-center mx-auto mt-[-50px]">
@@ -140,51 +138,45 @@
               <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl mx-[40px]"></div>
               <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl mx-[40px]"></div>
               <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl ml-[40px]"></div>
-
-
             </div>
           </div>
-
 
           <!-- project -->
           <div v-if="project" class="h-[500px] absolute  top-0 p-[300px] ">
             <div class=" text-[25px] font-semibold text-red-400">
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-                voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-                voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-                voluptatibus. Impedit sed libero temporibus blanditiis cumque maxime, laudantium nemo dignissimos nihil
-                commodi
-              </div>
-          
+              Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
+              provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
+              vo
+            </div>
           </div>
-
 
           <!-- contacts -->
           <div v-if="contacts" class="h-[500px] absolute  top-0 p-[300px] ">
             <div class=" text-[25px] font-semibold text-green-200">
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-          
-              </div>
-          
+              Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
+              provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
+
+            </div>
           </div>
 
-
-           <!-- tnx -->
-           <div v-if="tnx" class="h-[500px] absolute  top-0 p-[300px] ">
+          <!-- tnx -->
+          <div v-if="tnx" class="h-[500px] absolute  top-0 p-[300px] ">
             <div class=" text-[40px] font-semibold text-white">
-                Lorem ipsum, dolor sit amet 
-                
-          
-              </div>
-          
+              Lorem ipsum, dolor sit amet
+            </div>
+
           </div>
+        </div>
+
+        <!-- scrollbar -->
+        <div class="flex flex-col items-center ml-[100px] mt-[160px]">
+          <div :class="{ 'bg-white' : bar, 'bg-slate-600' : nobar}" class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
+
+          <div :class="{ 'bg-white' : bar2, 'bg-slate-600' : nobar2}" class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[40px]"></div>
+          <div :class="{ 'bg-white' : bar3, 'bg-slate-600' : nobar3}" class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[30px]"></div>
+          <div :class="{ 'text-white' : bar4, 'text-slate-600' : nobar4}" class="text-[35px] font-extrabold duration-500">TNX</div>
         </div>
 
       </div>
@@ -218,7 +210,15 @@ export default {
       aanimazione3: false,
       wel: true,
       scrolle: false,
-      bluu: 'bluer'
+      bluu: 'bluer',
+      bar: false,
+      bar2: false,
+      bar3: false,
+      bar4: false,
+      nobar: true,
+      nobar2: true,
+      nobar3: true,
+      nobar4: true
 
 
     };
@@ -301,26 +301,45 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
+        
+        if (this.opacitys >= 0.7) {
+        this.nobar = false
+        this.bar = true
+        } else {
+        this.nobar = true
+        this.bar = false
+        }
 
-      /* B */
+        /* B */
       } else if (this.ctt > 860 && this.ctt <= 1160) { /* +300 */
         this.opacitys = 1;
 
-      /* C */
+        this.nobar = false
+        this.bar = true
+
+        /* C */
       } else if (this.ctt > 1160 && this.ctt <= 1610) { /* +450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
+        
+        if (this.opacitys >= 0.7) {
+        this.nobar = false
+        this.bar = true
+        } else {
+        this.nobar = true
+        this.bar = false
+        }
 
-      /* D */
+        /* D */
       } else if (this.ctt > 1560 && this.ctt < 1810) { /* +200 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* E */
+        /* E */
       } else if (this.ctt == 1810) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
@@ -328,11 +347,11 @@ export default {
         blurr.classList.remove('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
 
-      
+
       } /* project */
-      
-        /* A. */
-        else if (this.ctt > 1810 && this.ctt <= 2260) { /* +450 */
+
+      /* A. */
+      else if (this.ctt > 1810 && this.ctt <= 2260) { /* +450 */
         this.devP = false
         this.project = true
         this.contacts = false
@@ -343,25 +362,42 @@ export default {
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* B */
+        if (this.opacitys >= 0.7) {
+        this.nobar2 = false
+        this.bar2 = true
+        } else {
+        this.nobar2 = true
+        this.bar2 = false
+        }
+
+        /* B */
       } else if (this.ctt > 2260 && this.ctt <= 2560) { /* +300 */
         this.opacitys = 1;
-
-      /* C */
+        this.nobar2 = false
+        this.bar2 = true
+        /* C */
       } else if (this.ctt > 2560 && this.ctt <= 3010) { /* +450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* D */
+        if (this.opacitys >= 0.7) {
+        this.nobar2 = false
+        this.bar2 = true
+        } else {
+        this.nobar2 = true
+        this.bar2 = false
+        }
+
+        /* D */
       } else if (this.ctt > 3010 && this.ctt < 3210) { /* +200 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* E */
+        /* E */
       } else if (this.ctt == 3210) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
@@ -370,9 +406,9 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
       } /* contacts */
- 
-       /* A. */
-       else if (this.ctt > 3210 && this.ctt <= 3660) { /* +450 */
+
+      /* A. */
+      else if (this.ctt > 3210 && this.ctt <= 3660) { /* +450 */
         this.devP = false
         this.project = false
         this.contacts = true
@@ -383,25 +419,44 @@ export default {
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* B */
+        if (this.opacitys >= 0.7) {
+        this.nobar3 = false
+        this.bar3 = true
+        } else {
+        this.nobar3 = true
+        this.bar3 = false
+        }
+
+        /* B */
       } else if (this.ctt > 3660 && this.ctt <= 3960) { /* +300 */
         this.opacitys = 1;
 
-      /* C */
+        this.nobar3 = false
+        this.bar3 = true
+
+        /* C */
       } else if (this.ctt > 3960 && this.ctt <= 4410) { /* +450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* D */
+        if (this.opacitys >= 0.7) {
+        this.nobar3 = false
+        this.bar3 = true
+        } else {
+        this.nobar3 = true
+        this.bar3 = false
+        }
+
+        /* D */
       } else if (this.ctt > 4410 && this.ctt < 4610) { /* +200 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* E */
+        /* E */
       } else if (this.ctt == 4610) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
@@ -423,9 +478,19 @@ export default {
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
 
-      /* B */
+        if (this.opacitys >= 0.7) {
+        this.nobar4 = false
+        this.bar4 = true
+        } else {
+        this.nobar4 = true
+        this.bar4 = false
+        }
+
+        /* B */
       } else if (this.ctt > 5060 && this.ctt <= 5310) { /* +300 - 50 */
         this.opacitys = 1;
+        this.nobar4 = false
+        this.bar4 = true
       }
 
     },
@@ -435,32 +500,44 @@ export default {
     opacitysali() {
       console.log(`opacity-[${this.opacitys}]`);
 
-       /* dev P */
-       if (this.ctt <= 410) {
+     
+
+      /* dev P */
+      if (this.ctt <= 410) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* E. */
-        else if (this.ctt > 410 && this.ctt <= 860) { /* -450 */
+      else if (this.ctt > 410 && this.ctt <= 860) { /* -450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        if (this.opacitys >= 0.7) {
+        this.nobar = false
+        this.bar = true
+        } else {
+        this.nobar = true
+        this.bar = false
+        }
+
+
       } /* D. */
-        else if (this.ctt > 860 && this.ctt <= 1160) { /* -300 */
+      else if (this.ctt > 860 && this.ctt <= 1160) { /* -300 */
         this.opacitys = 1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        this.nobar = false
+        this.bar = true
+
+
       } /* C. */
-        else if (this.ctt > 1160 && this.ctt <= 1610) { /* -450 */
+      else if (this.ctt > 1160 && this.ctt <= 1610) { /* -450 */
         this.devP = true
         this.project = false
         this.contacts = false
@@ -470,45 +547,60 @@ export default {
         blurr.classList.remove('opacity-[0]');
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        if (this.opacitys >= 0.7) {
+          this.nobar = false
+        this.bar = true
+        } else {
+        this.nobar = true
+        this.bar = false
+        }
+
       } /* B. */
-        else if (this.ctt == 1660) {
+      else if (this.ctt == 1660) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.classList.remove('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* A. */
-        else if (this.ctt > 1660 && this.ctt <= 1810) { /* -150 */
+      else if (this.ctt > 1660 && this.ctt <= 1810) { /* -150 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* project */
 
-        /* E. */
-        else if (this.ctt > 1810 && this.ctt <= 2260) { /* -450 */
+      /* E. */
+      else if (this.ctt > 1810 && this.ctt <= 2260) { /* -450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        if (this.opacitys >= 0.7) {
+        this.nobar2 = false
+        this.bar2 = true
+        } else {
+        this.nobar2 = true
+        this.bar2 = false
+        }
+
       } /* D. */
-        else if (this.ctt > 2260 && this.ctt <= 2560) { /* -300 */
+      else if (this.ctt > 2260 && this.ctt <= 2560) { /* -300 */
         this.opacitys = 1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        this.nobar2 = false
+        this.bar2 = true
+
+
       } /* C. */
-        else if (this.ctt > 2560 && this.ctt <= 3010) { /* -450 */
+      else if (this.ctt > 2560 && this.ctt <= 3010) { /* -450 */
         this.devP = false
         this.project = true
         this.contacts = false
@@ -518,46 +610,60 @@ export default {
         blurr.classList.remove('opacity-[0]');
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
+        if (this.opacitys >= 0.7) {
+        this.nobar2 = false
+        this.bar2 = true
+        } else {
+        this.nobar2 = true
+        this.bar2 = false
+        }
+
       } /* B. */
-        else if (this.ctt == 3060) {
+      else if (this.ctt == 3060) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.classList.remove('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* A. */
-        else if (this.ctt > 3060 && this.ctt <= 3210) { /* -150 */
+      else if (this.ctt > 3060 && this.ctt <= 3210) { /* -150 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
-      } 
-       /* contacts */
 
-        /* E. */
-        else if (this.ctt > 3210 && this.ctt <= 3660) { /* -450 */
+      }
+      /* contacts */
+
+      /* E. */
+      else if (this.ctt > 3210 && this.ctt <= 3660) { /* -450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
         
+        if (this.opacitys >= 0.7) {
+        this.nobar3 = false
+        this.bar3 = true
+        } else {
+        this.nobar3 = true
+        this.bar3 = false
+        }
+
       } /* D. */
-        else if (this.ctt > 3660 && this.ctt <= 3960) { /* -300 */
+      else if (this.ctt > 3660 && this.ctt <= 3960) { /* -300 */
         this.opacitys = 1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+       
+        this.nobar3 = false
+        this.bar3 = true
+
       } /* C. */
-        else if (this.ctt > 3960 && this.ctt <= 4410) { /* -450 */
+      else if (this.ctt > 3960 && this.ctt <= 4410) { /* -450 */
         this.opacitys += 0.1;
         this.devP = false
         this.project = false
@@ -567,33 +673,45 @@ export default {
         blurr.classList.remove('opacity-[0]');
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
         
+        if (this.opacitys >= 0.7) {
+        this.nobar3 = false
+        this.bar3 = true
+        } else {
+        this.nobar3 = true
+        this.bar3 = false
+        }
+
       } /* B. */
-        else if (this.ctt == 4460) {
+      else if (this.ctt == 4460) {
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.classList.remove('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* A. */
-        else if (this.ctt > 4460 && this.ctt <= 4610) { /* -150 */
+      else if (this.ctt > 4460 && this.ctt <= 4610) { /* -150 */
         this.opacitys = 0;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
-        
+
       } /* tnx */
-        else if (this.ctt > 4610 && this.ctt <= 5060) { /* -450 */
+      else if (this.ctt > 4610 && this.ctt <= 5060) { /* -450 */
         this.opacitys -= 0.1;
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        return `opacity-[${this.opacitys}]`
         
+        if (this.opacitys >= 0.7) {
+        this.nobar4 = false
+        this.bar4 = true
+        } else {
+        this.nobar4 = true
+        this.bar4 = false
+        }
+
       }
     },
 
