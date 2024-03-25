@@ -29,12 +29,22 @@
           </div>
 
           <!-- list -->
-          <ul class="flex justify-center items-center max-w-[70%]  mx-auto pr-[40px] xl:pr-[180px] pb-[25px]">
-            <li><img src="../assets/home.png" alt="" class="w-[120px]  mr-[50px] pr-[20px]"></li>
-            <li><img src="../assets/devProfile.png" alt="" class="w-[240px] mr-[50px] pr-[20px]"></li>
-            <li><img src="../assets/project.png" alt="" class="w-[200px] mr-[50px] pr-[20px]"></li>
-            <li><img src="../assets/contacts.png" alt="" class="w-[230px] "></li>
-          </ul>
+          <div class="flex flex-col max-w-[70%] mx-auto pr-[40px] xl:pr-[180px] pb-[25px]">
+            <ul class="flex justify-center items-center">
+              <li><button @click="homE"><img src="../assets/home.png" alt=""
+                    class="w-[135px]  mr-[50px] pr-[20px]"></button></li>
+              <li><button @click="devProfile"><img src="../assets/devProfile.png" alt=""
+                    class="w-[240px] mr-[50px] pr-[20px]"></button></li>
+              <li><button @click="projecT"><img src="../assets/project.png" alt=""
+                    class="w-[210px] mr-[50px] pr-[20px]"></button></li>
+              <li><button @click="contactS"><img src="../assets/contacts.png" alt="" class="w-[230px] "></button></li>
+            </ul>
+
+            <div
+              :class="{ 'ml-[-40px]': homest, 'ml-[200px]': devPst, 'ml-[480px]': projectst, 'ml-[760px]': contactst, }"
+              class="ml-[-40px] duration-1000"><img src="../assets/sottol.png" alt="" class="w-[180px]"></div>
+          </div>
+
         </div>
 
 
@@ -116,8 +126,8 @@
 
       <!-- 2 homeview -->
       <div class=" h-[85vh] w-screen flex ">
-     
-       
+
+
 
         <!-- opacity container -->
         <div :id="bluu" :class="opacity" class="w-[80%] opacity-[0] duration-1000 ">
@@ -143,7 +153,7 @@
 
           <!-- project -->
           <div v-if="project" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold text-white">
+            <div class=" text-[25px] font-semibold text-red-300">
               Lorem ipsum, dolor sit amet consectetur
               adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
               provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
@@ -152,8 +162,8 @@
           </div>
 
           <!-- contacts -->
-          <div v-if="contacts" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold text-white">
+          <div v-if="contacts" class="h-[500px] absolute   top-0 p-[300px] ">
+            <div class=" text-[25px] font-semibold duration-1000 text-yellow-300">
               Lorem ipsum, dolor sit amet consectetur
               adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
               provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
@@ -172,11 +182,15 @@
 
         <!-- scrollbar -->
         <div class="flex flex-col items-center ml-[100px] mt-[160px]">
-          <div :class="{ 'bg-white' : bar, 'bg-slate-600' : nobar}" class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
+          <div :class="{ 'bg-white': bar, 'bg-slate-600': nobar }"
+            class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
 
-          <div :class="{ 'bg-white' : bar2, 'bg-slate-600' : nobar2}" class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[40px]"></div>
-          <div :class="{ 'bg-white' : bar3, 'bg-slate-600' : nobar3}" class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[30px]"></div>
-          <div :class="{ 'text-white' : bar4, 'text-slate-600' : nobar4}" class="text-[35px] font-extrabold duration-500">TNX</div>
+          <div :class="{ 'bg-white': bar2, 'bg-slate-600': nobar2 }"
+            class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[40px]"></div>
+          <div :class="{ 'bg-white': bar3, 'bg-slate-600': nobar3 }"
+            class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[30px]"></div>
+          <div :class="{ 'text-white': bar4, 'text-slate-600': nobar4 }"
+            class="text-[35px] font-extrabold duration-500">TNX</div>
         </div>
 
       </div>
@@ -218,7 +232,11 @@ export default {
       nobar: true,
       nobar2: true,
       nobar3: true,
-      nobar4: true
+      nobar4: true,
+      homest: true,
+      devPst: false,
+      projectst: false,
+      contactst: false
 
 
     };
@@ -245,6 +263,146 @@ export default {
 
   methods: {
 
+    homE() {
+      this.ctt = 60;
+      this.opacitys = 0;
+      this.bar = false;
+      this.bar2 = false;
+      this.bar3 = false;
+      this.bar4 = false;
+
+      this.nobar = true;
+      this.nobar2 = true;
+      this.nobar3 = true;
+      this.nobar4 = true;
+
+      this.devP = true
+      this.project = false
+      this.contacts = false
+      this.tnx = false
+
+      this.homest = true
+      this.devPst = false
+      this.projectst = false
+      this.contactst = false
+
+      const element = document.getElementById(this.customId);
+      element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
+      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.classList.add(`duration-1000`);
+      const blurr = document.getElementById(this.bluu);
+      blurr.classList.remove('opacity-[0]');
+      blurr.style.opacity = `${this.opacitys}`;
+
+      console.log(`top-[${this.ctt}px]`);
+
+    },
+
+    devProfile() {
+      this.ctt = 960;
+      this.opacitys = 1;
+      this.bar = true;
+      this.bar2 = false;
+      this.bar3 = false;
+      this.bar4 = false;
+
+      this.nobar = false;
+      this.nobar2 = true;
+      this.nobar3 = true;
+      this.nobar4 = true;
+
+      this.devP = true
+      this.project = false
+      this.contacts = false
+      this.tnx = false
+
+      this.homest = false
+      this.devPst = true
+      this.projectst = false
+      this.contactst = false
+
+      const element = document.getElementById(this.customId);
+      element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
+      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.classList.add(`duration-1000`);
+      const blurr = document.getElementById(this.bluu);
+      blurr.classList.remove('opacity-[0]');
+      blurr.style.opacity = `${this.opacitys}`;
+
+      console.log(`top-[${this.ctt}px]`);
+
+    },
+
+    projecT() {
+      this.ctt = 2410;
+      this.opacitys = 1;
+      this.bar = false;
+      this.bar2 = true;
+      this.bar3 = false;
+      this.bar4 = false;
+
+      this.nobar = true;
+      this.nobar2 = false;
+      this.nobar3 = true;
+      this.nobar4 = true;
+
+      this.devP = false
+      this.project = true
+      this.contacts = false
+      this.tnx = false
+
+      this.homest = false
+      this.devPst = false
+      this.projectst = true
+      this.contactst = false
+
+      const element = document.getElementById(this.customId);
+      element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
+      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.classList.add(`duration-1000`);
+      const blurr = document.getElementById(this.bluu);
+      blurr.classList.remove('opacity-[0]');
+      blurr.style.opacity = `${this.opacitys}`;
+
+      console.log(`top-[${this.ctt}px]`);
+
+    },
+
+    contactS() {
+      this.ctt = 3810;
+      this.opacitys = 1;
+      this.bar = false;
+      this.bar2 = false;
+      this.bar3 = true;
+      this.bar4 = false;
+
+      this.nobar = true;
+      this.nobar2 = true;
+      this.nobar3 = false;
+      this.nobar4 = true;
+
+      this.devP = false
+      this.project = false
+      this.contacts = true
+      this.tnx = false
+
+      this.homest = false
+      this.devPst = false
+      this.projectst = false
+      this.contactst = true
+
+      const element = document.getElementById(this.customId);
+      element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
+      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.classList.add(`duration-1000`);
+      const blurr = document.getElementById(this.bluu);
+      blurr.classList.remove('opacity-[0]');
+      blurr.style.opacity = `${this.opacitys}`;
+
+      console.log(`top-[${this.ctt}px]`);
+
+    },
+
     /* gestione evento */
     handleMouseWheel(event) {
 
@@ -264,7 +422,6 @@ export default {
 
     /* transition down */
     scendi() {
-      console.log(`top-[${this.ctt}px]`);
 
       if (this.ctt >= 0 && this.ctt <= 5210) {
         this.ctt += 50;
@@ -272,13 +429,14 @@ export default {
         element.classList.remove('top-[0px]');
         element.classList.add(`duration-1000`);
         element.style.top = `${this.ctt}px`;
+
+        console.log(`top-[${this.ctt}px]`);
         return `top-[${this.ctt}px]`;
       }
     },
 
     /* transition upp */
     sali() {
-      console.log(`top-[${this.ctt}px]`);
 
       if (this.ctt > 80) {
         this.ctt -= 50;
@@ -286,12 +444,35 @@ export default {
         element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
         element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
         element.classList.add(`duration-1000`);
+
+        console.log(`top-[${this.ctt}px]`);
         return `top-[${this.ctt}px]`;
       }
     },
 
     opacity() {
       console.log(`opacity-[${this.opacitys}]`);
+
+      
+      if (this.ctt > 410 && this.ctt < 1810) {
+        this.homest = false
+        this.devPst = true
+        this.projectst = false
+        this.contactst = false
+      }
+      if (this.ctt >= 1810 && this.ctt < 3210) {
+        this.homest = false
+        this.devPst = false
+        this.projectst = true
+        this.contactst = false
+      }
+      if (this.ctt >= 3210 && this.ctt < 4610) {
+        this.homest = false
+        this.devPst = false
+        this.projectst = false
+        this.contactst = true
+      }
+
 
       /* devP */
 
@@ -301,13 +482,16 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        
+
         if (this.opacitys >= 0.7) {
-        this.nobar = false
-        this.bar = true
+          this.nobar = false
+          this.bar = true
+
+
         } else {
-        this.nobar = true
-        this.bar = false
+          this.nobar = true
+          this.bar = false
+
         }
 
         /* B */
@@ -323,13 +507,15 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        
+
         if (this.opacitys >= 0.7) {
-        this.nobar = false
-        this.bar = true
+          this.nobar = false
+          this.bar = true
+
         } else {
-        this.nobar = true
-        this.bar = false
+          this.nobar = true
+          this.bar = false
+
         }
 
         /* D */
@@ -363,11 +549,13 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar2 = false
-        this.bar2 = true
+          this.nobar2 = false
+          this.bar2 = true
+
         } else {
-        this.nobar2 = true
-        this.bar2 = false
+          this.nobar2 = true
+          this.bar2 = false
+
         }
 
         /* B */
@@ -375,6 +563,7 @@ export default {
         this.opacitys = 1;
         this.nobar2 = false
         this.bar2 = true
+
         /* C */
       } else if (this.ctt > 2560 && this.ctt <= 3010) { /* +450 */
         this.opacitys -= 0.1;
@@ -383,11 +572,13 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar2 = false
-        this.bar2 = true
+          this.nobar2 = false
+          this.bar2 = true
+
         } else {
-        this.nobar2 = true
-        this.bar2 = false
+          this.nobar2 = true
+          this.bar2 = false
+
         }
 
         /* D */
@@ -420,11 +611,13 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar3 = false
-        this.bar3 = true
+          this.nobar3 = false
+          this.bar3 = true
+
         } else {
-        this.nobar3 = true
-        this.bar3 = false
+          this.nobar3 = true
+          this.bar3 = false
+
         }
 
         /* B */
@@ -442,11 +635,13 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar3 = false
-        this.bar3 = true
+          this.nobar3 = false
+          this.bar3 = true
+
         } else {
-        this.nobar3 = true
-        this.bar3 = false
+          this.nobar3 = true
+          this.bar3 = false
+
         }
 
         /* D */
@@ -479,11 +674,11 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar4 = false
-        this.bar4 = true
+          this.nobar4 = false
+          this.bar4 = true
         } else {
-        this.nobar4 = true
-        this.bar4 = false
+          this.nobar4 = true
+          this.bar4 = false
         }
 
         /* B */
@@ -500,7 +695,37 @@ export default {
     opacitysali() {
       console.log(`opacity-[${this.opacitys}]`);
 
-     
+      if (this.ctt <= 410 ) {
+        this.homest = true
+        this.devPst = false
+        this.projectst = false
+        this.contactst = false
+      }
+      if (this.ctt > 410 && this.ctt < 1810) {
+        this.homest = false
+        this.devPst = true
+        this.projectst = false
+        this.contactst = false
+      }
+      if (this.ctt > 410 && this.ctt < 1810) {
+        this.homest = false
+        this.devPst = true
+        this.projectst = false
+        this.contactst = false
+      }
+      if (this.ctt >= 1810 && this.ctt < 3210) {
+        this.homest = false
+        this.devPst = false
+        this.projectst = true
+        this.contactst = false
+      }
+      if (this.ctt >= 3210 && this.ctt < 4610) {
+        this.homest = false
+        this.devPst = false
+        this.projectst = false
+        this.contactst = true
+      }
+
 
       /* dev P */
       if (this.ctt <= 410) {
@@ -517,11 +742,11 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar = false
-        this.bar = true
+          this.nobar = false
+          this.bar = true
         } else {
-        this.nobar = true
-        this.bar = false
+          this.nobar = true
+          this.bar = false
         }
 
 
@@ -550,10 +775,10 @@ export default {
 
         if (this.opacitys >= 0.7) {
           this.nobar = false
-        this.bar = true
+          this.bar = true
         } else {
-        this.nobar = true
-        this.bar = false
+          this.nobar = true
+          this.bar = false
         }
 
       } /* B. */
@@ -581,11 +806,11 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar2 = false
-        this.bar2 = true
+          this.nobar2 = false
+          this.bar2 = true
         } else {
-        this.nobar2 = true
-        this.bar2 = false
+          this.nobar2 = true
+          this.bar2 = false
         }
 
       } /* D. */
@@ -612,11 +837,11 @@ export default {
         blurr.style.opacity = `${this.opacitys}`;
 
         if (this.opacitys >= 0.7) {
-        this.nobar2 = false
-        this.bar2 = true
+          this.nobar2 = false
+          this.bar2 = true
         } else {
-        this.nobar2 = true
-        this.bar2 = false
+          this.nobar2 = true
+          this.bar2 = false
         }
 
       } /* B. */
@@ -643,13 +868,13 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        
+
         if (this.opacitys >= 0.7) {
-        this.nobar3 = false
-        this.bar3 = true
+          this.nobar3 = false
+          this.bar3 = true
         } else {
-        this.nobar3 = true
-        this.bar3 = false
+          this.nobar3 = true
+          this.bar3 = false
         }
 
       } /* D. */
@@ -658,7 +883,7 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-       
+
         this.nobar3 = false
         this.bar3 = true
 
@@ -673,13 +898,13 @@ export default {
         blurr.classList.remove('opacity-[0]');
         blurr.classList.add('duration-1000');
         blurr.style.opacity = `${this.opacitys}`;
-        
+
         if (this.opacitys >= 0.7) {
-        this.nobar3 = false
-        this.bar3 = true
+          this.nobar3 = false
+          this.bar3 = true
         } else {
-        this.nobar3 = true
-        this.bar3 = false
+          this.nobar3 = true
+          this.bar3 = false
         }
 
       } /* B. */
@@ -703,13 +928,13 @@ export default {
         const blurr = document.getElementById(this.bluu);
         blurr.classList.remove('opacity-[0]');
         blurr.style.opacity = `${this.opacitys}`;
-        
+
         if (this.opacitys >= 0.7) {
-        this.nobar4 = false
-        this.bar4 = true
+          this.nobar4 = false
+          this.bar4 = true
         } else {
-        this.nobar4 = true
-        this.bar4 = false
+          this.nobar4 = true
+          this.bar4 = false
         }
 
       }
