@@ -1,7 +1,9 @@
 <template>
 
   <!-- container/input mouse -->
-  <div @wheel="handleMouseWheel" class=" w-screen bg-black">
+  <div @wheel="handleMouseWheel" class=" w-screen">
+
+    
 
     <div class="relative">
 
@@ -16,7 +18,7 @@
 
       <div class="relative">
         <!-- nav carta -->
-        <div class=" h-[200px] mb-[-24px] "><img src="../assets/nav.png" alt="" class="h-[130%] w-screen ">
+        <div class=" h-[200px] mb-[-24px] "><img src="../assets/nav.png" alt="" class="h-[130%] w-screen">
         </div>
 
         <!-- ind -->
@@ -125,29 +127,91 @@
       </div>
 
       <!-- 2 homeview -->
-      <div class=" h-[85vh] w-screen flex ">
-
+      <div class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black">
+        
+          
+  
 
 
         <!-- opacity container -->
-        <div :id="bluu" :class="opacity" class="w-[80%] opacity-[0] duration-1000 ">
+        <div :id="bluu" :class="opacity" class="w-[89%] pt-[80px] pr-[100px] pb-[100px] pl-[390px] h-[740px] opacity-[0] duration-1000 ">
 
           <!-- Dev. profile -->
-          <div v-if="devP" class="h-[500px] absolute  top-0 p-[300px] ">
+          <div v-if="devP" class="flex flex-col  ">
 
-            <div class="flex justify-center items-center">
-              <div class=" text-[25px] font-semibold text-white">
-                Lorem ipsum, dolor sit amet consectetur
+         
+            
+
+            <div class="flex justify-center items-start ">
+
+              <!-- CARD SX -->
+              
+              <div class="relative flex justify-center items-center h-[250px] w-[250px] mb-[25px] rounded-[20px] mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)]" >
+                <div class="absolute top-[-35px] right-1  blur-[5px] z-[0] font-extrabold text-[90px] text-white">Lo</div>
+             <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[220px] hover:animate-bounce">
+              </div>
+            
+
+              <div class=" w-[800px] text-[25px] font-semibold text-white mt-[20px]">
+                <span class="font-extrabold text-[90px] ml-[-23px] leading-7 z-[1]">rem </span>Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
+                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus inciduntLorem ipsum, dolor sit amet consectetur
               </div>
             </div>
 
-            <div class="flex justify-center items-center mx-auto mt-[-50px]">
-              <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl mr-[40px]"></div>
-              <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl mx-[40px]"></div>
-              <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl mx-[40px]"></div>
-              <div class="h-[180px] w-[180px] border-solid border-2 border-indigo-600 rounded-3xl ml-[40px]"></div>
+
+            <div class="relative w-[100%] px-[70px] text-[25px] font-semibold text-white ">
+              <div>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
+                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incisse  
+              </div>
+                <div class="absolute top-[40px] right-[115px]  font-extrabold text-[90px]">ipsum</div>
+            </div>
+            
+          
+            
+
+            <div class="absolute bottom-[50px] flex flex-col  justify-center items-center  left-[14%]  px-[15px] ">
+              <div class="h-[7px] w-[1400px] bg-[#e75cff] rounded-[50px] mb-[20px]"></div>
+
+
+              <div class="flex">
+              <ul class="flex">
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/htmlI.png" alt="" class="h-[60px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/cssI.png" alt="" class="h-[60px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/javascriptI.png" alt="" class="h-[60px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/tailwindI.png" alt="" class="h-[45px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vueI.png" alt="" class="h-[50px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vsI.png" alt="" class="h-[50px]">
+                </li>
+                <li class="h-[90px] w-[90px] mr-[-10px] flex justify-center items-center "><img src="../assets/gitI.jpg" alt="" class="h-[50px]">
+                </li>
+              </ul>
+
+              <ul class="flex">
+                
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png" alt="" class="h-[50px]">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png" alt="" class="h-[50px]">
+                </li>
+                
+                <li class="h-[90px] w-[90px] ml-[10px] flex justify-center items-center "><img src="../assets/apil.png" alt="" class="h-[50px]">
+                </li>
+                <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png" alt="" class="h-[60px] ">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png" alt="" class="h-[60px] ">
+                </li>
+                <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png" alt="" class="h-[35px] ">
+                </li>
+                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/reactI.png" alt="" class="h-[50px]">
+                </li>
+              </ul>
+            </div>
             </div>
           </div>
 
@@ -179,28 +243,31 @@
 
           </div>
         </div>
-
+        <!-- ml-[180px] mt-[160px] -->
         <!-- scrollbar -->
-        <div class="flex flex-col items-center ml-[100px] mt-[160px]">
-          <div :class="{ 'bg-white': bar, 'bg-slate-600': nobar }"
+        <div class="flex flex-col items-center ml-[20px] ">
+          <div :class="{ 'bg-white': bar, 'bg-[rgba(255,255,255,0.26)]': nobar }"
             class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
 
-          <div :class="{ 'bg-white': bar2, 'bg-slate-600': nobar2 }"
+          <div :class="{ 'bg-white': bar2, 'bg-[rgba(255,255,255,0.26)]': nobar2 }"
             class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[40px]"></div>
-          <div :class="{ 'bg-white': bar3, 'bg-slate-600': nobar3 }"
+          <div :class="{ 'bg-white': bar3, 'bg-[rgba(255,255,255,0.26)]': nobar3 }"
             class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[30px]"></div>
-          <div :class="{ 'text-white': bar4, 'text-slate-600': nobar4 }"
+          <div :class="{ 'text-white': bar4, 'text-[rgba(255,255,255,0.26)]': nobar4 }"
             class="text-[35px] font-extrabold duration-500">TNX</div>
         </div>
 
+      
       </div>
+    
 
     </div>
 
 
 
-
+  
   </div>
+
 
 
 
