@@ -1,9 +1,9 @@
 <template>
 
   <!-- container/input mouse -->
-  <div @wheel="handleMouseWheel" class=" w-screen">
+  <div @wheel="handleMouseWheel" class="hidden md:block w-screen bg-black">
 
-    
+
 
     <div class="relative">
 
@@ -31,7 +31,7 @@
           </div>
 
           <!-- list -->
-          <div class="flex flex-col max-w-[70%] mx-auto pr-[40px] xl:pr-[180px] pb-[25px]">
+          <div class="relative flex flex-col max-w-[70%] mx-auto pr-[40px] xl:pr-[180px] pb-[25px]">
             <ul class="flex justify-center items-center">
               <li><button @click="homE"><img src="../assets/home.png" alt=""
                     class="w-[135px]  mr-[50px] pr-[20px]"></button></li>
@@ -42,9 +42,9 @@
               <li><button @click="contactS"><img src="../assets/contacts.png" alt="" class="w-[230px] "></button></li>
             </ul>
 
-            <div
-              :class="{ 'ml-[-40px]': homest, 'ml-[200px]': devPst, 'ml-[480px]': projectst, 'ml-[760px]': contactst, }"
-              class="ml-[-40px] duration-1000"><img src="../assets/sottol.png" alt="" class="w-[180px]"></div>
+            <div :class="{ 'ml-[-40px]': homest, 'ml-[17%]': devPst, 'ml-[42%]': projectst, 'ml-[66%]': contactst, }"
+              class="absolute top-[70px] ml-[-40px] duration-1000"><img src="../assets/sottol.png" alt=""
+                class="w-[180px]"></div>
           </div>
 
         </div>
@@ -77,21 +77,29 @@
 
               <div class="flex justify-center items-start">
                 <img src="../assets/disegno.png" alt="" class="w-[400px] lg:w-[450px] xl:w-[500px] ">
-                <div class="text-[18px] lg:text-[20px]  w-[650px] my-auto ml-[15px] xl:ml-[50px] mt-[60px] ">Lorem,
-                  ipsum dolor sit amet consectetur
-                  adipisicing elit. Eaque amet aut nemo deserunt a blanditiis ut, perspiciatis id enim tenetur debitis
-                  eos tempore, earum facere beatae, veniam adipisci. Consequuntur placeat ipsam praesentium. Laborum
-                  libero nam a quasi Lorem ipsum dolor sit amet consectetur ad.</div>
+
+                <div
+                  class="text-[18px] mt-[20px] lg:text-[20px] font-semibold  w-[650px] my-auto ml-[15px]  xl:ml-[50px] ">
+                  <span class="mt-[20px]  text-[23px] xl:text-[25px] font-semibold underline">Sono Antonino, non
+                    solo un front-end Developer!</span> <br>
+                  Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
+                  ho studiato arte illustrativa, grafica e progettazione architettonica. Successivamente, mi sono
+                  iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
+                  programmazione.
+                </div>
+
               </div>
 
               <!-- section inf -->
               <div class="flex justify-center items-center">
-                <div class="text-[18px]  lg:text-[20px] w-[800px] my-auto pl-[13px] xl:pl-[40px] mt-[90px]">Lorem, ipsum
-                  dolor sit amet consectetur
-                  adipisicing elit. Eaque amet aut nemo deserunt a blanditiis ut, perspiciatis id enim tenetur debitis
-                  eos tempore, earum facere beatae, veniam adipisci. Consequuntur placeat ipsam praesentium. Laborum
-                  libero nam a quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas tempora
-                  perspiciatis? Deserunt molestias voluptatibus possimus quis quidem obcaecati nemo perspiciatis corpo.
+                <div
+                  class="text-[18px] font-semibold  lg:text-[20px] w-[800px] my-auto pl-[13px] xl:pl-[40px] mt-[90px]">
+                  Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi ha
+                  fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
+                  Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte altre
+                  passioni.
+                  Adoro il disegno a mano libera, progettare oggetti di design e nel tempo libero mi trasformo in un
+                  tatuatore!
                 </div>
                 <img src="../assets/sedia.png" alt=""
                   class="w-[300px] lg:w-[350px] xl:w-[400px] xl:mt-[-40px] xl:ml-[50px] ">
@@ -127,115 +135,346 @@
       </div>
 
       <!-- 2 homeview -->
-      <div class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black">
-        
-          
-  
+      <div
+        class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black border-solid border-2 px-[20px] border-indigo-600">
+
 
 
         <!-- opacity container -->
-        <div :id="bluu" :class="opacity" class="w-[89%] pt-[80px] pr-[100px] pb-[100px] pl-[390px] h-[740px] opacity-[0] duration-1000 ">
+        <div :id="bluu" :class="opacity" class="w-[89%] pt-[80px]  pb-[100px]  h-[740px] opacity-[0] duration-1000  ">
 
-          <!-- Dev. profile -->
-          <div v-if="devP" class="flex flex-col  ">
 
-         
-            
+          <!-- DEV PROFILE -->
+          <div v-if="devP" class="flex flex-col items-center ml-[15%] mt-[40px] 2xl:mt-0 ">
 
-            <div class="flex justify-center items-start ">
+            <div class="flex  items-start  ">
 
-              <!-- CARD SX -->
-              
-              <div class="relative flex justify-center items-center h-[250px] w-[250px] mb-[25px] rounded-[20px] mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)]" >
-                <div class="absolute top-[-35px] right-1  blur-[5px] z-[0] font-extrabold text-[90px] text-white">Lo</div>
-             <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[220px] hover:animate-bounce">
+              <!-- section sup -->
+              <div
+                class="relative flex justify-center scale-[0.85] lg:scale-90 xl:scale-100 ml-[150px] lg:ml-0 items-center h-[300px] w-[250px] mt-[-15px] xl:mt-[0px] rounded-[20px] mr-[4px] lg:mr-[10px] xl:mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)] ">
+                <div
+                  class="absolute top-[-10px] lg:top-[-13px] xl:top-[-25px] 2xl:top-[-35px] right-1  blur-[5px] z-[0] font-extrabold md:text-[60px] lg:text-[70px] xl:text-[80px]  2xl:text-[90px] text-white">
+                  Cr
+                </div>
+                <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[220px]  hover:animate-bounce">
               </div>
-            
 
-              <div class=" w-[800px] text-[25px] font-semibold text-white mt-[20px]">
-                <span class="font-extrabold text-[90px] ml-[-23px] leading-7 z-[1]">rem </span>Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus inciduntLorem ipsum, dolor sit amet consectetur
+
+              <div
+                class=" w-[800px] pr-[25%] lg:pr-[130px] 2xl:pr-[0px] text-[20px]  lg:text-[23px] font-semibold text-white mt-[20px] 2xl:text-[25px]">
+                <span
+                  class="font-extrabold  md:text-[60px] lg:text-[70px] xl:text-[80px]  2xl:text-[90px]  ml-[-23px] leading-7 z-[1]">edo</span>
+                fortemente nell'organizzazione. <br>
+                Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto di scadenze
+                prefissate. <br>
+                Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
+                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide. <br>
+                Sono un umano socievole che apprezza il senso di comunità all’interno del team.
+                Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
               </div>
             </div>
 
 
             <div class="relative w-[100%] px-[70px] text-[25px] font-semibold text-white ">
-              <div>Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-                provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incisse  
+              <div>
               </div>
-                <div class="absolute top-[40px] right-[115px]  font-extrabold text-[90px]">ipsum</div>
+
             </div>
-            
-          
-            
 
-            <div class="absolute bottom-[50px] flex flex-col  justify-center items-center  left-[14%]  px-[15px] ">
-              <div class="h-[7px] w-[1400px] bg-[#e75cff] rounded-[50px] mb-[20px]"></div>
+            <!-- section inf -->
+            <div
+              class="flex flex-col mr-[5vw] mt-[60px] lg:mt-[75px] xl:mt-[60px] 2xl:mt-[70px] md:scale-[0.6] lg:scale-[0.7] xl:scale-[0.8] 2xl:scale-[0.9]">
+              <h1 class="font-extrabold text-white text-[60px] text-end mt-[-20px]">Competenze</h1>
+              <div @mouseover="competenze = true" @mouseleave="competenze = false"
+                class="flex flex-col  justify-center items-center">
+                <div :class="{ 'bg-white': competenze, 'bg-[#ffffff4e]': !competenze }"
+                  class="h-[7px] w-[1400px] rounded-[50px] duration-500 mb-[20px]"></div>
 
 
-              <div class="flex">
-              <ul class="flex">
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/htmlI.png" alt="" class="h-[60px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/cssI.png" alt="" class="h-[60px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/javascriptI.png" alt="" class="h-[60px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/tailwindI.png" alt="" class="h-[45px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vueI.png" alt="" class="h-[50px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vsI.png" alt="" class="h-[50px]">
-                </li>
-                <li class="h-[90px] w-[90px] mr-[-10px] flex justify-center items-center "><img src="../assets/gitI.jpg" alt="" class="h-[50px]">
-                </li>
-              </ul>
+                <div class="flex">
+                  <ul class="flex">
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/htmlI.png"
+                        alt="" class="h-[60px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/cssI.png" alt=""
+                        class="h-[60px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/javascriptI.png"
+                        alt="" class="h-[60px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/tailwindI.png"
+                        alt="" class="h-[45px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vueI.png" alt=""
+                        class="h-[50px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vsI.png" alt=""
+                        class="h-[50px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] mr-[-10px] flex justify-center items-center "><img
+                        src="../assets/gitI.jpg" alt="" class="h-[50px]">
+                    </li>
+                  </ul>
 
-              <ul class="flex">
-                
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png" alt="" class="h-[50px]">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png" alt="" class="h-[50px]">
-                </li>
-                
-                <li class="h-[90px] w-[90px] ml-[10px] flex justify-center items-center "><img src="../assets/apil.png" alt="" class="h-[50px]">
-                </li>
-                <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png" alt="" class="h-[60px] ">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png" alt="" class="h-[60px] ">
-                </li>
-                <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png" alt="" class="h-[35px] ">
-                </li>
-                <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/reactI.png" alt="" class="h-[50px]">
-                </li>
-              </ul>
-            </div>
-            </div>
-          </div>
+                  <ul class="flex">
 
-          <!-- project -->
-          <div v-if="project" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold text-red-300">
-              Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-              provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-              vo
-            </div>
-          </div>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png"
+                        alt="" class="h-[50px]">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png"
+                        alt="" class="h-[50px]">
+                    </li>
 
-          <!-- contacts -->
-          <div v-if="contacts" class="h-[500px] absolute   top-0 p-[300px] ">
-            <div class=" text-[25px] font-semibold duration-1000 text-yellow-300">
-              Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Ipsum, suscipit! Ullam iusto exercitationem saepe reprehenderit soluta dicta ratione,
-              provident vitae tempora quos, atque nam sint illo distinctio laborum! Laudantium necessitatibus incidunt
-
+                    <li class="h-[90px] w-[90px] ml-[10px] flex justify-center items-center "><img
+                        src="../assets/apil.png" alt="" class="h-[50px]">
+                    </li>
+                    <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png"
+                        alt="" class="h-[60px] ">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png"
+                        alt="" class="h-[60px] ">
+                    </li>
+                    <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png" alt=""
+                        class="h-[35px] ">
+                    </li>
+                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/reactI.png"
+                        alt="" class="h-[50px]">
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- tnx -->
+
+
+          <!-- PROJECT -->
+          <div v-if="project" class="flex justify-center ml-[150px] lg:ml-[250px]  items-center text-white">
+
+            <!-- TESTO -->
+            <div class="flex flex-col mr-[-30px] text-[35px] lg:text-[40px] justify-center w-[400px] h-[600px] ">
+
+              <!-- p1 -->
+              <div class="flex  items-center">
+                <button @click="cp11"
+                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1, 'text-white border-solid border-b-4': cp1 }"
+                  class="text-center mb-[15px]  font-bold">DRIBBLE</button>
+              </div>
+              <!-- p2 -->
+              <div class="flex  items-center">
+                <button @click="cp22"
+                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp2, 'text-white border-solid border-b-4': cp2 }"
+                  class="text-center mb-[15px]  font-bold">L'IMPICCATO</button>
+              </div>
+              <!-- p3 -->
+              <div class="flex  items-center">
+                <button @click="cp33"
+                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp3, 'text-white border-solid border-b-4': cp3 }"
+                  class="text-center mb-[15px] text-nowrap  font-bold">P-COMMERCE</button>
+              </div>
+              <!-- p4 -->
+              <div class="flex  items-center">
+                <button @click="cp44"
+                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp4, 'text-white border-solid border-b-4': cp4 }"
+                  class="text-center  font-bold">BLOG</button>
+              </div>
+
+
+
+
+            </div>
+
+            <!-- CONTENUTO -->
+            <div
+              class="flex justify-center pr-[50px] scale-[0.7] lg:scale-[0.8] xl:scale-[0.95] items-center w-[600px] h-[600px] ">
+
+              <!-- Cp1 -->
+              <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true" @mouseleave="over1 = false"
+                :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
+                <div :class="{ 'border-solid border-4': over1 }"
+                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(132,132,247)] rounded-[60px]">
+                  <!-- img cont -->
+                  <img src="../assets/p1.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+
+                  <div
+                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                  </div>
+                  <div class=" bg-[rgb(132,132,247)]  mt-[-40px] w-[520px] h-[100px]"></div>
+
+                  <!-- text e bottom -->
+                  <div :class="{ 'text-white': over1, 'text-[rgb(230,230,251)]': !over1 }"
+                    class=" w-[470px]  mt-[-80px] font-semibold text-[18px] ">
+                    Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble. <br>
+                    Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito all’avanguardia nel design
+                    e nel clean-code.
+                  </div>
+
+                  <div class="flex  items-center w-[470px] mt-[15px]  h-[50px]">
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[20px]">
+                      HTML
+                    </div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      CSS</div>
+
+                  </div>
+                </div>
+                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
+                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+              </a>
+
+              <!-- Cp2 -->
+              <a href="https://impiccato-game.vercel.app/" @mouseover="over2 = true" @mouseleave="over2 = false"
+                :class="{ 'hidden': !cp2, 'flex': cp2 }" class="flex flex-col">
+                <div :class="{ 'border-solid border-4': over2 }"
+                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(250,128,128)] rounded-[60px]">
+                  <!-- img cont -->
+                  <img src="../assets/p2.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+
+                  <div
+                    class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                  </div>
+                  <div class=" bg-[rgb(250,128,128)]  mt-[-40px] w-[520px] h-[100px]"></div>
+
+                  <!-- text e bottom -->
+                  <div :class="{ 'text-white': over2, 'text-[rgb(245,218,218)]': !over2 }"
+                    class=" w-[470px]  mt-[-80px] font-semibold text-[18px] ">
+                    Mi sono divertito a ricreare il gioco dell’impiccato, sfidandomi direttamente contro il computer.
+                    <br>
+                    E tu, vieni a fare una partita?
+                  </div>
+
+                  <div class="flex  items-center w-[470px] mt-[15px]  h-[50px]">
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[20px]">
+                      HTML
+                    </div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[20px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      TAILWIND</div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      JAVASCRIPT</div>
+                  </div>
+
+                </div>
+
+                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
+                    :class="{ 'text-white border-white': over2, 'border-[rgba(255,255,255,0.26)]': !over2 }"
+                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+              </a>
+
+              <!-- Cp3 -->
+              <a href="https://penta-e-commerce.vercel.app/" @mouseover="over3 = true" @mouseleave="over3 = false"
+                :class="{ 'hidden': !cp3, 'flex': cp3 }" class="flex flex-col">
+                <div :class="{ 'border-solid border-4': over3 }"
+                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(77,190,97)] rounded-[60px]">
+                  <!-- img cont -->
+                  <img src="../assets/p4.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+
+                  <div
+                    class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                  </div>
+                  <div class=" bg-[rgb(77,190,97)]  mt-[-40px] w-[520px] h-[100px]"></div>
+
+                  <!-- text e bottom -->
+                  <div :class="{ 'text-white': over3, 'text-[rgb(222,246,226)]': !over3 }"
+                    class=" w-[470px]  mt-[-100px] font-semibold text-[18px] ">
+                    Per questo progetto, insieme al mio team, abbiamo dato vita a un e-commerce. <br>
+                    Abbiamo creato un file JSON locale per popolare gli articoli e abbiamo adottato Pinia per gestire
+                    gli stati tra elementi e pagine. Ti va di fare acquisti?
+                  </div>
+
+                  <div class="flex justify-center  items-center w-[550px] mt-[10px]  h-[50px]">
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[10px]">
+                      HTML
+                    </div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      TAILWIND</div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      JAVASCRIPT</div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      VUE.JS</div>
+                    <div
+                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      PINIA</div>
+                  </div>
+
+                </div>
+
+                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
+                    :class="{ 'text-white border-white': over3, 'border-[rgba(255,255,255,0.26)]': !over3 }"
+                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+              </a>
+
+              <!-- Cp4 -->
+              <div :class="{ 'hidden': !cp4, 'flex': cp4 }" class="flex flex-col ">
+                <div class="text-[70px] font-bold text-[rgba(255,255,255,0.26)] text-nowrap ">COMING <span
+                    class="text-nowrap  text-[20px] ml-[-10px] text-green-400">10/04/24</span></div>
+                <div class="loader ml-[50px] bg-red-200"></div>
+
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <!-- CONTACTS -->
+          <div v-if="contacts" class="flex justify-center mt-[20px] ml-[400px] h-[500px] duration-1000  text-white">
+            <!-- info1 -->
+            <div class="flex flex-col justify-center w-[400px] h-[500px]">
+
+              <div class="text-[50px]  font-bold ">RESIDENZA</div>
+              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(253,175,154)]">Bari (BA)</div>
+
+              <div class="text-[50px] font-bold mt-[30px] ">EMAIL</div>
+              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(195,154,253)]">ape.develop3@gmail.com</div>
+
+              <div class="text-[50px] mt-[30px] font-bold ">NUMERO</div>
+              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(154,253,180)]">39+ 3426398488</div>
+
+            </div>
+
+            <!-- info2 -->
+            <div class="flex flex-col justify-center mt-[-2px] w-[400px] h-[500px]">
+
+              <div class="text-[50px]  font-bold ">LINKEDIN</div>
+              <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold  text-[rgb(248,253,154)] underline">Guarda
+                i miei post!</a>
+
+              <div class="text-[50px] font-bold mt-[30px] ">GITHUB</div>
+              <a href="https://github.com/AntoninoPalmaEsposito"
+                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(154,241,253)]">Scopri
+                le mie repository!</a>
+
+              <div class="text-[50px] mt-[30px] font-bold ">CV</div>
+              <a href="../assets/cv.pdf" download="cv.pdf"> 
+                Download</a>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- TNX -->
           <div v-if="tnx" class="h-[500px] absolute  top-0 p-[300px] ">
             <div class=" text-[40px] font-semibold text-white">
               Lorem ipsum, dolor sit amet
@@ -243,9 +482,11 @@
 
           </div>
         </div>
-        <!-- ml-[180px] mt-[160px] -->
-        <!-- scrollbar -->
-        <div class="flex flex-col items-center ml-[20px] ">
+
+
+
+        <!-- SCROLLBAR -->
+        <div class=" flex flex-col   items-center ml-[20px] scale-75 2xl:scale-90 ">
           <div :class="{ 'bg-white': bar, 'bg-[rgba(255,255,255,0.26)]': nobar }"
             class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
 
@@ -257,15 +498,15 @@
             class="text-[35px] font-extrabold duration-500">TNX</div>
         </div>
 
-      
+
       </div>
-    
+
 
     </div>
 
 
 
-  
+
   </div>
 
 
@@ -303,7 +544,16 @@ export default {
       homest: true,
       devPst: false,
       projectst: false,
-      contactst: false
+      contactst: false,
+      competenze: false,
+      cp1: true,
+      cp2: false,
+      cp3: false,
+      cp4: false,
+      over1: false,
+      over2: false,
+      over3: false,
+      over4: false
 
 
     };
@@ -325,10 +575,44 @@ export default {
       this.scrolle = true;
     }, 10000);
 
+
   },
 
 
   methods: {
+
+    cp11() {
+      this.cp1 = !this.cp1
+      if (this.cp1) {
+        this.cp2 = false
+        this.cp3 = false
+        this.cp4 = false
+      }
+    },
+    cp22() {
+      this.cp2 = !this.cp2
+      if (this.cp2) {
+        this.cp1 = false
+        this.cp3 = false
+        this.cp4 = false
+      }
+    },
+    cp33() {
+      this.cp3 = !this.cp3
+      if (this.cp3) {
+        this.cp1 = false
+        this.cp2 = false
+        this.cp4 = false
+      }
+    },
+    cp44() {
+      this.cp4 = !this.cp4
+      if (this.cp4 == true) {
+        this.cp1 = false
+        this.cp2 = false
+        this.cp3 = false
+      }
+    },
 
     homE() {
       this.ctt = 60;
@@ -520,7 +804,7 @@ export default {
     opacity() {
       console.log(`opacity-[${this.opacitys}]`);
 
-      
+
       if (this.ctt > 410 && this.ctt < 1810) {
         this.homest = false
         this.devPst = true
@@ -762,7 +1046,7 @@ export default {
     opacitysali() {
       console.log(`opacity-[${this.opacitys}]`);
 
-      if (this.ctt <= 410 ) {
+      if (this.ctt <= 410) {
         this.homest = true
         this.devPst = false
         this.projectst = false
@@ -1024,6 +1308,30 @@ export default {
   box-sizing: border-box;
 }
 
+.loader {
+  height: 10px;
+  width: 200px;
+  border-radius: 20px;
+  --c: no-repeat linear-gradient(#02ab6a 0 0);
+  background: var(--c), var(--c), #c8d0ce;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+
+@keyframes l16 {
+  0% {
+    background-position: -150% 0, -150% 0
+  }
+
+  66% {
+    background-position: 250% 0, -150% 0
+  }
+
+  100% {
+    background-position: 250% 0, 250% 0
+  }
+}
+
 body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
@@ -1032,6 +1340,7 @@ body::-webkit-scrollbar {
 
 body {
   overflow-y: hidden;
+
 }
 
 .animazione2 {

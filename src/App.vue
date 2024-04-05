@@ -3,6 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 import HomeView from './views/HomeView.vue';
 import Gg from './views/Gg.vue';
 
+
+
+
 export default {
   components: {
     HomeView,
@@ -10,14 +13,16 @@ export default {
   }
 }
 
+
 </script>
 
 <template>
-  
-  <HomeView/>
- 
-  
+
+  <HomeView />
+  <Gg />
+
 </template>
 
 <style>
+
 </style>
