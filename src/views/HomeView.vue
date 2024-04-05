@@ -331,7 +331,7 @@
                 <div :class="{ 'border-solid border-4': over2 }"
                   class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(250,128,128)] rounded-[60px]">
                   <!-- img cont -->
-                  <img src="../assets/p2.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                  <img src="@/assets/p2.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
 
                   <div
                     class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
