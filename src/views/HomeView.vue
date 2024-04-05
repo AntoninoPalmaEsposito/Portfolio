@@ -372,7 +372,7 @@
                 <div :class="{ 'border-solid border-4': over3 }"
                   class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(77,190,97)] rounded-[60px]">
                   <!-- img cont -->
-                  <img src="../assets/p4.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                  <img src="../assets/p3.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
 
                   <div
                     class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
