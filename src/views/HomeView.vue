@@ -464,7 +464,7 @@
                 le mie repository!</a>
 
               <div class="text-[50px] mt-[30px] font-bold ">CV</div>
-              <a href="../assets/cv.pdf" download="cv.pdf"> 
+              <a href="../assets/cv.pdf" download="cv.pdf" class="text-red-400"> 
                 Download</a>
 
             </div>
