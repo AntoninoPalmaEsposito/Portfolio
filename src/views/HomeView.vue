@@ -76,7 +76,7 @@
               <!-- section sup -->
 
               <div class="flex justify-center items-start">
-                <img src="../assets/disegno.png" alt="" class="w-[400px] lg:w-[450px] xl:w-[500px] ">
+                <img src="../assets/disegno.png" alt="" class="w-[400px] ml-[5%] lg:w-[450px] xl:w-[500px] ">
 
                 <div
                   class="text-[18px] mt-[20px] lg:text-[20px] font-semibold  w-[650px] my-auto ml-[15px]  xl:ml-[50px] ">
@@ -136,7 +136,7 @@
 
       <!-- 2 homeview -->
       <div
-        class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black border-solid border-2 px-[20px] border-indigo-600">
+        class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black  px-[20px]">
 
 
 
@@ -249,16 +249,16 @@
 
 
           <!-- PROJECT -->
-          <div v-if="project" class="flex justify-center ml-[150px] lg:ml-[250px]  items-center text-white">
+          <div v-if="project" class="flex justify-center   ml-[150px] lg:ml-[250px]  items-center text-white">
 
             <!-- TESTO -->
-            <div class="flex flex-col mr-[-30px] text-[35px] lg:text-[40px] justify-center w-[400px] h-[600px] ">
+            <div class="flex flex-col   text-[35px] lg:text-[40px] justify-center w-[400px] h-[600px] ">
 
               <!-- p1 -->
-              <div class="flex  items-center">
+              <div class="flex  items-center ">
                 <button @click="cp11"
                   :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1, 'text-white border-solid border-b-4': cp1 }"
-                  class="text-center mb-[15px]  font-bold">DRIBBLE</button>
+                  class="text-center mb-[15px]   font-bold">DRIBBBLE</button>
               </div>
               <!-- p2 -->
               <div class="flex  items-center">
@@ -435,7 +435,7 @@
 
 
           <!-- CONTACTS -->
-          <div v-if="contacts" class="flex justify-center mt-[20px] ml-[400px] h-[500px] duration-1000  text-white">
+          <div v-if="contacts" class="flex justify-center scale-75 lg:scale-90 xl:scale-100 mt-[20px]  ml-[20%] xl:ml-[400px] h-[500px] duration-1000  text-white">
             <!-- info1 -->
             <div class="flex flex-col justify-center w-[400px] h-[500px]">
 
@@ -443,7 +443,7 @@
               <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(253,175,154)]">Bari (BA)</div>
 
               <div class="text-[50px] font-bold mt-[30px] ">EMAIL</div>
-              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(195,154,253)]">ape.develop3@gmail.com</div>
+              <div class="text-[25px] mt-[-7px] font-semibold pr-[30px] text-[rgb(195,154,253)]">ape.develop3@gmail.com</div>
 
               <div class="text-[50px] mt-[30px] font-bold ">NUMERO</div>
               <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(154,253,180)]">39+ 3426398488</div>
@@ -463,9 +463,12 @@
                 class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(154,241,253)]">Scopri
                 le mie repository!</a>
 
-              <div class="text-[50px] mt-[30px] font-bold ">CV</div>
-              <a href="/public/cv.pdf" download="cv.pdf" class="text-red-400"> 
-                Download</a>
+                <div class="text-[50px] font-bold mt-[30px] ">INSTAGRAM</div>
+              <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(253,154,200)]">
+                Visita il mio profilo!</a>
+
+              
 
             </div>
 
@@ -475,11 +478,14 @@
 
 
           <!-- TNX -->
-          <div v-if="tnx" class="h-[500px] absolute  top-0 p-[300px] ">
-            <div class=" text-[40px] font-semibold text-white">
-              Lorem ipsum, dolor sit amet
+          <div v-if="tnx" class="h-[500px] flex flex-col  justify-center items-center mt-[-30px] ml-[16%]  ">
+            <div class="flex flex-col scale-[0.8] lg:scale-90 2xl:scale-95">
+            <div class=" text-[80px] font-bold text-nowrap text-white pb-[10px]">
+              Grazie per la visita! 
             </div>
-
+            <div class=" text-white text-[30px] text-nowrap ml-[20px] font-semibold">Torna a trovarmi, aggiornerò il mio portfolio <br>
+               con nuovi progetti interessanti ;) </div>
+              </div>
           </div>
         </div>
 
