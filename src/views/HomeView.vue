@@ -22,29 +22,64 @@
         </div>
 
         <!-- ind -->
-        <div class="absolute w-screen top-0 z-20 flex items-center justify-start pt-[30px] ">
+        <div class="absolute w-screen  right-0 top-0 z-20   pt-[30px] ">
 
-          <!-- container logo -->
-          <div>
-            <div class="pl-[40px] xl:pl-[80px] "><img src="../assets/logo.png" alt=""
-                class="w-[80px] md:w-[120px] lg:w-[140px] xl:w-[160px]"></div>
-          </div>
+
 
           <!-- list -->
-          <div class="relative flex flex-col max-w-[70%] mx-auto pr-[40px] xl:pr-[180px] pb-[25px]">
-            <ul class="flex justify-center items-center">
-              <li><button @click="homE"><img src="../assets/home.png" alt=""
-                    class="w-[135px]  mr-[50px] pr-[20px]"></button></li>
-              <li><button @click="devProfile"><img src="../assets/devProfile.png" alt=""
-                    class="w-[240px] mr-[50px] pr-[20px]"></button></li>
-              <li><button @click="projecT"><img src="../assets/project.png" alt=""
-                    class="w-[210px] mr-[50px] pr-[20px]"></button></li>
-              <li><button @click="contactS"><img src="../assets/contacts.png" alt="" class="w-[230px] "></button></li>
-            </ul>
+          <div class="relative flex justify-center scale-90 navi  w-screen  pb-[25px]">
 
-            <div :class="{ 'ml-[-40px]': homest, 'ml-[17%]': devPst, 'ml-[42%]': projectst, 'ml-[66%]': contactst, }"
-              class="absolute top-[70px] ml-[-40px] duration-1000"><img src="../assets/sottol.png" alt=""
-                class="w-[180px]"></div>
+            <div class="absolute flex items-center scr w-screen justify-between ml-[-80px]  top-[0px] ">
+
+              <!-- logo -->
+              <button @click="homE">
+                <div class=" logi  w-[185px]"><img src="../assets/logo.png" alt="" class="w-[200px] "></div>
+              </button>
+
+              <ul class=" listi flex  items-end mx-auto w-[1300px] ">
+                <!-- lg home -->
+                <div class="flex flex-col margi items-center justify-center mb-[-2px] ml-[70px]  ">
+                  <li class="hover:scale-125"><button @click="homE"><img src="../assets/home.png" alt=""
+                        class="w-[135px]  "></button>
+                  </li>
+                  <div :class="{ 'opacity-100 , delay-500': homest }" class=" w-[180px]  opacity-0 duration-1000"><img
+                      src="../assets/sottol.png" alt="" class="w-[180px] ">
+                  </div>
+                </div>
+
+                <!-- lg devp -->
+                <div class="flex flex-col items-center justify-center  px-[30px]">
+                  <li class="hover:scale-125"><button @click="devProfile"><img src="../assets/devProfile.png" alt=""
+                        class="w-[260px]   "></button>
+                  </li>
+                  <div :class="{ 'opacity-100 , delay-500': devPst }" class=" w-[180px]  opacity-0 duration-1000"><img
+                      src="../assets/sottol.png" alt="" class="w-[180px] ">
+                  </div>
+                </div>
+
+                <!-- lg proj -->
+                <div class="flex flex-col items-center justify-center px-[25px] ">
+                  <li class="hover:scale-125"><button @click="projecT"><img src="../assets/project.png" alt=""
+                        class="w-[210px]  "></button></li>
+                  <div :class="{ 'opacity-100 , delay-500': projectst }" class=" w-[180px]  opacity-0 duration-1000">
+                    <img src="../assets/sottol.png" alt="" class="w-[180px] ">
+                  </div>
+                </div>
+
+                <!-- lg contacts -->
+                <div class="flex flex-col items-center justify-center px-[25px] ">
+                  <li class="hover:scale-125"><button @click="contactS"><img src="../assets/contacts.png" alt=""
+                        class="w-[260px] "></button></li>
+                  <div :class="{ 'opacity-100 , delay-500': contactst }" class=" w-[180px]  opacity-0 duration-1000">
+                    <img src="../assets/sottol.png" alt="" class="w-[180px] ">
+                  </div>
+                </div>
+
+
+              </ul>
+
+            </div>
+
           </div>
 
         </div>
@@ -58,30 +93,30 @@
           <div :id="customId" :class="scendi" class=" z-10 w-screen h-screen  translate-y-6  absolute top-[60px] ">
 
             <!-- contenitore Body -->
-            <div class="absolute w-screen h-screen top-[100px] z-40 p-[50px] flex flex-col">
+            <div
+              class="absolute w-screen conthome ml-[-30px] resp h-screen top-[100px] z-40 p-[50px] flex flex-col items-center  ">
 
               <!-- aereoplano -->
               <div><img src="../assets/aereoplano.png" alt=""
-                  class="absolute bottom-[-100px] animazione5 left-[-100] z-50  w-[200px]  "></div>
+                  class="absolute bottom-[-400px] animazione5  left-[-400] z-50  w-[200px]  "></div>
 
               <!-- welcome -->
               <img v-if="wel" src="../assets/welcome.png" alt="" :class="{ 'animazione3': aanimazione3 }"
-                class="w-[200px] lg:w-[250px] animazione2 absolute top-[33%] left-[43%] z-40 ">
+                class="w-[250px] wel absolute top-[315px] left-[43%] z-40 ">
 
               <!-- firma -->
               <div><img src="../assets/firma.png" alt=""
-                  class="absolute bottom-[180px]  z-60 right-[50px] w-[150px] xl:w-[200px]  "></div>
+                  class="absolute top-[630px] firma  z-60 right-[70px] w-[200px]  "></div>
 
               <!-- main carta -->
               <!-- section sup -->
 
-              <div class="flex justify-center items-start">
-                <img src="../assets/disegno.png" alt="" class="w-[400px] ml-[5%] lg:w-[450px] xl:w-[500px] ">
+              <div class="flex justify-center items-start b1 mt-[-15px]">
+                <img src="../assets/disegno.png" alt="" class=" ml-[4%] w-[500px] mt-[15px] ">
 
-                <div
-                  class="text-[18px] mt-[20px] lg:text-[20px] font-semibold  w-[650px] my-auto ml-[15px]  xl:ml-[50px] ">
-                  <span class="mt-[20px]  text-[23px] xl:text-[25px] font-semibold underline">Sono Antonino, non
-                    solo un front-end Developer!</span> <br>
+                <div class=" mt-[5px] text-[20px] font-semibold  w-[650px] my-auto   ml-[50px] ">
+                  <span class="  text-[23px] text-nowrap font-bold leading-[80px]">Mi chiamo Antonino, non sono
+                    solo un Web Developer!</span> <br>
                   Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
                   ho studiato arte illustrativa, grafica e progettazione architettonica. Successivamente, mi sono
                   iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
@@ -91,9 +126,8 @@
               </div>
 
               <!-- section inf -->
-              <div class="flex justify-center items-center">
-                <div
-                  class="text-[18px] font-semibold  lg:text-[20px] w-[800px] my-auto pl-[13px] xl:pl-[40px] mt-[90px]">
+              <div class="flex justify-center items-center b2">
+                <div class=" font-semibold  text-[20px] w-[800px] my-auto pl-[65px] mt-[90px]">
                   Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi ha
                   fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
                   Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte altre
@@ -101,8 +135,7 @@
                   Adoro il disegno a mano libera, progettare oggetti di design e nel tempo libero mi trasformo in un
                   tatuatore!
                 </div>
-                <img src="../assets/sedia.png" alt=""
-                  class="w-[300px] lg:w-[350px] xl:w-[400px] xl:mt-[-40px] xl:ml-[50px] ">
+                <img src="../assets/sedia.png" alt="" class="w-[400px] mt-[-30px] ml-[50px] ">
               </div>
 
 
@@ -110,11 +143,9 @@
 
 
               <!-- scroll dis -->
-              <div v-if="scrolle"
-                class="flex justify-center items-center animazione2 absolute bottom-[170px] xl:bottom-[200px] left-[45%]">
-                <img src="../assets/scrolldis.png" alt="" class="w-[100px] lg:w-[125px] mt-[70px] xl:mt-[-70px]">
-                <img src="../assets/frecciadis.png" alt=""
-                  class="w-[30px] lg:w-[40px] mt-[90px] xl:mt-[-50px] animate-bounce duration-1000">
+              <div v-if="scrolle" class="flex justify-center items-center animazione2 absolute top-[700px] left-[45%]">
+                <img src="../assets/scrolldis.png" alt="" class="w-[125px] mt-[-50px]">
+                <img src="../assets/frecciadis.png" alt="" class="w-[40px] mt-[-30px] animate-bounce duration-1000">
 
               </div>
 
@@ -135,8 +166,7 @@
       </div>
 
       <!-- 2 homeview -->
-      <div
-        class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black  px-[20px]">
+      <div class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black  px-[20px]">
 
 
 
@@ -145,32 +175,29 @@
 
 
           <!-- DEV PROFILE -->
-          <div v-if="devP" class="flex flex-col items-center ml-[15%] mt-[40px] 2xl:mt-0 ">
+          <div v-if="devP" class="flex flex-col items-center ml-[17%] mt-0 ">
 
-            <div class="flex  items-start  ">
+            <div class="flex  items-start cdev1 ">
 
               <!-- section sup -->
               <div
-                class="relative flex justify-center scale-[0.85] lg:scale-90 xl:scale-100 ml-[150px] lg:ml-0 items-center h-[300px] w-[250px] mt-[-15px] xl:mt-[0px] rounded-[20px] mr-[4px] lg:mr-[10px] xl:mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)] ">
-                <div
-                  class="absolute top-[-10px] lg:top-[-13px] xl:top-[-25px] 2xl:top-[-35px] right-1  blur-[5px] z-[0] font-extrabold md:text-[60px] lg:text-[70px] xl:text-[80px]  2xl:text-[90px] text-white">
-                  Cr
-                </div>
+                class="relative flex justify-center  ml-0 items-center h-[340px] w-[280px] mt-[30px] rounded-[40px] mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)] ">
+
                 <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[220px]  hover:animate-bounce">
               </div>
 
 
-              <div
-                class=" w-[800px] pr-[25%] lg:pr-[130px] 2xl:pr-[0px] text-[20px]  lg:text-[23px] font-semibold text-white mt-[20px] 2xl:text-[25px]">
-                <span
-                  class="font-extrabold  md:text-[60px] lg:text-[70px] xl:text-[80px]  2xl:text-[90px]  ml-[-23px] leading-7 z-[1]">edo</span>
+              <div class=" w-[800px]    text-[23px] font-semibold text-white mt-[20px]">
+                <span class="font-extrabold  text-[80px]  leading-7">Credo</span>
                 fortemente nell'organizzazione. <br>
                 Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto di scadenze
                 prefissate. <br>
                 Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
-                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide. <br>
-                Sono un umano socievole che apprezza il senso di comunità all’interno del team.
-                Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide. <br> <br>
+                <div class="mt-[-15px]">
+                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.
+                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                </div>
               </div>
             </div>
 
@@ -182,65 +209,130 @@
             </div>
 
             <!-- section inf -->
-            <div
-              class="flex flex-col mr-[5vw] mt-[60px] lg:mt-[75px] xl:mt-[60px] 2xl:mt-[70px] md:scale-[0.6] lg:scale-[0.7] xl:scale-[0.8] 2xl:scale-[0.9]">
-              <h1 class="font-extrabold text-white text-[60px] text-end mt-[-20px]">Competenze</h1>
-              <div @mouseover="competenze = true" @mouseleave="competenze = false"
-                class="flex flex-col  justify-center items-center">
-                <div :class="{ 'bg-white': competenze, 'bg-[#ffffff4e]': !competenze }"
-                  class="h-[7px] w-[1400px] rounded-[50px] duration-500 mb-[20px]"></div>
+            <div :class="{ 'mt-[-10px]': competenze, 'mt-[15px]': !competenze }" class="duration-500 ">
+              <div class="flex flex-col mr-[5vw] cdev2 mt-[70px] scale-[0.9]">
+                <h1 :class="{ 'text-white': competenze, 'text-[#ffffff4e]': !competenze }"
+                  class="font-extrabold  text-[40px] duration-500  mt-[-20px]">Competenze</h1>
+                <div @mouseover="competenze = true" @mouseleave="competenze = false"
+                  class="flex flex-col  justify-center items-center">
+                  <div :class="{ 'bg-white , mb-[10px]': competenze, 'bg-[#ffffff4e] , mb-[20px]': !competenze }"
+                    class="h-[7px] w-[1400px] rounded-[50px] duration-500 "></div>
 
 
-                <div class="flex">
-                  <ul class="flex">
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/htmlI.png"
-                        alt="" class="h-[60px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/cssI.png" alt=""
-                        class="h-[60px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/javascriptI.png"
-                        alt="" class="h-[60px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/tailwindI.png"
-                        alt="" class="h-[45px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vueI.png" alt=""
-                        class="h-[50px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/vsI.png" alt=""
-                        class="h-[50px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] mr-[-10px] flex justify-center items-center "><img
-                        src="../assets/gitI.jpg" alt="" class="h-[50px]">
-                    </li>
-                  </ul>
+                  <div class="flex">
+                    <ul class="flex ">
 
-                  <ul class="flex">
+                      <div @mouseenter="html = true" @mouseleave="html = false">
+                        <li class="h-[90px] w-[90px] flex  duration-500 justify-center items-center "><img
+                            src="../assets/htmlI.png" alt="" class="h-[60px]">
+                        </li>
+                        <div :class="{ 'opacity-100': html, 'opacity-0': !html }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">HTML</div>
+                      </div>
 
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png"
-                        alt="" class="h-[50px]">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png"
-                        alt="" class="h-[50px]">
-                    </li>
+                      <div @mouseenter="css = true" @mouseleave="css = false">
+                        <li class="h-[90px] w-[90px] flex duration-500 justify-center items-center "><img
+                            src="../assets/cssI.png" alt="" class="h-[60px]">
+                        </li>
+                        <div :class="{ 'opacity-100': css, 'opacity-0': !css }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">CSS</div>
+                      </div>
 
-                    <li class="h-[90px] w-[90px] ml-[10px] flex justify-center items-center "><img
-                        src="../assets/apil.png" alt="" class="h-[50px]">
-                    </li>
-                    <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png"
-                        alt="" class="h-[60px] ">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png"
-                        alt="" class="h-[60px] ">
-                    </li>
-                    <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png" alt=""
-                        class="h-[35px] ">
-                    </li>
-                    <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/reactI.png"
-                        alt="" class="h-[50px]">
-                    </li>
-                  </ul>
+                      <div @mouseenter="js = true" @mouseleave="js = false">
+                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
+                            src="../assets/javascriptI.png" alt="" class="h-[60px]">
+                        </li>
+                        <div :class="{ 'opacity-100': js, 'opacity-0': !js }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">JS</div>
+                      </div>
+
+                      <div @mouseenter="tailwind = true" @mouseleave="tailwind = false">
+                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
+                            src="../assets/tailwindI.png" alt="" class="h-[45px]">
+                        </li>
+                        <div :class="{ 'opacity-100': tailwind, 'opacity-0': !tailwind }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">TAILWIND</div>
+                      </div>
+
+                      <div @mouseenter="vue = true" @mouseleave="vue = false">
+                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
+                            src="../assets/vueI.png" alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': vue, 'opacity-0': !vue }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">VUE.JS</div>
+                      </div>
+
+                      <div @mouseenter="vsc = true" @mouseleave="vsc = false">
+                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
+                            src="../assets/vsI.png" alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': vsc, 'opacity-0': !vsc }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">VSC</div>
+                      </div>
+
+                      <div @mouseenter="github = true" @mouseleave="github = false" class="mr-[-10px]">
+                        <li class="h-[90px] w-[90px]  duration-500 flex flex-center justify-center items-center ">
+                          <img src="../assets/gitI.jpg" alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': github, 'opacity-0': !github }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">GITHUB</div>
+                      </div>
+
+
+                    </ul>
+
+                    <ul class="flex">
+
+                      <div @mouseenter="figma = true" @mouseleave="figma = false" class="">
+                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png"
+                            alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': figma, 'opacity-0': !figma }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">FIGMA</div>
+                      </div>
+
+                      <div @mouseenter="adobe = true" @mouseleave="adobe = false" class="">
+                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png"
+                            alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': adobe, 'opacity-0': !adobe }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">ADOBE</div>
+                      </div>
+
+                      <div @mouseenter="api = true" @mouseleave="api = false" class="ml-[10px]">
+                        <li class="h-[90px] w-[90px]  flex justify-center items-center "><img src="../assets/apil.png"
+                            alt="" class="h-[50px]">
+                        </li>
+                        <div :class="{ 'opacity-100': api, 'opacity-0': !api }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">API REST</div>
+                      </div>
+
+                      <div @mouseenter="google = true" @mouseleave="google = false" class="">
+                        <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png"
+                            alt="" class="h-[60px] ">
+                        </li>
+                        <div :class="{ 'opacity-100': google, 'opacity-0': !google }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">GOOGLE.A</div>
+                      </div>
+
+                      <div @mouseenter="postman = true" @mouseleave="postman = false" class="">
+                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png"
+                            alt="" class="h-[60px] ">
+                        </li>
+                        <div :class="{ 'opacity-100': postman, 'opacity-0': !postman }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">POSTMAN</div>
+                      </div>
+
+                      <div @mouseenter="npm = true" @mouseleave="npm = false" class="">
+                        <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png"
+                            alt="" class="h-[35px] ">
+                        </li>
+                        <div :class="{ 'opacity-100': npm, 'opacity-0': !npm }"
+                          class="text-white text-center font-semibold duration-500 text-[19px] ">NPM</div>
+                      </div>
+
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,10 +341,10 @@
 
 
           <!-- PROJECT -->
-          <div v-if="project" class="flex justify-center   ml-[150px] lg:ml-[250px]  items-center text-white">
+          <div v-if="project" class="flex justify-center cpro  ml-[300px]  items-center text-white">
 
             <!-- TESTO -->
-            <div class="flex flex-col   text-[35px] lg:text-[40px] justify-center w-[400px] h-[600px] ">
+            <div class="flex flex-col mrt text-[40px] justify-center w-[400px] h-[600px] ">
 
               <!-- p1 -->
               <div class="flex  items-center ">
@@ -285,12 +377,11 @@
             </div>
 
             <!-- CONTENUTO -->
-            <div
-              class="flex justify-center pr-[50px] scale-[0.7] lg:scale-[0.8] xl:scale-[0.95] items-center w-[600px] h-[600px] ">
+            <div class="flex justify-center pr-[50px] ml-[-30px] scale-[0.85] items-center w-[600px] h-[600px] ">
 
               <!-- Cp1 -->
-              <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true" @mouseleave="over1 = false"
-                :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
+              <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
+                @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
                 <div :class="{ 'border-solid border-4': over1 }"
                   class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(132,132,247)] rounded-[60px]">
                   <!-- img cont -->
@@ -435,23 +526,24 @@
 
 
           <!-- CONTACTS -->
-          <div v-if="contacts" class="flex justify-center scale-75 lg:scale-90 xl:scale-100 mt-[20px]  ml-[20%] xl:ml-[400px] h-[500px] duration-1000  text-white">
+          <div v-if="contacts" class="flex justify-center cont pt-[50px] duration-1000 ml-[250px]   text-white">
             <!-- info1 -->
-            <div class="flex flex-col justify-center w-[400px] h-[500px]">
+            <div class="flex flex-col justify-center  pr-[100px] ">
 
               <div class="text-[50px]  font-bold ">RESIDENZA</div>
               <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(253,175,154)]">Bari (BA)</div>
 
               <div class="text-[50px] font-bold mt-[30px] ">EMAIL</div>
-              <div class="text-[25px] mt-[-7px] font-semibold pr-[30px] text-[rgb(195,154,253)]">ape.develop3@gmail.com</div>
+              <div class="text-[25px] mt-[-7px] font-semibold pr-[30px] text-[rgb(195,154,253)]">ape.develop3@gmail.com
+              </div>
 
               <div class="text-[50px] mt-[30px] font-bold ">NUMERO</div>
-              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(154,253,180)]">39+ 3426398488</div>
+              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(154,253,180)]">+39 3426398488</div>
 
             </div>
 
             <!-- info2 -->
-            <div class="flex flex-col justify-center mt-[-2px] w-[400px] h-[500px]">
+            <div class="flex flex-col justify-center  ">
 
               <div class="text-[50px]  font-bold ">LINKEDIN</div>
               <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
@@ -463,12 +555,12 @@
                 class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(154,241,253)]">Scopri
                 le mie repository!</a>
 
-                <div class="text-[50px] font-bold mt-[30px] ">INSTAGRAM</div>
+              <div class="text-[50px] font-bold mt-[30px] ">INSTAGRAM</div>
               <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
                 class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(253,154,200)]">
                 Visita il mio profilo!</a>
 
-              
+
 
             </div>
 
@@ -478,21 +570,22 @@
 
 
           <!-- TNX -->
-          <div v-if="tnx" class="h-[500px] flex flex-col  justify-center items-center mt-[-30px] ml-[16%]  ">
-            <div class="flex flex-col scale-[0.8] lg:scale-90 2xl:scale-95">
-            <div class=" text-[80px] font-bold text-nowrap text-white pb-[10px]">
-              Grazie per la visita! 
-            </div>
-            <div class=" text-white text-[30px] text-nowrap ml-[20px] font-semibold">Torna a trovarmi, aggiornerò il mio portfolio <br>
-               con nuovi progetti interessanti ;) </div>
+          <div v-if="tnx" class="h-[500px] tnx flex flex-col  justify-center items-center mt-[-30px] ml-[13%]  ">
+            <div class="flex flex-col scale-95">
+              <div class=" text-[80px] font-bold text-nowrap text-white pb-[10px]">
+                Grazie per la visita!
               </div>
+              <div class=" text-white text-[30px] text-nowrap ml-[20px] font-semibold">Torna a trovarmi, aggiornerò il
+                mio portfolio <br>
+                con nuovi progetti interessanti ;) </div>
+            </div>
           </div>
         </div>
 
 
 
         <!-- SCROLLBAR -->
-        <div class=" flex flex-col   items-center ml-[20px] scale-75 2xl:scale-90 ">
+        <div class=" flex flex-col  tnx items-center ml-[20px] scale-90 ">
           <div :class="{ 'bg-white': bar, 'bg-[rgba(255,255,255,0.26)]': nobar }"
             class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
 
@@ -522,6 +615,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -559,7 +653,20 @@ export default {
       over1: false,
       over2: false,
       over3: false,
-      over4: false
+      over4: false,
+      html: false,
+      css: false,
+      js: false,
+      tailwind: false,
+      vue: false,
+      github: false,
+      vsc: false,
+      figma: false,
+      adobe: false,
+      api: false,
+      google: false,
+      postman: false,
+      npm: false
 
 
     };
@@ -570,16 +677,16 @@ export default {
     /* welcome style */
     setTimeout(() => {
       this.aanimazione3 = true;
-    }, 5000);
+    }, 3000);
 
     setTimeout(() => {
       this.wel = false;
-    }, 10000);
+    }, 6000);
 
     /* scroll */
     setTimeout(() => {
       this.scrolle = true;
-    }, 10000);
+    }, 6000);
 
 
   },
@@ -1314,6 +1421,225 @@ export default {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1640px) {
+  .resp {
+    scale: 0.8;
+  }
+
+  .tnx {
+    scale: 0.9;
+  }
+
+  .cont {
+    scale: 0.9;
+    padding-top: 40px;
+    margin-left: 210px;
+  }
+
+  .cdev1 {
+    scale: 0.9;
+  }
+
+  .cpro {
+    scale: 0.8;
+    margin-top: -30px;
+    margin-left: 220px;
+  }
+
+  .cdev2 {
+    scale: 0.8;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .navi {
+    scale: 0.85;
+    margin-left: -30px;
+  }
+
+  .logi {
+    margin-left: -60px;
+    margin-right: 80px;
+  }
+
+
+  .conthome {
+    margin-top: -80px;
+
+  }
+
+  .firma {
+    right: -100px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .resp {
+    scale: 0.75;
+  }
+
+  .animazione {
+    scale: 0.85;
+    right: 80px;
+  }
+
+  .tnx {
+    scale: 0.8;
+  }
+
+  .cont {
+    scale: 0.75;
+    padding-top: 60px;
+    margin-left: 190px;
+  }
+
+  .cpro {
+    scale: 0.7;
+    margin-top: -40px;
+    margin-left: 200px;
+  }
+
+  .cdev2 {
+    scale: 0.7;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .cdev1 {
+    scale: 0.8;
+    margin-top: 15px;
+    margin-left: -30px;
+  }
+
+  .logi {
+    margin-left: -80px;
+    margin-right: 70px;
+  }
+
+  .navi {
+    scale: 0.8;
+    margin-left: -30px;
+  }
+
+  .conthome {
+    margin-top: -100px;
+  }
+
+  .resp2 {
+    scale: 0.9;
+  }
+
+
+
+  .firma {
+    right: -150px;
+  }
+
+}
+
+@media screen and (max-width: 1270px) {
+  .resp {
+    scale: 0.7;
+  }
+
+  .animazione {
+    scale: 0.7;
+    right: 40px;
+  }
+
+  .tnx {
+    scale: 0.7;
+  }
+
+  .cont {
+    scale: 0.6;
+    height: 450px;
+    margin-left: 130px;
+  }
+
+  .cpro {
+    scale: 0.55;
+    margin-top: -40px;
+    margin-left: 200px;
+  }
+
+  .cdev1 {
+    scale: 0.6;
+    margin-top: 20px;
+    margin-left: -50px;
+  }
+
+  .mrt {
+    margin-right: 80px;
+  }
+
+  .cdev2 {
+    scale: 0.56;
+    margin-top: -85px;
+    margin-left: 20px;
+  }
+
+  .navi {
+
+    margin-right: 25%;
+    margin-top: -20px;
+    margin-left: -40px;
+  }
+
+  .resp2 {
+    scale: 0.95;
+  }
+
+  .conthome {
+    padding: 0;
+    margin-top: -150px;
+    scale: 0.6;
+    margin-left: 0;
+  }
+
+  .b1 {
+    width: 1200px;
+  }
+
+  .b2 {
+    width: 1200px;
+  }
+
+  .firma {
+    right: -200px;
+  }
+
+  .resp3 {
+    scale: 0.6;
+    margin-top: -20px;
+  }
+
+  .scr {
+    width: auto;
+    scale: 0.7;
+    margin-left: 100px;
+  }
+
+  .logi {
+    margin-left: -170px;
+    margin-right: 130px;
+  }
+
+  .wel {
+    top: 270px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .logi {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+
+}
+
 .loader {
   height: 10px;
   width: 200px;
@@ -1369,7 +1695,7 @@ body {
 
 .animazione3 {
   animation-name: welcome3;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-direction: reverse;
 }
 
@@ -1388,12 +1714,12 @@ body {
 .animazione {
   animation-name: palloncino;
   animation-duration: 15s;
-  animation-delay: 25s;
+  animation-delay: 22s;
 }
 
 @keyframes palloncino {
   from {
-    bottom: -100px;
+    bottom: -300px;
   }
 
   to {
@@ -1403,20 +1729,20 @@ body {
 
 .animazione5 {
   animation-name: aereoplano;
-  animation-duration: 6s;
-  animation-delay: 18s;
+  animation-duration: 10s;
+  animation-delay: 11s;
   animation-timing-function: linear;
 }
 
 @keyframes aereoplano {
   from {
-    bottom: 600px;
-    left: -200px;
+    bottom: 800px;
+    left: -600px;
   }
 
   to {
-    bottom: -100px;
-    left: 900px;
+    bottom: -400px;
+    left: 1800px;
   }
 }
 

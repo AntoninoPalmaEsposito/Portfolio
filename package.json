@@ -12,7 +12,8 @@
     "gsap": "^3.12.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue-zoomer": "^0.3.10"
+    "vue-zoomer": "^0.3.10",
+    "vue3-touch-events": "^4.1.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
