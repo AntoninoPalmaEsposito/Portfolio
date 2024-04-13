@@ -4,20 +4,42 @@
 
 
         <!-- BODY bg -->
-        <div class="w-screen flex flex-col items-center pt-[17px] text-white pr-[25vw] font-semibold text-[5.7vw]">
+        <div
+            class="w-screen relative flex flex-col items-center pt-[17px] text-white pr-[25vw] font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
             <div class="flex justify-end w-screen">
-            <ul class="flex flex-col items-start">
+                <ul class="flex flex-col items-start">
 
-                <li>Home</li>
-                <li>Dev. Profile</li>
-                <li>Project</li>
-                <li>Contacts</li>
+                    <li><button @click="tscroll"
+                            :class="{ 'text-[rgba(255,255,255,0.45)] ': !scroll, 'text-white text-[6.5vw] border-solid border-b-4': scroll }"
+                            class="duration-500">Home</button></li>
+
+                    <li><button @click="devpp"
+                            :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[6.5vw] border-solid border-b-4': devp }"
+                            class="duration-500">Dev. Profile</button></li>
+
+                    <li><button @click="projectp"
+                            :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[6.5vw] border-solid border-b-4': project }"
+                            class="duration-500">Project</button></li>
+
+                    <li><button @click="contactsp"
+                            :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
+                            class="duration-500">Contacts</button></li>
+
+                </ul>
+            </div>
+
+            <!-- Dev Profile -->
+            <div v-if="devp" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-red-400"></div>
+
+            <!-- Project -->
+            <div v-if="project" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-green-400"></div>
+
+            <!-- Contacts -->
+            <div v-if="contacts" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-yellow-300"></div>
 
 
-            </ul>
-    </div>
 
 
 
@@ -25,9 +47,7 @@
 
 
 
-
-
-    </div>
+        </div>
 
 
 
@@ -40,7 +60,7 @@
 
 
         <!-- BODY carta -->
-        <div :class="{ 'top-[-5px]': !scroll, 'top-[100vh]': scroll }"
+        <div :class="{ 'top-[-5px]': scroll, 'top-[100vh]': !scroll }"
             class="absolute bg-black left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
 
             <!-- img body -->
@@ -48,7 +68,7 @@
 
             <!-- nav scroll -->
             <div class="flex justify-end mt-[30px] w-screen px-[30px]">
-                <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></button>
+                <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
             </div>
 
             <!-- sect 1 -->
@@ -108,7 +128,11 @@
 export default {
     data() {
         return {
-            scroll: false
+            scroll: true,
+            home: false,
+            devp: false,
+            project: false,
+            contacts: false
 
         }
     },
@@ -117,9 +141,38 @@ export default {
 
         tscroll() {
             this.scroll = !this.scroll
-        }
+            if (this.scroll) {
+                this.devp = false
+                this.project = false
+                this.contacts = false
+            } else {
+                this.devp = true
+                this.project = false
+                this.contacts = false
+            }
 
+        },
 
+        devpp() {
+            this.scroll = false
+            this.devp = true
+            this.project = false
+            this.contacts = false
+        },
+
+        projectp() {
+            this.scroll = false
+            this.devp = false
+            this.project = true
+            this.contacts = false
+        },
+
+        contactsp() {
+            this.scroll = false
+            this.devp = false
+            this.project = false
+            this.contacts = true
+        },
     }
 
 }
