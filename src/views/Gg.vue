@@ -1,21 +1,28 @@
 <template>
-    <div class="md:hidden h-screen bg-black">
+    <div class="relative md:hidden h-screen bg-black z-[20]">
 
         <!-- NAV carta -->
         <div @click="tscroll" class="absolute top-0 left-[-4px]">
-            <img src="../assets/nav2.png" alt="" class="w-[50vw] z-[-30]">
+            <img src="../assets/nav2.png" alt="" class="w-[50vw]">
             <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[10px] left-[10px]">
         </div>
 
 
         <!-- BODY carta -->
-        <div :class="{'top-[-5px]': !scroll , 'top-[1000px]': scroll }" class="absolute   left-[0px]   h-screen duration-[4s]        w-screen" >
+        <div :class="{ 'top-[-5px]': !scroll, 'top-[1000px]': scroll }"
+            class="absolute  left-[0px] flex flex-col items-center  h-screen duration-[4s]  w-screen ">
 
-            <img src="../assets/corpo2.png" alt="" class=" absolute   left-[0px]">
+            <!-- img body -->
+            <img src="../assets/corpo2.png" alt="" class=" absolute z-[-1]  left-[0px]">
 
-            <button @click="tscroll" class="relative right-[-380px] top-[20px] w-[100px] h-[50px] rounded-[50px] bg-slate-400"></button>
-            
+          
 
+            <!-- nav scroll -->
+            <div class="flex justify-end mt-[30px] w-screen px-[30px]">
+            <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px] bg-slate-400"></button>
+            </div>
+
+           
 
 
 
@@ -47,21 +54,21 @@
 
 <script>
 export default {
-data() {
-    return {
-        scroll: false
+    data() {
+        return {
+            scroll: false
+
+        }
+    },
+
+    methods: {
+
+        tscroll() {
+            this.scroll = !this.scroll
+        }
+
 
     }
-},
-
-methods: {
-
-tscroll() {
-    this.scroll = !this.scroll
-}
-
-
-}
 
 }
 
@@ -75,5 +82,4 @@ tscroll() {
 
 
 
-<style>
-</style>
+<style></style>
