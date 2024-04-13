@@ -166,7 +166,7 @@
       </div>
 
       <!-- 2 homeview -->
-      <div class=" h-[85vh] w-screen flex items-center mt-[-40px] bg-black  px-[20px]">
+      <div class=" h-[85vh] w-screen flex items-center mt-[-40px]  bg-black  px-[20px]">
 
 
 
@@ -175,7 +175,7 @@
 
 
           <!-- DEV PROFILE -->
-          <div v-if="devP" class="flex flex-col items-center ml-[17%] mt-0 ">
+          <div v-if="devP" class="flex flex-col items-center scale-90  ml-[17%] mt-[-30px] ">
 
             <div class="flex  items-start cdev1 ">
 
@@ -210,7 +210,7 @@
 
             <!-- section inf -->
             <div :class="{ 'mt-[-10px]': competenze, 'mt-[15px]': !competenze }" class="duration-500 ">
-              <div class="flex flex-col mr-[5vw] cdev2 mt-[70px] scale-[0.9]">
+              <div class="flex flex-col mr-[5vw]  cdev2 mt-[70px] scale-[0.9]">
                 <h1 :class="{ 'text-white': competenze, 'text-[#ffffff4e]': !competenze }"
                   class="font-extrabold  text-[40px] duration-500  mt-[-20px]">Competenze</h1>
                 <div @mouseover="competenze = true" @mouseleave="competenze = false"
@@ -526,7 +526,7 @@
 
 
           <!-- CONTACTS -->
-          <div v-if="contacts" class="flex justify-center cont pt-[50px] duration-1000 ml-[250px]   text-white">
+          <div v-if="contacts" class="flex justify-center  scale-90 cont pt-[80px] duration-1000 ml-[250px]   text-white">
             <!-- info1 -->
             <div class="flex flex-col justify-center  pr-[100px] ">
 
@@ -1419,6 +1419,11 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.cdev1 {
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 @media screen and (max-width: 1640px) {
