@@ -30,7 +30,7 @@
             </div>
 
             <!-- sect 1 -->
-            <div class="px-[30px] pt-[100px] leading-[50px] font-extrabold text-[40px] text-[rgba(0,0,0,0.52)]">Mi chiamo Antonino e non sono solo un Web Developer!</div>
+            <div class="px-[30px] pt-[100px] leading-[40px] font-extrabold text-[43px] text-[rgba(0,0,0,0.52)]">Mi chiamo Antonino <br> e non sono solo un Web Developer!</div>
 
             <!-- img 1 home -->
             <img src="../assets/disegno.png" alt="" class="px-[20px] w-screen pt-[30px]">
