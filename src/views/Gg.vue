@@ -5,11 +5,11 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[17px] text-white pr-[25vw] font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[17px] text-white pr-[18vw] font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
             <div class="flex justify-end w-screen">
-                <ul class="flex flex-col items-start">
+                <ul class="flex flex-col items-start w-[35vw]">
 
                     <li><button @click="tscroll"
                             :class="{ 'text-[rgba(255,255,255,0.45)] ': !scroll, 'text-white text-[6.5vw] border-solid border-b-4': scroll }"
