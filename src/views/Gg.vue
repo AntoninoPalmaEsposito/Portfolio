@@ -5,15 +5,13 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[17px] text-white pr-[18vw] font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[17px] text-white  font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
-            <div class="flex justify-end w-screen">
+            <div class="flex justify-end pr-[5vw] w-screen">
                 <ul class="flex flex-col items-start w-[35vw]">
 
-                    <li><button @click="tscroll"
-                            :class="{ 'text-[rgba(255,255,255,0.45)] ': !scroll, 'text-white text-[6.5vw] border-solid border-b-4': scroll }"
-                            class="duration-500">Home</button></li>
+                    <li><button @click="tscroll" class="duration-500 text-[rgba(255,255,255,0.45)]">Home</button></li>
 
                     <li><button @click="devpp"
                             :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[6.5vw] border-solid border-b-4': devp }"
@@ -30,24 +28,30 @@
                 </ul>
             </div>
 
-            <!-- Dev Profile -->
-            <div v-if="devp" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-red-400"></div>
 
-            <!-- Project -->
-            <div v-if="project" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-green-400"></div>
+<!-- Dev Profile -->
+<div v-if="devp" :class="{'opacity-0':!devp , 'opacity-1':devp}" class="w-screen duration-1000 mt-[100px] h-[400px]  bg-red-400"></div>
 
-            <!-- Contacts -->
-            <div v-if="contacts" class="w-screen ml-[30px] mt-[100px] h-[400px] bg-yellow-300"></div>
+<!-- Project -->
+<div v-if="project" class="w-screen  mt-[100px] h-[400px] bg-green-400"></div>
 
-
-
-
-
-
+<!-- Contacts -->
+<div v-if="contacts" class="w-screen  mt-[100px] h-[400px] bg-yellow-300"></div>
 
 
 
         </div>
+
+
+        
+
+
+
+
+
+
+
+
 
 
 
