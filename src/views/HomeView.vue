@@ -1669,7 +1669,10 @@ export default {
   }
 }
 
-body::-webkit-scrollbar {
+
+@media screen and (min-width: 768px) {
+ 
+  body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1679,6 +1682,11 @@ body {
   overflow-y: hidden;
 
 }
+
+
+}
+
+
 
 .animazione2 {
   animation-name: welcome2;
