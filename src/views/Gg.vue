@@ -4,11 +4,19 @@
 
 
         <!-- BODY bg -->
-        <div class="w-screen flex flex-col items-center">
+        <div class="w-screen flex flex-col items-center pt-[30px] text-white pr-[25vw] font-semibold text-[30px]">
 
             <!-- NAV bg -->
             <div class="flex justify-end w-screen">
-        <div class="text-white"> ciaoooooooooooooooooooooooooo</div>
+            <ul class="flex flex-col items-start">
+
+                <li>Home</li>
+                <li>Dev. Profile</li>
+                <li>Project</li>
+                <li>Contacts</li>
+
+
+            </ul>
     </div>
 
 
