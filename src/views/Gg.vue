@@ -4,7 +4,7 @@
 
 
         <!-- BODY bg -->
-        <div class="w-screen flex flex-col items-center pt-[30px] text-white pr-[25vw] font-semibold text-[30px]">
+        <div class="w-screen flex flex-col items-center pt-[20px] text-white pr-[25vw] font-semibold text-[25px]">
 
             <!-- NAV bg -->
             <div class="flex justify-end w-screen">
