@@ -58,7 +58,7 @@
         <!-- NAV carta -->
         <div @click="tscroll" class="absolute top-0 left-[-4px]">
             <img src="../assets/nav2.png" alt="" class="w-[50vw]">
-            <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[10px] left-[10px]">
+            <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[15px] left-[20px]">
         </div>
 
 
