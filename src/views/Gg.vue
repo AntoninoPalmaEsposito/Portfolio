@@ -56,7 +56,7 @@
 
 
         <!-- NAV carta -->
-        <div @click="tscroll" class="absolute top-0 left-[-4px]">
+        <div @click="tscroll" class="absolute z-[-1] top-0 left-[-4px]">
             <img src="../assets/nav2.png" alt="" class="w-[50vw]">
             <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[15px] left-[20px]">
         </div>
@@ -79,7 +79,7 @@
 
             <!-- // -->
 
-            <div class="pt-[20px] " >
+            <div class="pt-[25px] z-10 " >
                 <div class="h-[5px]  w-[85vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
             </div>
 
