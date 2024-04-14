@@ -77,17 +77,15 @@
                 <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
             </div>
 
-            
-
-            <!-- img 1 home -->
-            <img src="../assets/disegno.png" alt="" class="px-[20px] w-screen mt-[80px]">
-
             <!-- sect 1 -->
-            <div class="px-[30px] pt-[30px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
+            <div class="px-[17px] pt-[100px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
                 chiamo Antonino <br> e non sono solo un Web Developer!</div>
 
+            <!-- img 1 home -->
+            <img src="../assets/disegno.png" alt="" class="px-[5px] w-screen pt-[30px]">
+
             <!-- 1 descrizione -->
-            <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[30px] pt-[30px]">
+            <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[17px] pt-[40px]">
                 Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
                 ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
@@ -100,7 +98,7 @@
             <img src="../assets/sedia.png" alt="" class="px-[20px] mr-[5%] w-[85%] pt-[20px]">
 
             <!-- 2 descrizione -->
-            <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[30px] pt-[20px] pb-[70px]">
+            <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[17px] pt-[20px] pb-[70px]">
                 Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi ha
                 fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze. <br>
                 Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte altre
