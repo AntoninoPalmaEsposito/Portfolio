@@ -56,7 +56,7 @@
 
 
         <!-- NAV carta -->
-        <div @click="tscroll" class="absolute z-[-1] top-0 left-[-4px]">
+        <div @click="tscroll" class="absolute top-0 left-[-4px]">
             <img src="../assets/nav2.png" alt="" class="w-[50vw]">
             <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[15px] left-[20px]">
         </div>
@@ -77,12 +77,7 @@
                 <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
             </div>
 
-            <!-- // -->
-
-            <div class="pt-[30px] z-10 " >
-                <div class="h-[5px]  w-[85vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
-            </div>
-
+           
             <!-- sect 1 -->
             <div class="px-[25px] pt-[50px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
                 chiamo Antonino <br> e non sono solo un Web Developer!</div>
