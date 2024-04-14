@@ -45,14 +45,14 @@
                         <div class="flex mb-[30px]">
                             <img src="../assets/pc.png" alt="" class=" h-[170px] mr-[30px]  hover:animate-bounce">
 
-                            <div class="text-[23px]">Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto
+                            <div class="text-[20px]">Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto
                                 di scadenze
                                 prefissate.
                                </div>
 
                         </div>
 
-                        <div class="text-[23px]">
+                        <div class="text-[20px]">
                                 Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                                 Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
 
