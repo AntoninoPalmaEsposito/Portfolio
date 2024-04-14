@@ -79,7 +79,7 @@
 
             <!-- // -->
 
-            <div class="pt-[25px] z-10 " >
+            <div class="pt-[30px] z-10 " >
                 <div class="h-[5px]  w-[85vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
             </div>
 
@@ -88,7 +88,7 @@
                 chiamo Antonino <br> e non sono solo un Web Developer!</div>
 
             <!-- img 1 home -->
-            <img src="../assets/disegno.png" alt="" class="px-[16px] w-screen pt-[30px]">
+            <img src="../assets/disegno.png" alt="" class="px-[16px] w-screen pt-[15px]">
 
             <!-- 1 descrizione -->
             <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[25px] pt-[40px]">
