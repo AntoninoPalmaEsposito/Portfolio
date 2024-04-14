@@ -64,8 +64,8 @@
 
 
         <!-- BODY carta -->
-        <div :class="{ 'top-[-5px]': scroll, 'top-[100vh]': !scroll }"
-            class="absolute bg-black left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
+        <div :class="{ 'top-[-10px]': scroll, 'top-[100vh]': !scroll }"
+            class="absolute  left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
 
             <!-- img body -->
             <img src="../assets/corpo2.png" alt="" class=" absolute z-[-1]  left-[0px]">
@@ -191,4 +191,10 @@ export default {
 
 
 
-<style></style>
+<style>
+
+body {
+    background-color: black;
+   
+}
+</style>
