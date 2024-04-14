@@ -78,12 +78,12 @@
 
 
                 <!-- Project -->
-                <div v-if="project" class="w-screen ">
+                <div v-if="project" class="w-screen mt-[-100px] flex flex-col items-center ">
 
 
                     <!-- CONTENUTO -->
                     <div
-                        class="flex justify-center pr-[50px] ml-[-30px] scale-[0.6] items-center w-[600px] h-[600px] ">
+                        class="flex justify-center scale-[0.6] items-center w-[600px] h-[600px] ">
 
                         <!-- Cp1 -->
                         <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
@@ -232,25 +232,25 @@
 
 
                     <!-- TESTO -->
-                    <div class="flex flex-col mrt text-[40px] justify-center w-[400px] h-[600px] ">
+                    <div class="flex flex-col items-center mt-[-300px] text-[30px] justify-center w-[400px] h-[600px] ">
 
                         <!-- p1 -->
                         <div class="flex  items-center ">
                             <button @click="cp11"
                                 :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1, 'text-white border-solid border-b-4': cp1 }"
-                                class="text-center mb-[15px]   font-bold">DRIBBBLE</button>
+                                class="text-center mb-[5px]   font-bold">DRIBBBLE</button>
                         </div>
                         <!-- p2 -->
                         <div class="flex  items-center">
                             <button @click="cp22"
                                 :class="{ 'text-[rgba(255,255,255,0.26)]': !cp2, 'text-white border-solid border-b-4': cp2 }"
-                                class="text-center mb-[15px]  font-bold">L'IMPICCATO</button>
+                                class="text-center mb-[5px]  font-bold">L'IMPICCATO</button>
                         </div>
                         <!-- p3 -->
                         <div class="flex  items-center">
                             <button @click="cp33"
                                 :class="{ 'text-[rgba(255,255,255,0.26)]': !cp3, 'text-white border-solid border-b-4': cp3 }"
-                                class="text-center mb-[15px] text-nowrap  font-bold">P-COMMERCE</button>
+                                class="text-center mb-[5px] text-nowrap  font-bold">P-COMMERCE</button>
                         </div>
                         <!-- p4 -->
                         <div class="flex  items-center">
