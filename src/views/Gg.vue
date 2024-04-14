@@ -73,16 +73,22 @@
             
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[30px] w-screen px-[30px]">
+            <div class="flex justify-end mt-[50px] w-screen px-[80px]">
                 <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
             </div>
 
+            <!-- // -->
+
+            <div class="pt-[50px] " >
+                <div class="h-[7px]  w-[80vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
+            </div>
+
             <!-- sect 1 -->
-            <div class="px-[25px] pt-[100px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
+            <div class="px-[25px] pt-[50px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
                 chiamo Antonino <br> e non sono solo un Web Developer!</div>
 
             <!-- img 1 home -->
-            <img src="../assets/disegno.png" alt="" class="px-[13px] w-screen pt-[30px]">
+            <img src="../assets/disegno.png" alt="" class="px-[16px] w-screen pt-[30px]">
 
             <!-- 1 descrizione -->
             <div class="font-semibold text-[rgba(0,0,0,0.74)] text-[20px] px-[25px] pt-[40px]">
