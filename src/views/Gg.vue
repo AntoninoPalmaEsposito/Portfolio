@@ -73,14 +73,14 @@
             
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[50px] w-screen px-[50px]">
+            <div class="flex justify-end mt-[40px] w-screen px-[50px]">
                 <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
             </div>
 
             <!-- // -->
 
-            <div class="pt-[30px] " >
-                <div class="h-[7px]  w-[85vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
+            <div class="pt-[20px] " >
+                <div class="h-[5px]  w-[85vw] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></div>
             </div>
 
             <!-- sect 1 -->
