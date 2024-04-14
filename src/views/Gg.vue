@@ -32,32 +32,39 @@
 
 
             <!-- container section -->
-            <div class="mt-[130px] text-white">
+            <div class="mt-[70px] text-white">
 
                 <!-- Dev Profile -->
                 <div v-if="devp" :class="{ 'opacity-0': !devp, 'opacity-1': devp }"
                     class="w-screen duration-1000 flex flex-col   ">
 
+                    <!-- h1 -->
                     <div class="font-bold  text-[30px] px-[25px]  leading-7"><span
                             class="text-[70px] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
 
-                    <div class=" mt-[10px] scale-90 p-[30px]  w-screen rounded-[40px] z-[0] bg-[rgba(255,255,255,0.2)] ">
+                    <!-- card -->
+                    <div
+                        class=" flex justify-center mt-[10px] scale-90 p-[30px]  w-screen rounded-[40px] z-[0] bg-[rgba(255,255,255,0.2)] ">
                         <div class="flex mb-[30px]">
-                            <img src="../assets/pc.png" alt="" class=" h-[170px] mr-[30px]  hover:animate-bounce">
-
-                            <div class="text-[20px]">Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto
-                                di scadenze
-                                prefissate.
-                               </div>
-
+                            <img src="../assets/pc.png" alt="" class=" h-[200px] mr-[30px]  hover:animate-bounce">
                         </div>
 
-                        <div class="text-[20px]">
-                                Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
-                                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
-
-
                     </div>
+
+                    <!-- text -->
+                    <div class="text-[20px] px-[25px]">Un’analisi accurata porta a un codice più pulito, uno sviluppo
+                        più veloce e al rispetto
+                        di scadenze
+                        prefissate.
+                    </div>
+
+
+                    <div class="text-[20px] px-[25px]">
+                        Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
+                        Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
+
+
+
 
                 </div>
 
