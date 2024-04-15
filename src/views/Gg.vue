@@ -11,33 +11,34 @@
             <div class="flex justify-end pr-[5vw] w-screen">
 
                 <div class="flex items-end">
-                
-                <div class="relative top-[34px] h-[40vw]  rounded-[50px] mr-[9vw] w-[4.3px] bg-[rgb(109,109,109)]"></div>
 
-                <ul class="flex flex-col items-start scale-110 w-[35vw]">
+                    <div class="relative top-[34px] h-[40vw]  rounded-[50px] mr-[9vw] w-[4.3px] bg-[rgb(109,109,109)]">
+                    </div>
 
-                    <li class="mb-[-10px] ml-[-7px]"><button @click="tscroll"
-                            :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
-                                src="../assets/freccia.png" alt="" class="w-[11vw]"></button></li>
+                    <ul class="flex flex-col items-start scale-110 w-[35vw]">
 
-                    <li><button @click="devpp"
-                            :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[6.5vw] border-solid border-b-4': devp }"
-                            class="duration-500 ">Dev. Profile</button></li>
+                        <li class="mb-[-10px] ml-[-7px]"><button @click="tscroll"
+                                :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
+                                    src="../assets/freccia.png" alt="" class="w-[11vw]"></button></li>
 
-                    <li><button @click="projectp"
-                            :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[6.5vw] border-solid border-b-4': project }"
-                            class="duration-500">Project</button></li>
+                        <li><button @click="devpp"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[6.5vw] border-solid border-b-4': devp }"
+                                class="duration-500 ">Dev. Profile</button></li>
 
-                    <li><button @click="contactsp"
-                            :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
-                            class="duration-500">Contacts</button></li>
+                        <li><button @click="projectp"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[6.5vw] border-solid border-b-4': project }"
+                                class="duration-500">Project</button></li>
 
-                            <div class="w-[47vw] h-[4px] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+                        <li><button @click="contactsp"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
+                                class="duration-500">Contacts</button></li>
 
-                            
-                </ul>
+                        <div class="w-[47vw] h-[4px] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
-            </div>
+
+                    </ul>
+
+                </div>
 
             </div>
 
@@ -57,15 +58,29 @@
 
                         <!-- card -->
                         <div
-                            class=" flex justify-center mt-[20px] mx-[25px] w-screen p-[25px]   rounded-[20px] z-[0] bg-[rgba(255,255,255,0.2)] ">
-                            <div class="flex justify-between items-center mb-[30px]">
-                                <img src="../assets/pc.png" alt="" class=" w-[50%] mb-[-10px]  hover:animate-bounce">
-
-                                <div class="h-[130px] py-auto pr-[30px] w-[80px] rounded-[100px] bg-black">
+                            class=" flex justify-around py-[30px]  items-center mt-[20px] mx-[25px] w-screen    rounded-[20px]  bg-[rgba(255,255,255,0.2)] ">
 
 
-                                </div>
+
+
+                            <img src="../assets/pc.png" alt="" class=" w-[170px] ml-[10px]">
+
+                            <div class="flex">
+
+                            <div class="h-[180px] flex flex-col items-center  w-[90px] rounded-[100px] bg-black">
+                                <div class="my-auto">a</div>
+                                <div class="my-auto">b</div>
+                                <div class="my-auto">c</div>
                             </div>
+
+                            <div class="flex flex-col justify-around ml-[30px] mr-[10px] items-center">
+                                <div>O</div>
+                                <div>O</div>
+
+                            </div>
+
+                        </div>
+
 
                         </div>
 
@@ -73,20 +88,20 @@
 
 
                     <div class="mt-[10px]">
-                            <!-- text -->
-                            <div class="text-[20px] px-[30px]">Un’analisi accurata porta a un codice più pulito, uno
-                                sviluppo
-                                più veloce e al rispetto
-                                di scadenze
-                                prefissate.
-                            </div>
-
-
-                            <div class="text-[20px] px-[30px]">
-                                Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
-                                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
-
+                        <!-- text -->
+                        <div class="text-[20px] px-[30px]">Un’analisi accurata porta a un codice più pulito, uno
+                            sviluppo
+                            più veloce e al rispetto
+                            di scadenze
+                            prefissate.
                         </div>
+
+
+                        <div class="text-[20px] px-[30px]">
+                            Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
+                            Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
+
+                    </div>
 
 
                 </div>
@@ -98,8 +113,7 @@
 
 
                     <!-- CONTENUTO -->
-                    <div
-                        class="flex justify-center scale-[0.6] items-center ">
+                    <div class="flex justify-center scale-[0.6] items-center ">
 
                         <!-- Cp1 -->
                         <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
@@ -142,7 +156,7 @@
 
                                 </div>
                             </div>
-                            
+
                         </a>
 
                         <!-- Cp2 -->
@@ -286,30 +300,38 @@
 
                 <!-- Contacts -->
                 <div v-if="contacts" class="w-screen flex flex-col px-[25px]   ">
-                
+
                     <div class="text-[35px]  font-bold ">RESIDENZA</div>
-                    <div class="text-[20px] mt-[-10px] mb-[20px]  font-semibold  text-[rgb(253,175,154)]">Bari (BA)</div>
+                    <div class="text-[20px] mt-[-10px] mb-[20px]  font-semibold  text-[rgb(253,175,154)]">Bari (BA)
+                    </div>
 
                     <div class="text-[35px]  font-bold ">EMAIL</div>
-                    <div class="text-[20px] mb-[20px] mt-[-10px] font-semibold   text-[rgb(195,154,253)]">ape.develop3@gmail.com</div>
+                    <div class="text-[20px] mb-[20px] mt-[-10px] font-semibold   text-[rgb(195,154,253)]">
+                        ape.develop3@gmail.com</div>
 
                     <div class="text-[35px]  font-bold ">NUMERO</div>
-                    <div class="text-[20px] mb-[20px] mt-[-10px] font-semibold   text-[rgb(154,253,180)]">+39 3426398488</div>
+                    <div class="text-[20px] mb-[20px] mt-[-10px] font-semibold   text-[rgb(154,253,180)]">+39 3426398488
+                    </div>
 
                     <div class="text-[35px]  font-bold ">LINKEDIN</div>
-                    <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/" class="text-[20px]  font-semibold underline mb-[20px]  text-[rgb(248,253,154)]">Guarda i miei post!</a>
+                    <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+                        class="text-[20px]  font-semibold underline mb-[20px]  text-[rgb(248,253,154)]">Guarda i miei
+                        post!</a>
 
                     <div class="text-[35px]  font-bold ">GITHUB</div>
-                    <a href="https://github.com/AntoninoPalmaEsposito" class="text-[20px] mb-[20px]  font-semibold underline  text-[rgb(154,241,253)]">Scopri
-                le mie repository!</a>
+                    <a href="https://github.com/AntoninoPalmaEsposito"
+                        class="text-[20px] mb-[20px]  font-semibold underline  text-[rgb(154,241,253)]">Scopri
+                        le mie repository!</a>
 
-                <div class="text-[35px]  font-bold ">INSTAGRAM</div>
-                    <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr" class="text-[20px]  font-semibold underline mb-[20px]  text-[rgb(253,154,200)]">Visita il mio profilo!</a>
+                    <div class="text-[35px]  font-bold ">INSTAGRAM</div>
+                    <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+                        class="text-[20px]  font-semibold underline mb-[20px]  text-[rgb(253,154,200)]">Visita il mio
+                        profilo!</a>
 
 
-                
-                
-                
+
+
+
                 </div>
             </div>
 
@@ -531,35 +553,34 @@ body {
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
 }
 
 @keyframes navbounce {
     from {
-    scale: 0.9;
-  }
+        scale: 0.9;
+    }
 
-  to {
-    scale: 1.1;
-  }
+    to {
+        scale: 1.1;
+    }
 }
 
 .navc {
     animation-name: navbounce2;
     animation-duration: 2s;
     animation-direction: alternate;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes navbounce2 {
     from {
-    background-color: rgba(0,0,0,0.52);
-  }
+        background-color: rgba(0, 0, 0, 0.52);
+    }
 
-  to {
-    background-color: rgba(0, 0, 0, 0.749);
-  }
+    to {
+        background-color: rgba(0, 0, 0, 0.749);
+    }
 }
-
 </style>
