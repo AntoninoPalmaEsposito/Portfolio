@@ -636,7 +636,7 @@ body {
 
 .opacitys2 {
     animation-name: opacitysc2;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes opacitysc2 {
