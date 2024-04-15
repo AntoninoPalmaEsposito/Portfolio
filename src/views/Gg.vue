@@ -101,7 +101,7 @@
                             @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
 
                             <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[40px] ml-[50px] font-semibold mb-[30px]"><span
+                                class=" text-[rgba(255,255,255,0.26)] text-[40px] ml-[50px] font-semibold mb-[20px]"><span
                                     :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
                                     class="border-solid duration-200 border-b-4   ">Visita!</span></span>
 
