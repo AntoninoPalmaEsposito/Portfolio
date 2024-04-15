@@ -99,6 +99,12 @@
                         <!-- Cp1 -->
                         <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
                             @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
+
+                            <span
+                                class=" text-[rgba(255,255,255,0.26)] text-[40px] ml-[50px] font-semibold mb-[30px]"><span
+                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                                    class="border-solid duration-200 border-b-4   ">Visita!</span></span>
+
                             <div :class="{ 'border-solid border-4': over1 }"
                                 class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(132,132,247)] rounded-[60px]">
                                 <!-- img cont -->
@@ -131,10 +137,7 @@
 
                                 </div>
                             </div>
-                            <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
-                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+                            
                         </a>
 
                         <!-- Cp2 -->
