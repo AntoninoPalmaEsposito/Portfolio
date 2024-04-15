@@ -44,7 +44,7 @@
 
 
             <!-- container section -->
-            <div class="mt-[100px] text-white">
+            <div class="mt-[120px] text-white">
 
                 <!-- Dev Profile -->
                 <div v-if="devp" :class="{ 'opacity-0': !devp, 'opacity-1': devp }"
@@ -67,13 +67,13 @@
 
                             <div class="flex">
 
-                            <div class="h-[40vw] flex flex-col items-center  w-[19vw] rounded-[100px] bg-black">
+                            <div class="h-[44vw] flex flex-col items-center  w-[22vw] rounded-[100px] bg-black">
                                 <div class="my-auto">a</div>
                                 <div class="my-auto">b</div>
                                 <div class="my-auto">c</div>
                             </div>
 
-                            <div class="flex flex-col justify-around pl-[5vw] pr-[2vw] items-center">
+                            <div class="flex flex-col justify-around pl-[7vw] pr-[3vw] items-center">
                                 <div>O</div>
                                 <div>O</div>
 
