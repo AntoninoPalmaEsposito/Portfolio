@@ -9,6 +9,8 @@
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
+                <div class="h-[173px] rounded-[50px] mr-[30px] mt-[60px] w-[5px] bg-[rgb(109,109,109)]"></div>
+
                 <ul class="flex flex-col items-start w-[35vw]">
 
                     <li class="mb-[-20px] ml-[-7px]"><button @click="tscroll"
@@ -27,7 +29,12 @@
                             :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
                             class="duration-500">Contacts</button></li>
 
+                            <div class="w-[190px] h-[5px] mt-[20px] ml-[-60px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+
                 </ul>
+
+                
+
             </div>
 
 
