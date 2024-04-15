@@ -16,7 +16,7 @@
 
                 <ul class="flex flex-col items-start scale-110 w-[35vw]">
 
-                    <li class="mb-[-20px] ml-[-7px]"><button @click="tscroll"
+                    <li class="mb-[-10px] ml-[-7px]"><button @click="tscroll"
                             :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
                                 src="../assets/freccia.png" alt="" class="w-[11vw]"></button></li>
 
