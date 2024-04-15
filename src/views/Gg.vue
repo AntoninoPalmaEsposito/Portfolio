@@ -58,22 +58,22 @@
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[30px]  items-center mt-[20px] mx-[25px] w-screen    rounded-[20px]  bg-[rgba(255,255,255,0.2)] ">
+                            class=" flex justify-around py-[6vw]  items-center mt-[20px] mx-[25px] w-screen    rounded-[20px]  bg-[rgba(255,255,255,0.2)] ">
 
 
 
 
-                            <img src="../assets/pc.png" alt="" class=" w-[170px] ml-[10px]">
+                            <img src="../assets/pc.png" alt="" class=" w-[35vw] ml-[2vw]">
 
                             <div class="flex">
 
-                            <div class="h-[180px] flex flex-col items-center  w-[90px] rounded-[100px] bg-black">
+                            <div class="h-[40vw] flex flex-col items-center  w-[19vw] rounded-[100px] bg-black">
                                 <div class="my-auto">a</div>
                                 <div class="my-auto">b</div>
                                 <div class="my-auto">c</div>
                             </div>
 
-                            <div class="flex flex-col justify-around ml-[30px] mr-[10px] items-center">
+                            <div class="flex flex-col justify-around pl-[5vw] pr-[2vw] items-center">
                                 <div>O</div>
                                 <div>O</div>
 
