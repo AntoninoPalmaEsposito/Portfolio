@@ -44,11 +44,10 @@
 
 
             <!-- container section -->
-            <div class="mt-[120px] text-white">
+            <div class="mt-[100px] text-white">
 
                 <!-- Dev Profile -->
-                <div v-if="devp" :class="{ 'opacity-0': !devp, 'opacity-1': devp }"
-                    class="w-screen duration-1000 flex flex-col   ">
+                <div v-if="devp1" :class="{ 'opacitys2': !devp, 'opacitys': devp }" class="w-screen flex flex-col   ">
 
                     <!-- h1 -->
                     <div class="font-bold  text-[25px] px-[30px]  leading-7"><span
@@ -67,19 +66,19 @@
 
                             <div class="flex">
 
-                            <div class="h-[44vw] flex flex-col items-center  w-[22vw] rounded-[100px] bg-black">
-                                <div class="my-auto">a</div>
-                                <div class="my-auto">b</div>
-                                <div class="my-auto">c</div>
+                                <div class="h-[44vw] flex flex-col items-center  w-[22vw] rounded-[100px] bg-black">
+                                    <div class="my-auto">a</div>
+                                    <div class="my-auto">b</div>
+                                    <div class="my-auto">c</div>
+                                </div>
+
+                                <div class="flex flex-col justify-around pl-[6vw] pr-[3vw] items-center">
+                                    <div>O</div>
+                                    <div>O</div>
+
+                                </div>
+
                             </div>
-
-                            <div class="flex flex-col justify-around pl-[7vw] pr-[3vw] items-center">
-                                <div>O</div>
-                                <div>O</div>
-
-                            </div>
-
-                        </div>
 
 
                         </div>
@@ -109,7 +108,8 @@
 
 
                 <!-- Project -->
-                <div v-if="project" class="w-screen mt-[-60px] flex flex-col items-center ">
+                <div v-if="project1" :class="{ 'opacitys2': !project, 'opacitys': project }"
+                    class="w-screen  mt-[-60px] flex flex-col items-center ">
 
 
                     <!-- CONTENUTO -->
@@ -299,7 +299,8 @@
 
 
                 <!-- Contacts -->
-                <div v-if="contacts" class="w-screen flex flex-col px-[25px]   ">
+                <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
+                    class="w-screen flex flex-col px-[25px]   ">
 
                     <div class="text-[35px]  font-bold ">RESIDENZA</div>
                     <div class="text-[20px] mt-[-10px] mb-[20px]  font-semibold  text-[rgb(253,175,154)]">Bari (BA)
@@ -455,7 +456,10 @@ export default {
             over1: false,
             over2: false,
             over3: false,
-            over4: false
+            over4: false,
+            devp1: true,
+            project1: false,
+            contacts1: false
 
         }
     },
@@ -501,10 +505,37 @@ export default {
                 this.devp = false
                 this.project = false
                 this.contacts = false
+
+                setTimeout(() => {
+                    this.devp1 = false;
+                }, 1000);
+
+                setTimeout(() => {
+                    this.project1 = false;
+                }, 1000);
+
+                setTimeout(() => {
+                    this.contacts1 = false;
+                }, 1000);
+
+
+
             } else {
                 this.devp = true
                 this.project = false
                 this.contacts = false
+
+                setTimeout(() => {
+                    this.devp1 = true;
+                }, 1000);
+
+                setTimeout(() => {
+                    this.project1 = false;
+                }, 1000);
+
+                setTimeout(() => {
+                    this.contacts1 = false;
+                }, 1000);
             }
 
         },
@@ -514,6 +545,19 @@ export default {
             this.devp = true
             this.project = false
             this.contacts = false
+
+            setTimeout(() => {
+                this.devp1 = true;
+            }, 1000);
+
+            setTimeout(() => {
+                this.project1 = false;
+            }, 1000);
+
+            setTimeout(() => {
+                this.contacts1 = false;
+            }, 1000);
+
         },
 
         projectp() {
@@ -521,6 +565,18 @@ export default {
             this.devp = false
             this.project = true
             this.contacts = false
+
+            setTimeout(() => {
+                this.devp1 = false;
+            }, 1000);
+
+            setTimeout(() => {
+                this.project1 = true;
+            }, 1000);
+
+            setTimeout(() => {
+                this.contacts1 = false;
+            }, 1000);
         },
 
         contactsp() {
@@ -528,6 +584,18 @@ export default {
             this.devp = false
             this.project = false
             this.contacts = true
+
+            setTimeout(() => {
+                this.devp1 = false;
+            }, 1000);
+
+            setTimeout(() => {
+                this.project1 = false;
+            }, 1000);
+
+            setTimeout(() => {
+                this.contacts1 = true;
+            }, 1000);
         },
     }
 
@@ -546,6 +614,42 @@ export default {
 <style>
 body {
     background-color: black;
+}
+
+.opacitys {
+    animation-name: opacitysc;
+    animation-duration: 2s;
+}
+
+@keyframes opacitysc {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.opacitys2 {
+    animation-name: opacitysc2;
+    animation-duration: 2s;
+}
+
+@keyframes opacitysc2 {
+    from {
+        opacity: 1;
+        filter: blur(0);
+
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(10px);
+    }
 }
 
 .nav {
