@@ -329,7 +329,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[55px] mb-[5px]  w-screen px-[35px]">
+            <div class="flex justify-end mt-[45px] mb-[15px]  w-screen px-[35px]">
                 <button @click="tscroll" class=" nav flex flex-col scale-90 items-end  ">
                     <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -510,6 +510,7 @@ body {
 .nav {
     animation-name: navbounce;
     animation-duration: 3s;
+    animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count:infinite;
 }
@@ -529,6 +530,7 @@ body {
     animation-duration: 3s;
     animation-direction: alternate;
     animation-iteration-count:infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes navbounce2 {
