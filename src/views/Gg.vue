@@ -508,15 +508,15 @@ export default {
 
                 setTimeout(() => {
                     this.devp1 = false;
-                }, 1000);
+                }, 500);
 
                 setTimeout(() => {
                     this.project1 = false;
-                }, 1000);
+                }, 500);
 
                 setTimeout(() => {
                     this.contacts1 = false;
-                }, 1000);
+                }, 500);
 
 
 
@@ -527,15 +527,15 @@ export default {
 
                 setTimeout(() => {
                     this.devp1 = true;
-                }, 1000);
+                }, 500);
 
                 setTimeout(() => {
                     this.project1 = false;
-                }, 1000);
+                }, 500);
 
                 setTimeout(() => {
                     this.contacts1 = false;
-                }, 1000);
+                }, 500);
             }
 
         },
@@ -548,15 +548,15 @@ export default {
 
             setTimeout(() => {
                 this.devp1 = true;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.project1 = false;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.contacts1 = false;
-            }, 1000);
+            }, 500);
 
         },
 
@@ -568,15 +568,15 @@ export default {
 
             setTimeout(() => {
                 this.devp1 = false;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.project1 = true;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.contacts1 = false;
-            }, 1000);
+            }, 500);
         },
 
         contactsp() {
@@ -587,15 +587,15 @@ export default {
 
             setTimeout(() => {
                 this.devp1 = false;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.project1 = false;
-            }, 1000);
+            }, 500);
 
             setTimeout(() => {
                 this.contacts1 = true;
-            }, 1000);
+            }, 500);
         },
     }
 
@@ -618,7 +618,7 @@ body {
 
 .opacitys {
     animation-name: opacitysc;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes opacitysc {
@@ -636,7 +636,7 @@ body {
 
 .opacitys2 {
     animation-name: opacitysc2;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 @keyframes opacitysc2 {
