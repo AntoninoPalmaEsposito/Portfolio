@@ -330,10 +330,10 @@
 
             <!-- nav scroll -->
             <div class="flex justify-end mt-[55px] mb-[5px]  w-screen px-[35px]">
-                <button @click="tscroll" class=" flex flex-col scale-90 items-end  ">
-                    <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
-                    <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
-                    <div class="h-[6px] w-[45px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                <button @click="tscroll" class=" nav flex flex-col scale-90 items-end  ">
+                    <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[6px] navc w-[45px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
 
                 </button>
             </div>
@@ -505,6 +505,40 @@ export default {
 <style>
 body {
     background-color: black;
-
 }
+
+.nav {
+    animation-name: navbounce;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+@keyframes navbounce {
+    from {
+    scale: 0.9;
+  }
+
+  to {
+    scale: 1.2;
+  }
+}
+
+.navc {
+    animation-name: navbounce2;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+@keyframes navbounce2 {
+    from {
+    background-color: rgba(0,0,0,0.52);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.749);
+  }
+}
+
 </style>
