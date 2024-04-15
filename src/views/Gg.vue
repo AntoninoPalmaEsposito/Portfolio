@@ -9,8 +9,10 @@
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
+
+                <div class="flex items-end">
                 
-                
+                <div class="relative top-[25px] h-[36vw]  rounded-[50px] mr-[6vw] w-[5px] bg-[rgb(109,109,109)]"></div>
 
                 <ul class="flex flex-col items-start w-[35vw]">
 
@@ -30,12 +32,12 @@
                             :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
                             class="duration-500">Contacts</button></li>
 
-                            <div class="w-[38vw] h-[5px] mt-[20px] ml-[-62px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+                            <div class="w-[43vw] h-[5px] mt-[4vw] ml-[-62px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
-                            <div class="h-[17vh] rounded-[50px] ml-[-35px] mt-[-128px] w-[5px] bg-[rgb(109,109,109)]"></div>
+                            
                 </ul>
 
-                
+            </div>
 
             </div>
 
