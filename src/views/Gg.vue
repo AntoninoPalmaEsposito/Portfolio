@@ -329,8 +329,13 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[40px] w-screen px-[50px]">
-                <button @click="tscroll" class=" w-[100px] h-[50px] rounded-[50px]  bg-[rgba(0,0,0,0.52)]"></button>
+            <div class="flex justify-end mt-[50px]  w-screen px-[50px]">
+                <button @click="tscroll" class=" flex flex-col items-end  ">
+                    <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[6px] w-[45px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+
+                </button>
             </div>
 
 
