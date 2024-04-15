@@ -5,16 +5,16 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[10px] text-white  font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[15px] text-white  font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
 
                 <div class="flex items-end">
                 
-                <div class="relative top-[25px] h-[36vw]  rounded-[50px] mr-[6vw] w-[5px] bg-[rgb(109,109,109)]"></div>
+                <div class="relative top-[36px] h-[40vw]  rounded-[50px] mr-[9vw] w-[5px] bg-[rgb(109,109,109)]"></div>
 
-                <ul class="flex flex-col items-start w-[35vw]">
+                <ul class="flex flex-col items-start scale-110 w-[35vw]">
 
                     <li class="mb-[-20px] ml-[-7px]"><button @click="tscroll"
                             :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
@@ -32,7 +32,7 @@
                             :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
                             class="duration-500">Contacts</button></li>
 
-                            <div class="w-[43vw] h-[5px] mt-[4vw] ml-[-62px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+                            <div class="w-[43vw] h-[4.5px] mt-[5vw] ml-[-14vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
                             
                 </ul>
@@ -520,7 +520,7 @@ body {
 
 .nav {
     animation-name: navbounce;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count:infinite;
@@ -532,13 +532,13 @@ body {
   }
 
   to {
-    scale: 1.2;
+    scale: 1.1;
   }
 }
 
 .navc {
     animation-name: navbounce2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
