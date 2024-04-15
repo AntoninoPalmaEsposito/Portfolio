@@ -329,7 +329,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[40px] mb-[20px]  w-screen px-[40px]">
+            <div class="flex justify-end mt-[55px] mb-[5px]  w-screen px-[35px]">
                 <button @click="tscroll" class=" flex flex-col scale-90 items-end  ">
                     <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[6px] w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
