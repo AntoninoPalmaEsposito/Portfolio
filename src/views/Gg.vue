@@ -66,15 +66,20 @@
 
                             <div class="flex">
 
-                                <div class="h-[44vw] flex flex-col items-center  w-[22vw] rounded-[100px] bg-black">
-                                    <div class="my-auto">a</div>
-                                    <div class="my-auto">b</div>
-                                    <div class="my-auto">c</div>
+                                <div class="h-[44vw] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] bg-black">
+                                    <div v-if="img1" class="my-auto"><img src="../assets/htmlI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img2" class="my-auto"><img src="../assets/cssI.png" alt="" class="w-[8vw]"></div>
+
+                                    <div v-if="img3" class="my-auto"><img src="../assets/javascriptI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img4" class="my-auto"><img src="../assets/tailwindI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img5" class="my-auto"><img src="../assets/vueI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img6" class="my-auto"><img src="../assets/vsI.png" alt="" class="w-[8vw]"></div>
                                 </div>
 
                                 <div class="flex flex-col justify-around pl-[6vw] pr-[3vw] items-center">
-                                    <div>O</div>
-                                    <div>O</div>
+
+                                    <button @click="meno">O</button>
+                                    <button @click="più">O</button>
 
                                 </div>
 
@@ -459,12 +464,92 @@ export default {
             over4: false,
             devp1: true,
             project1: false,
-            contacts1: false
+            contacts1: false,
+            constimg: 1,
+            constimg2: 2,
+            constimg3: 3,
+            img1: true,
+            img2: true,
+            img3: true,
+            img4: false,
+            img5: false,
+            img6: false
 
         }
     },
 
     methods: {
+
+        meno() {
+            if (this.constimg > 1) {
+                this.constimg--
+                console.log(this.constimg)
+                if (this.constimg == 1) {
+                    this.img1 = true
+                    this.img2 = true
+                    this.img3 = true
+                    this.img4 = false
+                    this.img5 = false
+                }
+                else if (this.constimg == 2) {
+                    this.img1 = false
+                    this.img2 = true
+                    this.img3 = true
+                    this.img4 = true
+                    this.img5 = false
+                } else if (this.constimg == 3) {
+                    this.img2 = false
+                    this.img3 = true
+                    this.img4 = true
+                    this.img5 = true
+                    this.img6 = false
+                } else if (this.constimg == 4) {
+                    this.img3 = false
+                    this.img4 = true
+                    this.img5 = true
+                    this.img6 = true
+                    
+                } 
+            }
+
+        },
+
+
+        più() {
+            if (this.constimg >= 1 && this.constimg < 5) {
+                this.constimg++
+                console.log(this.constimg)
+                if (this.constimg == 1) {
+                    this.img1 = true
+                    this.img2 = true
+                    this.img3 = true
+
+                } else if (this.constimg == 2) {
+                    this.img1 = false
+                    this.img2 = true
+                    this.img3 = true
+                    this.img4 = true
+                }
+                else if (this.constimg == 3) {
+                    this.img2 = false
+                    this.img3 = true
+                    this.img4 = true
+                    this.img5 = true
+                } else if (this.constimg == 4) {
+                    this.img3 = false
+                    this.img4 = true
+                    this.img5 = true
+                    this.img6 = true
+                } else if (this.constimg == 5) {
+                    this.img4 = false
+                    this.img5 = true
+                    this.img6 = true
+                }
+
+            }
+        },
+
+
 
         cp11() {
             this.cp1 = !this.cp1
