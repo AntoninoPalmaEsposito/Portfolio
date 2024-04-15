@@ -43,29 +43,31 @@
 
 
             <!-- container section -->
-            <div class="mt-[70px] text-white">
+            <div class="mt-[100px] text-white">
 
                 <!-- Dev Profile -->
                 <div v-if="devp" :class="{ 'opacity-0': !devp, 'opacity-1': devp }"
                     class="w-screen duration-1000 flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="font-bold  text-[30px] px-[25px]  leading-7"><span
-                            class="text-[70px] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
+                    <div class="font-bold  text-[25px] px-[25px]  leading-7"><span
+                            class="text-[60px] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
 
                     <div class="flex ">
 
                         <!-- card -->
                         <div
-                            class=" flex justify-center mt-[30px] mx-[25px] w-[45vw] p-[25px]   rounded-[40px] z-[0] bg-[rgba(255,255,255,0.2)] ">
-                            <div class="flex mb-[30px]">
-                                <img src="../assets/pc.png" alt="" class=" w-[100%] mb-[-10px]  hover:animate-bounce">
+                            class=" flex justify-center mt-[20px] mx-[25px] w-screen p-[25px]   rounded-[40px] z-[0] bg-[rgba(255,255,255,0.2)] ">
+                            <div class="flex justify-center mb-[30px]">
+                                <img src="../assets/pc.png" alt="" class=" w-[50%] mb-[-10px]  hover:animate-bounce">
                             </div>
 
                         </div>
 
+                    </div>
 
-                        <div>
+
+                    <div class="mt-[10px]">
                             <!-- text -->
                             <div class="text-[20px] px-[25px]">Un’analisi accurata porta a un codice più pulito, uno
                                 sviluppo
@@ -80,8 +82,6 @@
                                 Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
 
                         </div>
-
-                    </div>
 
 
                 </div>
