@@ -50,16 +50,21 @@
                     class="w-screen duration-1000 flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="font-bold  text-[25px] px-[25px]  leading-7"><span
+                    <div class="font-bold  text-[25px] px-[30px]  leading-7"><span
                             class="text-[60px] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
 
                     <div class="flex ">
 
                         <!-- card -->
                         <div
-                            class=" flex justify-center mt-[20px] mx-[25px] w-screen p-[25px]   rounded-[40px] z-[0] bg-[rgba(255,255,255,0.2)] ">
-                            <div class="flex justify-center mb-[30px]">
+                            class=" flex justify-center mt-[20px] mx-[25px] w-screen p-[25px]   rounded-[20px] z-[0] bg-[rgba(255,255,255,0.2)] ">
+                            <div class="flex justify-between items-center mb-[30px]">
                                 <img src="../assets/pc.png" alt="" class=" w-[50%] mb-[-10px]  hover:animate-bounce">
+
+                                <div class="h-[130px] py-auto pr-[30px] w-[80px] rounded-[100px] bg-black">
+
+
+                                </div>
                             </div>
 
                         </div>
@@ -69,7 +74,7 @@
 
                     <div class="mt-[10px]">
                             <!-- text -->
-                            <div class="text-[20px] px-[25px]">Un’analisi accurata porta a un codice più pulito, uno
+                            <div class="text-[20px] px-[30px]">Un’analisi accurata porta a un codice più pulito, uno
                                 sviluppo
                                 più veloce e al rispetto
                                 di scadenze
@@ -77,7 +82,7 @@
                             </div>
 
 
-                            <div class="text-[20px] px-[25px]">
+                            <div class="text-[20px] px-[30px]">
                                 Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                                 Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
 
