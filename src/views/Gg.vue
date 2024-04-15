@@ -9,7 +9,8 @@
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
-                <div class="h-[173px] rounded-[50px] mr-[30px] mt-[60px] w-[5px] bg-[rgb(109,109,109)]"></div>
+                
+                
 
                 <ul class="flex flex-col items-start w-[35vw]">
 
@@ -31,6 +32,7 @@
 
                             <div class="w-[190px] h-[5px] mt-[20px] ml-[-60px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
+                            <div class="h-[173px] rounded-[50px] ml-[-35px] mt-[-147px] w-[5px] bg-[rgb(109,109,109)]"></div>
                 </ul>
 
                 
