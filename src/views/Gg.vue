@@ -30,9 +30,9 @@
                             :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
                             class="duration-500">Contacts</button></li>
 
-                            <div class="w-[190px] h-[5px] mt-[20px] ml-[-60px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+                            <div class="w-[38vw] h-[5px] mt-[20px] ml-[-62px] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
-                            <div class="h-[173px] rounded-[50px] ml-[-35px] mt-[-147px] w-[5px] bg-[rgb(109,109,109)]"></div>
+                            <div class="h-[17vh] rounded-[50px] ml-[-35px] mt-[-128px] w-[5px] bg-[rgb(109,109,109)]"></div>
                 </ul>
 
                 
