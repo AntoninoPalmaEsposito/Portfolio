@@ -89,7 +89,7 @@
 
 
                 <!-- Project -->
-                <div v-if="project" class="w-screen flex flex-col items-center ">
+                <div v-if="project" class="w-screen mt-[-60px] flex flex-col items-center ">
 
 
                     <!-- CONTENUTO -->
