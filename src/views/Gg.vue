@@ -57,7 +57,7 @@
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[6vw] border-r-[1px] border-b-[1px]  border-[rgb(119,119,119)]  items-center mt-[20px] mx-[25px] w-screen    rounded-[20px]  bg-[rgba(255,255,255,0.2)] ">
+                            class=" flex justify-around py-[6vw] border-r-[1px] border-b-[1px]  border-[rgb(119,119,119)]  items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.2)] ">
 
 
 
