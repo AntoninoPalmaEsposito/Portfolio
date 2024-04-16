@@ -67,11 +67,11 @@
                             <div class="flex">
 
                                 <div class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] bg-black">
-                                    <div v-if="img1" class="my-auto"><img src="../assets/htmlI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img1" class="my-auto"><img src="../assets/htmlI.png" alt="" class="w-[6vw] opacity-75"></div>
                                     
-                                    <div v-if="img2" class="my-auto"><img src="../assets/cssI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img2" class="my-auto text-[22px] text-center mb-[-2px]"><img src="../assets/cssI.png" alt="" class="w-[10vw] mb-[-5px]">css</div>
 
-                                    <div v-if="img3" class="my-auto"><img src="../assets/javascriptI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img3" class="my-auto"><img src="../assets/javascriptI.png" alt="" class="w-[6vw] opacity-75"></div>
                                     <div v-if="img4" class="my-auto"><img src="../assets/tailwindI.png" alt="" class="w-[8vw]"></div>
                                     <div v-if="img5" class="my-auto"><img src="../assets/vueI.png" alt="" class="w-[8vw]"></div>
                                     <div v-if="img6" class="my-auto"><img src="../assets/vsI.png" alt="" class="w-[8vw]"></div>
@@ -471,7 +471,7 @@ export default {
             constimg3: 3,
             img1: true,
             img2: true,
-            img3: true,
+            img3: false,
             img4: false,
             img5: false,
             img6: false
@@ -482,10 +482,17 @@ export default {
     methods: {
 
         meno() {
-            if (this.constimg > 1) {
+            if (this.constimg > 0) {
                 this.constimg--
                 console.log(this.constimg)
-                if (this.constimg == 1) {
+                if (this.constimg == 0) {
+                    this.img1 = true
+                    this.img2 = true
+                    this.img3 = false
+                    this.img4 = false
+                    this.img5 = false
+                }
+                else if (this.constimg == 1) {
                     this.img1 = true
                     this.img2 = true
                     this.img3 = true
@@ -517,15 +524,21 @@ export default {
 
 
         più() {
-            if (this.constimg >= 1 && this.constimg < 5) {
+            if (this.constimg >= 0 && this.constimg < 5) {
                 this.constimg++
                 console.log(this.constimg)
-                if (this.constimg == 1) {
+                if (this.constimg == 0) {
+                    this.img1 = true
+                    this.img2 = true
+                    this.img3 = false
+
+                } else if (this.constimg == 1) {
                     this.img1 = true
                     this.img2 = true
                     this.img3 = true
 
-                } else if (this.constimg == 2) {
+                }
+                else if (this.constimg == 2) {
                     this.img1 = false
                     this.img2 = true
                     this.img3 = true
