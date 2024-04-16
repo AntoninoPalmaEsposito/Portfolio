@@ -125,10 +125,11 @@
 
                                 </div>
 
-                                <div class="flex flex-col justify-around pl-[6vw] pr-[3vw] items-center">
+                                <div class="flex flex-col justify-around  pl-[4vw] items-center">
 
-                                    <button @click="meno">O</button>
-                                    <button @click="più">O</button>
+                                    <button @click="meno"><img src="../assets/fsu.png" alt="" :class="{'opacity-35':!fsu , 'opacity-95':fsu}"    class="w-[8vw] duration-1000"></button>
+
+                                    <button @click="più"><img src="../assets/fgiu.png" alt="" :class="{'opacity-35':!fgiu , 'opacity-95':fgiu}" class="w-[8vw] duration-1000"></button>
 
                                 </div>
 
@@ -543,6 +544,8 @@ export default {
             cimg11: false,
             cimg12: false,
             cimg13: false,
+            fsu: false,
+            fgiu: true,
 
 
         }
@@ -562,6 +565,8 @@ export default {
 
                     this.cimg1 = true
                     this.cimg2 = false
+
+                    this.fsu = false
                 }
                 else if (this.constimg == 1) {
                     this.img1 = true
@@ -661,6 +666,8 @@ export default {
 
                     this.cimg12 = true
                     this.cimg13 = false
+
+                    this.fgiu = true
                 }
 
             }
@@ -688,6 +695,8 @@ export default {
 
                     this.cimg1 = false
                     this.cimg2 = true
+
+                    this.fsu = true
 
                 }
                 else if (this.constimg == 2) {
@@ -787,6 +796,8 @@ export default {
 
                     this.cimg12 = false
                     this.cimg13 = true
+
+                    this.fgiu = false
                 }
 
             }
