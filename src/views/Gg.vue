@@ -67,7 +67,7 @@
                             <div class="flex">
 
                                 <div
-                                    class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
+                                    class="h-[44vw] border-l-[1px] border-t-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
 
                                     <div v-if="img1" class="my-auto flex flex-col items-center"><img src="../assets/htmlI.png" alt="" :class="{' mt-[80%] opp':cimg1, ' opp2':!cimg1}" class="  ">
                                     <div v-if="cimg1"  class="text-[3vw] text-center mt-[3px]">HTML</div>
