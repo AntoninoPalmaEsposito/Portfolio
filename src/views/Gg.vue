@@ -69,19 +69,20 @@
                                 <div
                                     class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
 
-                                    <div v-if="img1" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/htmlI.png" alt="" :class="{'w-[11vw] mt-[80%]':cimg1, 'w-[6vw] opacity-50':!cimg1}" class="duration-500  ">
-                                    <div v-if="cimg1" class="text-[17px] duration-500 text-center mt-[3px]">HTML</div>
+                                    <div v-if="img1" class="my-auto flex flex-col items-center"><img src="../assets/htmlI.png" alt="" :class="{' mt-[80%] opp':cimg1, ' opp2':!cimg1}" class="  ">
+                                    <div v-if="cimg1" class="text-[17px] text-center mt-[3px]">HTML</div>
                                     </div>
 
-                                    <div v-if="img2" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/cssI.png" alt="" :class="{'w-[11vw]':cimg2, 'w-[6vw] opacity-50':!cimg2}" class="duration-500 ">
-                                    <div v-if="cimg2" class="text-[17px] duration-500 text-center mt-[3px]">CSS</div>
+                                    <div v-if="img2" class="my-auto flex flex-col items-center"><img src="../assets/cssI.png" alt="" :class="{'  opp':cimg2, ' opp2':!cimg2}" class="  ">
+                                    <div v-if="cimg2" class="text-[17px] text-center mt-[3px]">CSS</div>
+                                    </div>
+                                    
+
+                                    <div v-if="img3" class="my-auto flex flex-col items-center"><img src="../assets/javascriptI.png" alt="" :class="{'  opp':cimg3, ' opp2':!cimg3}" class="  ">
+                                    <div v-if="cimg3" class="text-[17px] text-center mt-[3px]">JS</div>
                                     </div>
 
-                                    <div v-if="img3" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/javascriptI.png" alt="" :class="{'w-[11vw]':cimg3, 'w-[6vw] opacity-50':!cimg3}" class="duration-500 ">
-                                    <div v-if="cimg3" class="text-[17px] duration-500 text-center mt-[3px]">JS</div>
-                                    </div>
-
-                                    <div v-if="img4" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/tailwindI.png" alt="" :class="{'w-[11vw]':cimg4, 'w-[6vw] opacity-50':!cimg4}" class="duration-500 ">
+                                    <div v-if="img4" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/tailwindI.png" alt="" :class="{'w-[11vw]':cimg4, 'w-[6vw] opacity-50':!cimg4}" class="duration-1000 ">
                                     <div v-if="cimg4" class="text-[17px] duration-500 text-center mt-[3px]">TAILWIND</div>
                                     </div>
 
@@ -924,6 +925,55 @@ export default {
 body {
     background-color: black;
 }
+
+.opp {
+    animation-name: opa;
+    animation-duration: 1s;
+    width: 11vw;
+    filter: blur(0px);
+    
+}
+
+@keyframes opa {
+    from {
+        opacity: 0;
+        width: 6vw;
+        filter: blur(2px);
+
+    }
+
+    to {
+        opacity: 1;
+        width: 11vw;
+        filter: blur(0px);
+    }
+}
+
+.opp2 {
+    animation-name: opa2;
+    animation-duration: 1s;
+    opacity: 0.5;
+    width: 6vw;
+    filter: blur(2px);
+}
+
+@keyframes opa2 {
+    from {
+        opacity: 0;
+        width: 11vw;
+        filter: blur(0px);
+        
+
+    }
+
+    to {
+        opacity: 0.5;
+        width: 6vw;
+        filter: blur(2px);
+        
+    }
+}
+
 
 .opacitys {
     animation-name: opacitysc;
