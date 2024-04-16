@@ -207,7 +207,7 @@
 
                             <!-- visita -->
                             <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[5vw] font-semibold ml-[8vw] mb-[3vw]"><span
+                                class=" text-[rgba(255,255,255,0.26)] text-[4vw] font-semibold ml-[8vw] mb-[2vw]"><span
                                     :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
                                     class="border-solid duration-200 border-b-2   ">Visita!</span></span>
 
