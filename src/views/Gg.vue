@@ -66,15 +66,44 @@
 
                             <div class="flex">
 
-                                <div class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] bg-black">
-                                    <div v-if="img1" class="my-auto"><img src="../assets/htmlI.png" alt="" class="w-[6vw] opacity-75"></div>
-                                    
-                                    <div v-if="img2" class="my-auto text-[22px] text-center mb-[-2px]"><img src="../assets/cssI.png" alt="" class="w-[10vw] mb-[-5px]">css</div>
+                                <div
+                                    class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
 
-                                    <div v-if="img3" class="my-auto"><img src="../assets/javascriptI.png" alt="" class="w-[6vw] opacity-75"></div>
-                                    <div v-if="img4" class="my-auto"><img src="../assets/tailwindI.png" alt="" class="w-[8vw]"></div>
-                                    <div v-if="img5" class="my-auto"><img src="../assets/vueI.png" alt="" class="w-[8vw]"></div>
-                                    <div v-if="img6" class="my-auto"><img src="../assets/vsI.png" alt="" class="w-[8vw]"></div>
+                                    <div v-if="img1" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/htmlI.png" alt="" :class="{'w-[11vw] mt-[80%]':cimg1, 'w-[6vw] opacity-50':!cimg1}" class="duration-500  ">
+                                    <div v-if="cimg1" class="text-[17px] duration-500 text-center mt-[3px]">HTML</div>
+                                    </div>
+
+                                    <div v-if="img2" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/cssI.png" alt="" :class="{'w-[11vw]':cimg2, 'w-[6vw] opacity-50':!cimg2}" class="duration-500 ">
+                                    <div v-if="cimg2" class="text-[17px] duration-500 text-center mt-[3px]">CSS</div>
+                                    </div>
+
+                                    <div v-if="img3" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/javascriptI.png" alt="" :class="{'w-[11vw]':cimg3, 'w-[6vw] opacity-50':!cimg3}" class="duration-500 ">
+                                    <div v-if="cimg3" class="text-[17px] duration-500 text-center mt-[3px]">JS</div>
+                                    </div>
+
+                                    <div v-if="img4" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/tailwindI.png" alt="" :class="{'w-[11vw]':cimg4, 'w-[6vw] opacity-50':!cimg4}" class="duration-500 ">
+                                    <div v-if="cimg4" class="text-[17px] duration-500 text-center mt-[3px]">TAILWIND</div>
+                                    </div>
+
+                                    <div v-if="img5" class="my-auto"><img src="../assets/vueI.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img6" class="my-auto"><img src="../assets/vsI.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img7" class="my-auto"><img src="../assets/gitI.jpg" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img8" class="my-auto"><img src="../assets/figmaI.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img9" class="my-auto"><img src="../assets/adobeI.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img10" class="my-auto"><img src="../assets/apil.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img11" class="my-auto"><img src="../assets/google.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img12" class="my-auto"><img src="../assets/postman.png" alt=""
+                                            class="w-[8vw]"></div>
+                                    <div v-if="img13" class="my-auto"><img src="../assets/npm.png" alt=""
+                                            class="w-[8vw]"></div>
+
                                 </div>
 
                                 <div class="flex flex-col justify-around pl-[6vw] pr-[3vw] items-center">
@@ -466,7 +495,7 @@ export default {
             devp1: true,
             project1: false,
             contacts1: false,
-            constimg: 1,
+            constimg: 0,
             constimg2: 2,
             constimg3: 3,
             img1: true,
@@ -474,7 +503,28 @@ export default {
             img3: false,
             img4: false,
             img5: false,
-            img6: false
+            img6: false,
+            img7: false,
+            img8: false,
+            img9: false,
+            img10: false,
+            img11: false,
+            img12: false,
+            img13: false,
+            cimg1: true,
+            cimg2: false,
+            cimg3: false,
+            cimg4: false,
+            cimg5: false,
+            cimg6: false,
+            cimg7: false,
+            cimg8: false,
+            cimg9: false,
+            cimg10: false,
+            cimg11: false,
+            cimg12: false,
+            cimg13: false,
+
 
         }
     },
@@ -485,46 +535,122 @@ export default {
             if (this.constimg > 0) {
                 this.constimg--
                 console.log(this.constimg)
+
                 if (this.constimg == 0) {
                     this.img1 = true
                     this.img2 = true
                     this.img3 = false
-                    this.img4 = false
-                    this.img5 = false
+
+                    this.cimg1 = true
+                    this.cimg2 = false
                 }
                 else if (this.constimg == 1) {
                     this.img1 = true
                     this.img2 = true
                     this.img3 = true
                     this.img4 = false
-                    this.img5 = false
+
+                    this.cimg2 = true
+                    this.cimg3 = false
                 }
                 else if (this.constimg == 2) {
-                    this.img1 = false
                     this.img2 = true
                     this.img3 = true
                     this.img4 = true
                     this.img5 = false
+
+                    this.cimg3 = true
+                    this.cimg4 = false
+
                 } else if (this.constimg == 3) {
-                    this.img2 = false
                     this.img3 = true
                     this.img4 = true
                     this.img5 = true
                     this.img6 = false
+
+                    this.cimg4 = true
+                    this.cimg5 = false
+
                 } else if (this.constimg == 4) {
-                    this.img3 = false
                     this.img4 = true
                     this.img5 = true
                     this.img6 = true
-                    
-                } 
+                    this.img7 = false
+
+                    this.cimg5 = true
+                    this.cimg6 = false
+
+                } else if (this.constimg == 5) {
+                    this.img5 = true
+                    this.img6 = true
+                    this.img7 = true
+                    this.img8 = false
+
+                    this.cimg6 = true
+                    this.cimg7 = false
+
+                } else if (this.constimg == 6) {
+                    this.img6 = true
+                    this.img7 = true
+                    this.img8 = true
+                    this.img9 = false
+
+                    this.cimg7 = true
+                    this.cimg8 = false
+
+                } else if (this.constimg == 7) {
+                    this.img7 = true
+                    this.img8 = true
+                    this.img9 = true
+                    this.img10 = false
+
+                    this.cimg8 = true
+                    this.cimg9 = false
+
+                } else if (this.constimg == 8) {
+                    this.img8 = true
+                    this.img9 = true
+                    this.img10 = true
+                    this.img11 = false
+
+                    this.cimg9 = true
+                    this.cimg10 = false
+
+                } else if (this.constimg == 9) {
+                    this.img9 = true
+                    this.img10 = true
+                    this.img11 = true
+                    this.img12 = false
+
+                    this.cimg10 = true
+                    this.cimg11 = false
+
+                } else if (this.constimg == 10) {
+                    this.img10 = true
+                    this.img11 = true
+                    this.img12 = true
+                    this.img13 = false
+
+                    this.cimg11 = true
+                    this.cimg12 = false
+
+                } else if (this.constimg == 11) {
+
+                    this.img11 = true
+                    this.img12 = true
+                    this.img13 = true
+
+                    this.cimg12 = true
+                    this.cimg13 = false
+                }
+
             }
 
         },
 
 
         più() {
-            if (this.constimg >= 0 && this.constimg < 5) {
+            if (this.constimg >= 0 && this.constimg < 12) {
                 this.constimg++
                 console.log(this.constimg)
                 if (this.constimg == 0) {
@@ -532,10 +658,17 @@ export default {
                     this.img2 = true
                     this.img3 = false
 
+                    this.cimg1 = true
+
+
+
                 } else if (this.constimg == 1) {
                     this.img1 = true
                     this.img2 = true
                     this.img3 = true
+
+                    this.cimg1 = false
+                    this.cimg2 = true
 
                 }
                 else if (this.constimg == 2) {
@@ -543,21 +676,98 @@ export default {
                     this.img2 = true
                     this.img3 = true
                     this.img4 = true
+
+                    this.cimg2 = false
+                    this.cimg3 = true
                 }
                 else if (this.constimg == 3) {
                     this.img2 = false
                     this.img3 = true
                     this.img4 = true
                     this.img5 = true
+
+                    this.cimg3 = false
+                    this.cimg4 = true
+
                 } else if (this.constimg == 4) {
                     this.img3 = false
                     this.img4 = true
                     this.img5 = true
                     this.img6 = true
+
+                    this.cimg4 = false
+                    this.cimg5 = true
+
                 } else if (this.constimg == 5) {
                     this.img4 = false
                     this.img5 = true
                     this.img6 = true
+                    this.img7 = true
+
+                    this.cimg5 = false
+                    this.cimg6 = true
+
+                } else if (this.constimg == 6) {
+                    this.img5 = false
+                    this.img6 = true
+                    this.img7 = true
+                    this.img8 = true
+
+                    this.cimg6 = false
+                    this.cimg7 = true
+
+                } else if (this.constimg == 7) {
+                    this.img6 = false
+                    this.img7 = true
+                    this.img8 = true
+                    this.img9 = true
+
+                    this.cimg7 = false
+                    this.cimg8 = true
+
+                } else if (this.constimg == 8) {
+                    this.img7 = false
+                    this.img8 = true
+                    this.img9 = true
+                    this.img10 = true
+
+                    this.cimg8 = false
+                    this.cimg9 = true
+
+                } else if (this.constimg == 9) {
+                    this.img8 = false
+                    this.img9 = true
+                    this.img10 = true
+                    this.img11 = true
+
+                    this.cimg9 = false
+                    this.cimg10 = true
+
+                } else if (this.constimg == 10) {
+                    this.img9 = false
+                    this.img10 = true
+                    this.img11 = true
+                    this.img12 = true
+
+                    this.cimg10 = false
+                    this.cimg11 = true
+
+                } else if (this.constimg == 11) {
+                    this.img10 = false
+                    this.img11 = true
+                    this.img12 = true
+                    this.img13 = true
+
+                    this.cimg11 = false
+                    this.cimg12 = true
+
+                } else if (this.constimg == 12) {
+                    this.img11 = false
+                    this.img12 = true
+                    this.img13 = true
+
+                    this.cimg12 = false
+                    this.cimg13 = true
                 }
 
             }
