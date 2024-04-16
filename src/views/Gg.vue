@@ -205,14 +205,11 @@
                         <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
                             @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col ">
 
-                            <!-- visita -->
-                            <span class=" text-[rgba(255,255,255,0.26)] text-[20px] font-semibold mb-[20px]"><span
-                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
-                                    class="border-solid duration-200 border-b-4   ">Visita!</span></span>
 
 
                             <!-- container -->
-                            <div class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] rounded-[10vw]">
+                            <div
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] rounded-[10vw]">
 
                                 <!-- img cont -->
                                 <img src="/public/p1.jpg" alt=""
@@ -224,23 +221,35 @@
 
 
                                 <!-- text e bottom -->
-                                <div 
-                                    class=" w-[85vw] font-semibold text-[2.8vw] ">
+                                <div class=" w-[85vw] px-[4vw] z-[0] font-semibold mt-[-2vw] text-[3vw] text-white ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
-                                    
+
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
                                     all’avanguardia nel design
                                     e nel clean-code.
                                 </div>
 
-                                <div class="flex  items-center w-[85vw] ">
+                                <!-- skils -->
+                                <div class="flex item-end pt-[3vw] w-[85vw] px-[6vw] ">
                                     <div
-                                        class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[5vw]">
+                                        class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
                                         HTML
                                     </div>
-                                    
+
+                                    <div
+                                        class="px-[1.5vw] ml-[4vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
+                                        CSS
+                                    </div>
+
                                 </div>
                             </div>
+
+
+                            <!-- visita -->
+                            <span
+                                class=" text-[rgba(255,255,255,0.26)] text-[5vw] font-semibold ml-[8vw] mt-[2vw]"><span
+                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
 
                         </a>
 
