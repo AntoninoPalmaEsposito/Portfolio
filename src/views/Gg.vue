@@ -205,6 +205,11 @@
                         <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
                             @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col ">
 
+                            <!-- visita -->
+                            <span
+                                class=" text-[rgba(255,255,255,0.26)] text-[5vw] font-semibold ml-[8vw] mb-[3vw]"><span
+                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
 
 
                             <!-- container -->
@@ -245,11 +250,7 @@
                             </div>
 
 
-                            <!-- visita -->
-                            <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[5vw] font-semibold ml-[8vw] mt-[2vw]"><span
-                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
-                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+
 
                         </a>
 
@@ -359,31 +360,31 @@
 
 
                     <!-- TESTO -->
-                    <div class="flex flex-col items-center  text-[30px] justify-center w-[400px] h-[400px] ">
+                    <div class="flex flex-col items-center   justify-center w-[400px] h-[45vw] ">
 
                         <!-- p1 -->
-                        <div class="flex  items-center ">
+                        <div class="flex  items-center justify-center">
                             <button @click="cp11"
-                                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1, 'text-white border-solid border-b-4': cp1 }"
-                                class="text-center mb-[5px]   font-bold">DRIBBBLE</button>
+                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw] ': !cp1, 'text-white text-[7vw] underline underline-offset-4': cp1 }"
+                                class="text-center   font-extrabold">DRIBBBLE</button>
                         </div>
                         <!-- p2 -->
-                        <div class="flex  items-center">
+                        <div class="flex  items-center ">
                             <button @click="cp22"
-                                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp2, 'text-white border-solid border-b-4': cp2 }"
-                                class="text-center mb-[5px]  font-bold">L'IMPICCATO</button>
+                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw] ': !cp2, 'text-white text-[7vw] underline underline-offset-4': cp2 }"
+                                class="text-center   font-extrabold">L'IMPICCATO</button>
                         </div>
                         <!-- p3 -->
-                        <div class="flex  items-center">
+                        <div class="flex  items-center ">
                             <button @click="cp33"
-                                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp3, 'text-white border-solid border-b-4': cp3 }"
-                                class="text-center mb-[5px] text-nowrap  font-bold">P-COMMERCE</button>
+                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw]': !cp3, 'text-white text-[7vw] underline underline-offset-4': cp3 }"
+                                class="text-center   font-extrabold">P-COMMERCE</button>
                         </div>
                         <!-- p4 -->
-                        <div class="flex  items-center">
+                        <div class="flex  items-center ">
                             <button @click="cp44"
-                                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp4, 'text-white border-solid border-b-4': cp4 }"
-                                class="text-center  font-bold">BLOG</button>
+                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw]': !cp4, 'text-white text-[7vw] underline underline-offset-4': cp4 }"
+                                class="text-center   font-extrabold">BLOG</button>
                         </div>
 
                     </div>
