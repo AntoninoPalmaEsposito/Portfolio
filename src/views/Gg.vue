@@ -226,7 +226,7 @@
 
 
                                 <!-- text e bottom -->
-                                <div class=" w-[85vw] px-[4vw] z-[0] font-semibold mt-[-2vw] text-[3vw] text-white ">
+                                <div class=" w-[85vw] px-[4vw] z-[0] font-semibold mt-[-4vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
 
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
