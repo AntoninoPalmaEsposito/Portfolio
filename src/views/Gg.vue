@@ -70,40 +70,58 @@
                                     class="h-[44vw] border-r-[1px] border-b-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
 
                                     <div v-if="img1" class="my-auto flex flex-col items-center"><img src="../assets/htmlI.png" alt="" :class="{' mt-[80%] opp':cimg1, ' opp2':!cimg1}" class="  ">
-                                    <div v-if="cimg1" class="text-[15px] text-center mt-[3px]">HTML</div>
+                                    <div v-if="cimg1"  class="text-[3vw] text-center mt-[3px]">HTML</div>
                                     </div>
 
                                     <div v-if="img2" class="my-auto flex flex-col items-center"><img src="../assets/cssI.png" alt="" :class="{'  opp':cimg2, ' opp2':!cimg2}" class="  ">
-                                    <div v-if="cimg2" class="text-[15px] text-center mt-[3px]">CSS</div>
+                                    <div v-if="cimg2" class="text-[3vw] text-center mt-[3px]">CSS</div>
                                     </div>
                                     
 
                                     <div v-if="img3" class="my-auto flex flex-col items-center"><img src="../assets/javascriptI.png" alt="" :class="{'  opp':cimg3, ' opp2':!cimg3}" class="  ">
-                                    <div v-if="cimg3" class="text-[15px] text-center mt-[3px]">JS</div>
+                                    <div v-if="cimg3" class="text-[3vw] text-center mt-[3px]">JS</div>
                                     </div>
 
-                                    <div v-if="img4" class="my-auto duration-500 flex flex-col items-center"><img src="../assets/tailwindI.png" alt="" :class="{'w-[11vw]':cimg4, 'w-[6vw] opacity-50':!cimg4}" class="duration-1000 ">
-                                    <div v-if="cimg4" class="text-[15px] duration-500 text-center mt-[3px]">TAILWIND</div>
+                                    <div v-if="img4" class="my-auto flex flex-col items-center"><img src="../assets/tailwindI.png" alt="" :class="{'  opp':cimg4, ' opp2':!cimg4}" class="  ">
+                                    <div v-if="cimg4" class="text-[3vw] text-center mt-[3px]">TAILWIND</div>
                                     </div>
 
-                                    <div v-if="img5" class="my-auto"><img src="../assets/vueI.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img6" class="my-auto"><img src="../assets/vsI.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img7" class="my-auto"><img src="../assets/gitI.jpg" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img8" class="my-auto"><img src="../assets/figmaI.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img9" class="my-auto"><img src="../assets/adobeI.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img10" class="my-auto"><img src="../assets/apil.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img11" class="my-auto"><img src="../assets/google.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img12" class="my-auto"><img src="../assets/postman.png" alt=""
-                                            class="w-[8vw]"></div>
-                                    <div v-if="img13" class="my-auto"><img src="../assets/npm.png" alt=""
-                                            class="w-[8vw]"></div>
+                                    
+                                    <div v-if="img5" class="my-auto flex flex-col items-center"><img src="../assets/vueI.png" alt="" :class="{'  opp':cimg5, ' opp2':!cimg5}" class="  ">
+                                    <div v-if="cimg5" class="text-[3vw] text-center mt-[3px]">VUE.JS</div>
+                                    </div>
+
+                                    <div v-if="img6" class="my-auto flex flex-col items-center"><img src="../assets/vsI.png" alt="" :class="{'  opp':cimg6, ' opp2':!cimg6}" class="  ">
+                                    <div v-if="cimg6" class="text-[3vw] text-center mt-[3px]">VSC</div>
+                                    </div>
+                                    
+                                    <div v-if="img7" class="my-auto flex flex-col items-center"><img src="../assets/gitI.jpg" alt="" :class="{'  opp':cimg7, ' opp2':!cimg7}" class="  ">
+                                    <div v-if="cimg7" class="text-[3vw] text-center mt-[3px]">GITHUB</div>
+                                    </div>
+
+                                    <div v-if="img8" class="my-auto flex flex-col items-center"><img src="../assets/figmaI.png" alt="" :class="{'  opp':cimg8, ' opp2':!cimg8}" class="  ">
+                                    <div v-if="cimg8" class="text-[3vw] text-center mt-[3px]">FIGMA</div>
+                                    </div>
+
+                                    <div v-if="img9" class="my-auto flex flex-col items-center"><img src="../assets/adobeI.png" alt="" :class="{'  opp':cimg9, ' opp2':!cimg9}" class="  ">
+                                    <div v-if="cimg9" class="text-[3vw] text-center mt-[5px]">ADOBE</div>
+                                    </div>
+
+                                    <div v-if="img10" class="my-auto flex flex-col items-center"><img src="../assets/apil.png" alt="" :class="{'  opp':cimg10, ' opp2':!cimg10}" class="  ">
+                                    <div v-if="cimg10" class="text-[3vw] text-center mt-[3px]">API REST</div>
+                                    </div>
+
+                                    <div v-if="img11" class="my-auto flex flex-col items-center"><img src="../assets/google.png" alt="" :class="{'  opp':cimg11, ' opp2':!cimg11}" class="">
+                                    <div v-if="cimg11" class="text-[3vw] text-center ">GOOGLE.A</div>
+                                    </div>
+
+                                    <div v-if="img12" class="my-auto flex flex-col items-center"><img src="../assets/postman.png" alt="" :class="{'  opp':cimg12, ' opp2':!cimg12}" class="  ">
+                                    <div v-if="cimg12" class="text-[3vw] text-center mt-[3px]">POSTMAN</div>
+                                    </div>
+
+                                    <div v-if="img13" class="my-auto  flex flex-col items-center"><img src="../assets/npm.png" alt="" :class="{'  opp ':cimg13, ' opp2':!cimg13}" class="  ">
+                                    <div v-if="cimg13" :class="{'mb-[80%]':cimg13}" class="text-[3vw] text-center mb-[3px]">NPM</div>
+                                    </div>
 
                                 </div>
 
@@ -925,6 +943,8 @@ export default {
 body {
     background-color: black;
 }
+
+
 
 .opp {
     animation-name: opa;
