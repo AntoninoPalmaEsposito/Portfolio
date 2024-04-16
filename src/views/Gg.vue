@@ -195,7 +195,7 @@
 
                 <!-- Project -->
                 <div v-if="project1" :class="{ 'opacitys2': !project, 'opacitys': project }"
-                    class="w-screen mt-[-35px]  flex flex-col items-center ">
+                    class="w-screen mt-[-4vw]  flex flex-col items-center ">
 
 
                     <!-- CONTENUTO -->
