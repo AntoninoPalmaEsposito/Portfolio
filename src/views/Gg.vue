@@ -223,7 +223,7 @@
 
 
                                 <!-- text e bottom -->
-                                <div class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-4vw] text-[3.5vw] text-white leading-[4vw] ">
+                                <div class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
 
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
@@ -232,7 +232,7 @@
                                 </div>
 
                                 <!-- skils -->
-                                <div class="flex item-end pt-[3vw] w-[85vw] px-[6vw] ">
+                                <div class="flex item-end pt-[2vw] w-[85vw] px-[6vw] ">
                                     <div
                                         class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
                                         HTML
