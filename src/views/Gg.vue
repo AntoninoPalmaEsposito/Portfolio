@@ -202,26 +202,23 @@
                     <div class="flex justify-center items-center  ">
 
                         <!-- Cp1 -->
-                        <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
-                            @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col ">
+                        <a href="https://dribbble-replica-html-css.vercel.app/"  class="flex flex-col ">
 
                             <!-- visita -->
                             <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[4vw] font-semibold ml-[8vw] mb-[2vw]"><span
-                                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
-                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
+                                class=" visita text-[4vw] font-semibold ml-[8vw] mb-[2vw]"><span class="border-solid border-b-2  borderv ">Visita!</span></span>
 
 
                             <!-- container -->
                             <div
-                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] rounded-[10vw]">
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] border-2 bbc  rounded-[10vw]">
 
                                 <!-- img cont -->
                                 <img src="/public/p1.jpg" alt=""
                                     class="w-[85vw] h-[47vw]  rounded-[8.5vw] object-cover">
 
                                 <div
-                                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[85vw] h-[48.5vw]   ">
+                                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[48.5vw]   ">
                                 </div>
 
 
@@ -995,7 +992,66 @@ body {
     background-color: black;
 }
 
+.bbc {
+    animation-name: bbc;
+    animation-duration: 2s;
+    border-color:rgba(255, 255, 255, 0);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
 
+@keyframes bbc {
+    from {
+        border-color:rgba(255, 255, 255, 0);
+
+    }
+
+    to {
+        border-color:rgb(255, 255, 255);
+    }
+}
+
+.borderv {
+    animation-name: bvisit;
+    animation-duration: 2s;
+    border-color:rgba(255, 255, 255, 0.388);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bvisit {
+    from {
+        border-color:rgba(255, 255, 255, 0.388);
+
+    }
+
+    to {
+        border-color:rgba(255, 255, 255, 0.889);
+    }
+}
+
+.visita {
+    animation-name: visit;
+    animation-duration: 2s;
+    color: rgba(255, 255, 255, 0.388);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes visit {
+    from {
+        color: rgba(255, 255, 255, 0.388);
+
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.889);
+    }
+}
 
 .opp {
     animation-name: opa;
