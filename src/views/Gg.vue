@@ -27,7 +27,7 @@
 
                         <li><button @click="projectp"
                                 :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[6.5vw] border-solid border-b-4': project }"
-                                class="duration-500">Project</button></li>
+                                class="duration-500">Projects</button></li>
 
                         <li><button @click="contactsp"
                                 :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
@@ -155,11 +155,11 @@
                                 <div class="flex flex-col justify-around  pl-[4vw] items-center">
 
                                     <button @click="meno"><img src="../assets/fsu.png" alt=""
-                                            :class="{ 'opacity-35': !fsu, 'opacity-95': fsu }"
+                                            :class="{ 'opacity-35': fsu, 'opacity-100': !fsu }"
                                             class="w-[8vw] duration-1000"></button>
 
                                     <button @click="più"><img src="../assets/fgiu.png" alt=""
-                                            :class="{ 'opacity-35': !fgiu, 'opacity-95': fgiu }"
+                                            :class="{ 'opacity-35': fgiu, 'opacity-100': !fgiu }"
                                             class="w-[8vw] duration-1000"></button>
 
                                 </div>
@@ -379,7 +379,8 @@
                     <!-- TESTO2 -->
                     <div class="flex items-center justify-between w-screen px-[12vw] pt-[7vw]">
                         <button @click="indietro">
-                            <img src="../assets/fsin.png" alt="" :class="{'opacity-50':fsin , 'opacity-100':!fsin}" class="w-[9vw]">
+                            <img src="../assets/fsin.png" alt="" :class="{ 'opacity-50': fsin, 'opacity-100': !fsin }"
+                                class="w-[9vw]">
                         </button>
 
                         <!-- pis1 -->
@@ -396,7 +397,8 @@
 
 
                         <button @click="avanti">
-                            <img src="../assets/fdes.png" alt="" :class="{'opacity-50':fdes , 'opacity-100':!des}" class="w-[9vw]">
+                            <img src="../assets/fdes.png" alt="" :class="{ 'opacity-50': fdes, 'opacity-100': !des }"
+                                class="w-[9vw]">
                         </button>
 
                     </div>
@@ -600,7 +602,7 @@ export default {
             fsu: false,
             fgiu: true,
             contatorep: 0,
-            contatoretp:'1',
+            contatoretp: '1',
             fsin: false,
             fdes: true
 
@@ -622,8 +624,8 @@ export default {
 
                     this.cimg1 = true
                     this.cimg2 = false
-
                     this.fsu = false
+                    this.fgiu = true
                 }
                 else if (this.constimg == 1) {
                     this.img1 = true
@@ -633,6 +635,8 @@ export default {
 
                     this.cimg2 = true
                     this.cimg3 = false
+
+                    
                 }
                 else if (this.constimg == 2) {
                     this.img2 = true
@@ -724,7 +728,8 @@ export default {
                     this.cimg12 = true
                     this.cimg13 = false
 
-                    this.fgiu = true
+                    this.fsu = false
+                    this.fgiu = false
                 }
 
             }
@@ -743,7 +748,7 @@ export default {
                 this.cp3 = false
                 this.cp4 = false
             } else if (this.contatorep == 1) {
-                
+
                 this.contatoretp = '2'
                 this.cp2 = true
                 this.cp1 = false
@@ -809,7 +814,8 @@ export default {
                     this.img2 = true
                     this.img3 = false
 
-                    this.cimg1 = true
+                    this.fsu = false
+                    this.fgiu = true
 
 
 
@@ -821,7 +827,8 @@ export default {
                     this.cimg1 = false
                     this.cimg2 = true
 
-                    this.fsu = true
+                    this.fsu = false
+                    this.fgiu = false
 
                 }
                 else if (this.constimg == 2) {
@@ -922,6 +929,7 @@ export default {
                     this.cimg12 = false
                     this.cimg13 = true
 
+                    this.fsu = true
                     this.fgiu = false
                 }
 
