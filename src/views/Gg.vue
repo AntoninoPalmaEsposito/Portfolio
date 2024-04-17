@@ -379,7 +379,7 @@
                     <!-- TESTO2 -->
                     <div class="flex items-center justify-between w-screen px-[12vw] pt-[7vw]">
                         <button @click="indietro">
-                            <img src="../assets/fsin.png" alt="" :class="{ 'opacity-50': fsin, 'opacity-100': !fsin }"
+                            <img src="../assets/fsin.png" alt="" :class="{ 'opacity-35': fsin, 'opacity-100': !fsin }"
                                 class="w-[9vw]">
                         </button>
 
@@ -397,7 +397,7 @@
 
 
                         <button @click="avanti">
-                            <img src="../assets/fdes.png" alt="" :class="{ 'opacity-50': fdes, 'opacity-100': !des }"
+                            <img src="../assets/fdes.png" alt="" :class="{ 'opacity-35': fdes, 'opacity-100': !des }"
                                 class="w-[9vw]">
                         </button>
 
