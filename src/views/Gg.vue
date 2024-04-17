@@ -377,20 +377,20 @@
 
 
                     <!-- TESTO2 -->
-                    <div class="flex items-center justify-between w-screen px-[12vw] pt-[8vw]">
+                    <div class="flex items-center justify-between w-screen px-[12vw] pt-[7vw]">
 <button>
-    <img src="../assets/fsin.png" alt="" class="w-[10vw]">
+    <img src="../assets/fsin.png" alt="" class="w-[9vw]">
 </button>
 
 
 <button>
-    <img src="../assets/fdes.png" alt="" class="w-[10vw]">
+    <img src="../assets/fdes.png" alt="" class="w-[9vw]">
 </button>
 
                     </div>
 
 
-
+<div class="w-screen flex justify-center items-center text-[3.5vw]">1 / 4</div>
 
 
                     <!-- TESTO -->
