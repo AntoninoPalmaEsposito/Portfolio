@@ -202,37 +202,38 @@
                     <div class="flex justify-center items-center  ">
 
                         <!-- Cp1 -->
-                        <a href="https://dribbble-replica-html-css.vercel.app/"  class="flex flex-col ">
+                        <a href="https://dribbble-replica-html-css.vercel.app/" :class="{ 'hidden': !cp1, 'flex': cp1 }"
+                            class="flex flex-col ">
 
                             <!-- visita -->
-                            <span
-                                class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span class="border-solid border-b-2  borderv ">Visita!</span></span>
-
+                            <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2  borderv ">Visita!</span></span>
 
                             <!-- container -->
                             <div
                                 class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] border-[3px] bbc  rounded-[10vw]">
 
-                                <!-- img cont -->
+                                <!-- img -->
                                 <img src="/public/p1.jpg" alt=""
                                     class="w-[85vw] h-[43vw]  rounded-[8.5vw] object-cover">
 
+                                <!-- img cont -->
                                 <div
                                     class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[44.5vw]   ">
                                 </div>
 
-
                                 <!-- text e bottom -->
-                                <div class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
+                                <div
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
-
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
                                     all’avanguardia nel design
                                     e nel clean-code.
                                 </div>
 
                                 <!-- skils -->
-                                <div class="flex item-end pt-[2vw] w-[85vw] px-[6vw] ">
+                                <div class="flex item-end  w-[85vw] px-[6vw] ">
+
                                     <div
                                         class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
                                         HTML
@@ -245,105 +246,123 @@
 
                                 </div>
                             </div>
-
-
-
-
                         </a>
 
-                        <!-- Cp2 -->
-                        <a href="https://impiccato-game.vercel.app/" @mouseover="over2 = true"
-                            @mouseleave="over2 = false" :class="{ 'hidden': !cp2, 'flex': cp2 }" class="flex flex-col">
-                            <div :class="{ 'border-solid border-4': over2 }"
-                                class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(250,128,128)] rounded-[60px]">
-                                <!-- img cont -->
-                                <img src="/public/p2.jpg" alt=""
-                                    class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                        <!-- Cp2s -->
+                        <a href="https://impiccato-game.vercel.app/" :class="{ 'hidden': !cp2, 'flex': cp2 }"
+                            class="flex flex-col ">
 
+                            <!-- visita -->
+                            <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2  borderv ">Visita!</span></span>
+
+                            <!-- container -->
+                            <div
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(250,128,128)] border-[3px] bbc  rounded-[10vw]">
+
+                                <!-- img -->
+                                <img src="/public/p2.jpg" alt=""
+                                    class="w-[85vw] h-[43vw]  rounded-[8.5vw] object-top object-cover">
+
+                                <!-- img cont -->
                                 <div
-                                    class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                                    class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[44.5vw]   ">
                                 </div>
-                                <div class=" bg-[rgb(250,128,128)]  mt-[-40px] w-[520px] h-[100px]"></div>
 
                                 <!-- text e bottom -->
-                                <div :class="{ 'text-white': over2, 'text-[rgb(245,218,218)]': !over2 }"
-                                    class=" w-[470px]  mt-[-80px] font-semibold text-[18px] ">
+                                <div
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Mi sono divertito a ricreare il gioco dell’impiccato, sfidandomi direttamente contro
                                     il computer.
-                                    <br>
                                     E tu, vieni a fare una partita?
                                 </div>
 
-                                <div class="flex  items-center w-[470px] mt-[15px]  h-[50px]">
+                                <!-- skils -->
+                                <div class="flex item-end pt-[8vw] w-[85vw] px-[6vw] ">
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[20px]">
+                                        class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
                                         HTML
                                     </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[20px] border-solid border-2 border-white font-bold rounded-[20px]">
-                                        TAILWIND</div>
+                                        class="px-[1.5vw] ml-[4vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
+                                        TAILWIND
+                                    </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
-                                        JAVASCRIPT</div>
+                                        class="px-[1.5vw] ml-[4vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
+                                        JAVASCRIPT
+                                    </div>
+
                                 </div>
-
                             </div>
-
-                            <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                                    :class="{ 'text-white border-white': over2, 'border-[rgba(255,255,255,0.26)]': !over2 }"
-                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
                         </a>
 
-                        <!-- Cp3 -->
-                        <a href="https://penta-e-commerce.vercel.app/" @mouseover="over3 = true"
-                            @mouseleave="over3 = false" :class="{ 'hidden': !cp3, 'flex': cp3 }" class="flex flex-col">
-                            <div :class="{ 'border-solid border-4': over3 }"
-                                class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(77,190,97)] rounded-[60px]">
-                                <!-- img cont -->
-                                <img src="/public/p3.jpg" alt=""
-                                    class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                        <!-- Cp3s -->
+                        <a href="https://penta-e-commerce.vercel.app/" :class="{ 'hidden': !cp3, 'flex': cp3 }"
+                            class="flex flex-col ">
 
+                            <!-- visita -->
+                            <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2  borderv ">Visita!</span></span>
+
+                            <!-- container -->
+                            <div
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(77,190,97)] border-[3px] bbc  rounded-[10vw]">
+
+                                <!-- img -->
+                                <img src="/public/p3.jpg" alt=""
+                                    class="w-[85vw] h-[43vw]  rounded-[8.5vw]  object-center object-cover">
+
+                                <!-- img cont -->
                                 <div
-                                    class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                                    class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[44.5vw]   ">
                                 </div>
-                                <div class=" bg-[rgb(77,190,97)]  mt-[-40px] w-[520px] h-[100px]"></div>
 
                                 <!-- text e bottom -->
-                                <div :class="{ 'text-white': over3, 'text-[rgb(222,246,226)]': !over3 }"
-                                    class=" w-[470px]  mt-[-100px] font-semibold text-[18px] ">
-                                    Per questo progetto, insieme al mio team, abbiamo dato vita a un e-commerce. <br>
+                                <div
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
+                                    Per questo progetto, insieme al mio team, abbiamo dato vita a un e-commerce.
                                     Abbiamo creato un file JSON locale per popolare gli articoli e abbiamo adottato
                                     Pinia per gestire
                                     gli stati tra elementi e pagine. Ti va di fare acquisti?
                                 </div>
 
-                                <div class="flex justify-center  items-center w-[550px] mt-[10px]  h-[50px]">
+                                <!-- skils -->
+                                <div class="flex  pt-[2.5vw] w-[85vw] px-[3vw] ">
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[10px]">
+                                        class="px-[1.5vw]  bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
                                         HTML
                                     </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
-                                        TAILWIND</div>
+                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        TAILWIND
+                                    </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
-                                        JAVASCRIPT</div>
+                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        JS
+                                    </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
-                                        VUE.JS</div>
+                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        VUE.JS
+                                    </div>
+
                                     <div
-                                        class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
-                                        PINIA</div>
+                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        PINIA
+                                    </div>
+
                                 </div>
-
                             </div>
-
-                            <span
-                                class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                                    :class="{ 'text-white border-white': over3, 'border-[rgba(255,255,255,0.26)]': !over3 }"
-                                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
                         </a>
+
+
+                        
 
                         <!-- Cp4 -->
                         <div :class="{ 'hidden': !cp4, 'flex': cp4 }" class="flex flex-col ">
@@ -995,7 +1014,7 @@ body {
 .bbc {
     animation-name: bbc;
     animation-duration: 3s;
-    border-color:rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -1003,19 +1022,19 @@ body {
 
 @keyframes bbc {
     from {
-        border-color:rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0);
 
     }
 
     to {
-        border-color:rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
     }
 }
 
 .borderv {
     animation-name: bvisit;
     animation-duration: 3s;
-    border-color:rgba(255, 255, 255, 0.315);
+    border-color: rgba(255, 255, 255, 0.315);
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -1023,12 +1042,12 @@ body {
 
 @keyframes bvisit {
     from {
-        border-color:rgba(255, 255, 255, 0.315);
+        border-color: rgba(255, 255, 255, 0.315);
 
     }
 
     to {
-        border-color:rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
     }
 }
 
