@@ -57,7 +57,7 @@
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[6vw] border-r-[1px] border-b-[1px]  border-[rgb(119,119,119)]  items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.2)] ">
+                            class=" flex justify-around py-[6vw]     items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.2)] ">
 
 
 
@@ -67,7 +67,7 @@
                             <div class="flex">
 
                                 <div
-                                    class="h-[44vw] border-l-[1px] border-t-[1px] border-[rgb(119,119,119)] flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
+                                    class="h-[44vw]   flex flex-col py-[10px] items-center  w-[22vw] rounded-[100px] duration-500 bg-black">
 
                                     <div v-if="img1" class="my-auto flex flex-col items-center"><img
                                             src="../assets/htmlI.png" alt=""
