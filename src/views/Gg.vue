@@ -215,15 +215,15 @@
 
                                 <!-- img cont -->
                                 <img src="/public/p1.jpg" alt=""
-                                    class="w-[85vw] h-[47vw]  rounded-[8.5vw] object-cover">
+                                    class="w-[85vw] h-[43vw]  rounded-[8.5vw] object-cover">
 
                                 <div
-                                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[48.5vw]   ">
+                                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[82vw] h-[44.5vw]   ">
                                 </div>
 
 
                                 <!-- text e bottom -->
-                                <div class=" w-[85vw] px-[4vw] z-[0] font-semibold mt-[-4vw] text-[3.5vw] text-white leading-[4vw] ">
+                                <div class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-4vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
 
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
