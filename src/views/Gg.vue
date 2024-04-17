@@ -378,50 +378,31 @@
 
                     <!-- TESTO2 -->
                     <div class="flex items-center justify-between w-screen px-[12vw] pt-[7vw]">
-<button>
-    <img src="../assets/fsin.png" alt="" class="w-[9vw]">
-</button>
+                        <button @click="indietro">
+                            <img src="../assets/fsin.png" alt="" :class="{'opacity-50':fsin , 'opacity-100':!fsin}" class="w-[9vw]">
+                        </button>
+
+                        <!-- pis1 -->
+                        <div v-if="cp1" class="font-extrabold text-[7vw] mt-[-1vw]">DRIBBBLE</div>
+
+                        <!-- pis1 -->
+                        <div v-if="cp2" class="font-extrabold text-[7vw] mt-[-1vw]">L'IMPICCATO</div>
+
+                        <!-- pis1 -->
+                        <div v-if="cp3" class="font-extrabold text-[7vw] mt-[-1vw]">P-COMMERCE</div>
+
+                        <!-- pis1 -->
+                        <div v-if="cp4" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG</div>
 
 
-<button>
-    <img src="../assets/fdes.png" alt="" class="w-[9vw]">
-</button>
-
-                    </div>
-
-
-<div class="w-screen flex justify-center items-center text-[3.5vw]">1 / 4</div>
-
-
-                    <!-- TESTO -->
-                    <div class="hidden flex-col items-center   justify-center w-screen h-[45vw] ">
-
-                        <!-- p1 -->
-                        <div class="flex  items-center justify-center">
-                            <button @click="cp11"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw] ': !cp1, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp1 }"
-                                class="text-center   font-extrabold">DRIBBBLE</button>
-                        </div>
-                        <!-- p2 -->
-                        <div class="flex  items-center ">
-                            <button @click="cp22"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw] ': !cp2, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp2 }"
-                                class="text-center   font-extrabold">L'IMPICCATO</button>
-                        </div>
-                        <!-- p3 -->
-                        <div class="flex  items-center ">
-                            <button @click="cp33"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw]': !cp3, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp3 }"
-                                class="text-center   font-extrabold">P-COMMERCE</button>
-                        </div>
-                        <!-- p4 -->
-                        <div class="flex  items-center ">
-                            <button @click="cp44"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw]': !cp4, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp4 }"
-                                class="text-center   font-extrabold">BLOG</button>
-                        </div>
+                        <button @click="avanti">
+                            <img src="../assets/fdes.png" alt="" :class="{'opacity-50':fdes , 'opacity-100':!des}" class="w-[9vw]">
+                        </button>
 
                     </div>
+
+                    <!-- contatore -->
+                    <div class="w-screen flex justify-center items-center text-[3.5vw]">{{ contatoretp }} / 4</div>
 
                 </div>
 
@@ -590,8 +571,6 @@ export default {
             project1: false,
             contacts1: false,
             constimg: 0,
-            constimg2: 2,
-            constimg3: 3,
             img1: true,
             img2: true,
             img3: false,
@@ -620,6 +599,10 @@ export default {
             cimg13: false,
             fsu: false,
             fgiu: true,
+            contatorep: 0,
+            contatoretp:'1',
+            fsin: false,
+            fdes: true
 
 
         }
@@ -748,6 +731,74 @@ export default {
 
         },
 
+        indietro() {
+            if (this.contatorep > 0)
+
+                this.contatorep--
+            if (this.contatorep == 0) {
+                this.fdes = true
+                this.contatoretp = '1'
+                this.cp1 = true
+                this.cp2 = false
+                this.cp3 = false
+                this.cp4 = false
+            } else if (this.contatorep == 1) {
+                
+                this.contatoretp = '2'
+                this.cp2 = true
+                this.cp1 = false
+                this.cp3 = false
+                this.cp4 = false
+            } else if (this.contatorep == 2) {
+                this.fsin = false
+                this.contatoretp = '3'
+                this.cp3 = true
+                this.cp2 = false
+                this.cp1 = false
+                this.cp4 = false
+            } else if (this.contatorep == 3) {
+                this.contatoretp = '4'
+                this.cp4 = true
+                this.cp3 = false
+                this.cp2 = false
+                this.cp1 = false
+            }
+        },
+
+        avanti() {
+            if (this.contatorep < 3)
+
+                this.contatorep++
+            if (this.contatorep == 0) {
+                this.contatoretp = '1'
+                this.cp1 = true
+                this.cp2 = false
+                this.cp3 = false
+                this.cp4 = false
+            } else if (this.contatorep == 1) {
+                this.fdes = false
+                this.contatoretp = '2'
+                this.cp2 = true
+                this.cp1 = false
+                this.cp3 = false
+                this.cp4 = false
+            } else if (this.contatorep == 2) {
+                this.contatoretp = '3'
+                this.cp3 = true
+                this.cp2 = false
+                this.cp1 = false
+                this.cp4 = false
+            } else if (this.contatorep == 3) {
+                this.fsin = true
+                this.contatoretp = '4'
+                this.cp4 = true
+                this.cp3 = false
+                this.cp2 = false
+                this.cp1 = false
+            }
+
+            console.log(this.contatorep)
+        },
 
         più() {
             if (this.constimg >= 0 && this.constimg < 12) {
@@ -877,44 +928,6 @@ export default {
             }
         },
 
-
-
-        cp11() {
-
-            if (!this.cp1) {
-                this.cp1 = true
-                this.cp2 = false
-                this.cp3 = false
-                this.cp4 = false
-            }
-        },
-        cp22() {
-
-            if (!this.cp2) {
-                this.cp2 = true
-                this.cp1 = false
-                this.cp3 = false
-                this.cp4 = false
-            }
-        },
-        cp33() {
-
-            if (!this.cp3) {
-                this.cp3 = true
-                this.cp1 = false
-                this.cp2 = false
-                this.cp4 = false
-            }
-        },
-        cp44() {
-
-            if (!this.cp4 == true) {
-                this.cp4 = true
-                this.cp1 = false
-                this.cp2 = false
-                this.cp3 = false
-            }
-        },
 
         tscroll() {
             this.scroll = !this.scroll
