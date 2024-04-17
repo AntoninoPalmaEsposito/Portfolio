@@ -203,7 +203,7 @@
 
                         <!-- Cp1 -->
                         <a href="https://dribbble-replica-html-css.vercel.app/" :class="{ 'hidden': !cp1, 'flex': cp1 }"
-                            class="flex flex-col ">
+                            class="flex flex-col">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -211,7 +211,7 @@
 
                             <!-- container -->
                             <div
-                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] border-[3px] bbc  rounded-[10vw]">
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)]    rounded-[10vw]">
 
                                 <!-- img -->
                                 <img src="/public/p1.jpg" alt=""
@@ -258,7 +258,7 @@
 
                             <!-- container -->
                             <div
-                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(250,128,128)] border-[3px] bbc  rounded-[10vw]">
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(250,128,128)]   rounded-[10vw]">
 
                                 <!-- img -->
                                 <img src="/public/p2.jpg" alt=""
@@ -309,7 +309,7 @@
 
                             <!-- container -->
                             <div
-                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(77,190,97)] border-[3px] bbc  rounded-[10vw]">
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(77,190,97)]  rounded-[10vw]">
 
                                 <!-- img -->
                                 <img src="/public/p3.jpg" alt=""
@@ -1054,38 +1054,61 @@ body {
     background-color: black;
 }
 
-.bbc {
-    animation-name: bbc;
-    animation-duration: 3s;
-    border-color: rgba(255, 255, 255, 0);
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.devclass {
+    
+    opacity: 1;
+    animation-name: devc;
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
 
-@keyframes bbc {
+@keyframes devc {
     from {
-        border-color: rgba(255, 255, 255, 0);
+        opacity: 0;
+        display: none;
 
     }
 
     to {
-        border-color: rgb(255, 255, 255);
+        opacity: 1;
+        display: flex;
     }
 }
 
+.devclass2 {
+    display: none;
+    opacity: 1;
+    animation-name: devc2;
+    animation-duration: 2s;
+}
+
+@keyframes devc2 {
+    from {
+        opacity: 1;
+        display: flex;
+
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
 .borderv {
     animation-name: bvisit;
-    animation-duration: 3s;
-    border-color: rgba(255, 255, 255, 0.315);
-    animation-timing-function: linear;
+    animation-duration: 2s;
+    border-color: rgba(255, 255, 255, 0.164);
+    
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
 @keyframes bvisit {
     from {
-        border-color: rgba(255, 255, 255, 0.315);
+        border-color: rgba(255, 255, 255, 0.164);
 
     }
 
@@ -1096,9 +1119,9 @@ body {
 
 .visita {
     animation-name: visit;
-    animation-duration: 3s;
-    color: rgba(255, 255, 255, 0.315);
-    animation-timing-function: linear;
+    animation-duration: 2s;
+    color: rgba(255, 255, 255, 0.164);
+    
     animation-direction: alternate;
     animation-iteration-count: infinite;
 
@@ -1106,7 +1129,7 @@ body {
 
 @keyframes visit {
     from {
-        color: rgba(255, 255, 255, 0.315);
+        color: rgba(255, 255, 255, 0.164);
 
     }
 
