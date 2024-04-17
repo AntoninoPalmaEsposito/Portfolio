@@ -206,7 +206,7 @@
 
                             <!-- visita -->
                             <span
-                                class=" visita text-[4vw] font-semibold ml-[8vw] mb-[2vw]"><span class="border-solid border-b-2  borderv ">Visita!</span></span>
+                                class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span class="border-solid border-b-2  borderv ">Visita!</span></span>
 
 
                             <!-- container -->
