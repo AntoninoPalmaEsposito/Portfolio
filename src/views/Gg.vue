@@ -232,7 +232,7 @@
                                 </div>
 
                                 <!-- skils -->
-                                <div class="flex item-end  w-[85vw] px-[6vw] ">
+                                <div class="flex item-end scale-90 mt-[2vw] w-[85vw] px-[4vw] ">
 
                                     <div
                                         class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
@@ -278,7 +278,7 @@
                                 </div>
 
                                 <!-- skils -->
-                                <div class="flex item-end pt-[8vw] w-[85vw] px-[6vw] ">
+                                <div class="flex item-end scale-90 pt-[10vw] w-[85vw] px-[4vw] ">
 
                                     <div
                                         class="px-[1.5vw] bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw]">
@@ -330,30 +330,30 @@
                                 </div>
 
                                 <!-- skils -->
-                                <div class="flex  pt-[2.5vw] w-[85vw] px-[3vw] ">
+                                <div class="flex justify-center pt-[2.5vw] w-[85vw] px-[5vw] ">
 
                                     <div
-                                        class="px-[1.5vw]  bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        class="px-[1.5vw] mr-[-1vw]  bg-slate-300  text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-[0.8]">
                                         HTML
                                     </div>
 
                                     <div
-                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        class="px-[1.5vw]  bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-[0.8]">
                                         TAILWIND
                                     </div>
 
                                     <div
-                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        class="px-[1.5vw]  bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-[0.8]">
                                         JS
                                     </div>
 
                                     <div
-                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        class="px-[1.5vw]  bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-[0.8]">
                                         VUE.JS
                                     </div>
 
                                     <div
-                                        class="px-[1.5vw] mx-auto bg-slate-300 text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-90">
+                                        class="px-[1.5vw]  bg-slate-300  text-slate-500 font-bold rounded-[3vw]  border-solid border-2 border-white text-[4vw] scale-[0.8]">
                                         PINIA
                                     </div>
 
