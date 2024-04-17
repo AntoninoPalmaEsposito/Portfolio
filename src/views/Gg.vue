@@ -362,13 +362,14 @@
                         </a>
 
 
-                        
+
 
                         <!-- Cp4 -->
-                        <div :class="{ 'hidden': !cp4, 'flex': cp4 }" class="flex flex-col ">
-                            <div class="text-[70px] font-bold text-[rgba(255,255,255,0.26)] text-nowrap ">COMING <span
-                                    class="text-nowrap  text-[20px] ml-[-10px] text-green-400">10/04/24</span></div>
-                            <div class="loader ml-[50px] bg-red-200"></div>
+                        <div :class="{ 'hidden': !cp4, 'flex': cp4 }"
+                            class="flex flex-col justify-center items-center w-[85vw] h-[80vw] mt-[9.6vw] border-2 border-[rgba(255,255,255,0.45)] rounded-[10vw]">
+                            <div class="text-[10vw] font-bold text-[rgba(255,255,255,0.45)] text-nowrap ">COMING </div>
+                            <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">10/04/24</span>
+                            <div class="loader scale-[0.6] mt-[0.3vw] bg-red-200"></div>
 
                         </div>
                     </div>
@@ -381,25 +382,25 @@
                         <!-- p1 -->
                         <div class="flex  items-center justify-center">
                             <button @click="cp11"
-                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw] ': !cp1, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp1 }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw] ': !cp1, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp1 }"
                                 class="text-center   font-extrabold">DRIBBBLE</button>
                         </div>
                         <!-- p2 -->
                         <div class="flex  items-center ">
                             <button @click="cp22"
-                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw] ': !cp2, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp2 }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw] ': !cp2, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp2 }"
                                 class="text-center   font-extrabold">L'IMPICCATO</button>
                         </div>
                         <!-- p3 -->
                         <div class="flex  items-center ">
                             <button @click="cp33"
-                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw]': !cp3, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp3 }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw]': !cp3, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp3 }"
                                 class="text-center   font-extrabold">P-COMMERCE</button>
                         </div>
                         <!-- p4 -->
                         <div class="flex  items-center ">
                             <button @click="cp44"
-                                :class="{ 'text-[rgba(255,255,255,0.26)] text-[4.5vw]': !cp4, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp4 }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] text-[4.5vw]': !cp4, 'text-white text-[7vw] underline underline-offset-4 mb-[1vw]': cp4 }"
                                 class="text-center   font-extrabold">BLOG</button>
                         </div>
 
@@ -862,32 +863,36 @@ export default {
 
 
         cp11() {
-            this.cp1 = !this.cp1
-            if (this.cp1) {
+
+            if (!this.cp1) {
+                this.cp1 = true
                 this.cp2 = false
                 this.cp3 = false
                 this.cp4 = false
             }
         },
         cp22() {
-            this.cp2 = !this.cp2
-            if (this.cp2) {
+
+            if (!this.cp2) {
+                this.cp2 = true
                 this.cp1 = false
                 this.cp3 = false
                 this.cp4 = false
             }
         },
         cp33() {
-            this.cp3 = !this.cp3
-            if (this.cp3) {
+
+            if (!this.cp3) {
+                this.cp3 = true
                 this.cp1 = false
                 this.cp2 = false
                 this.cp4 = false
             }
         },
         cp44() {
-            this.cp4 = !this.cp4
-            if (this.cp4 == true) {
+
+            if (!this.cp4 == true) {
+                this.cp4 = true
                 this.cp1 = false
                 this.cp2 = false
                 this.cp3 = false
