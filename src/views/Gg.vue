@@ -202,8 +202,7 @@
                     <div class="flex justify-center items-center  ">
 
                         <!-- Cp1 -->
-                        <a href="https://dribbble-replica-html-css.vercel.app/" :class="{ 'hidden': !cp1, 'flex': cp1 }"
-                            class="flex flex-col">
+                        <a v-if="cp1" href="https://dribbble-replica-html-css.vercel.app/" :class="{'p1':c1 , 'p2':!c1}" class="flex flex-col">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -249,8 +248,7 @@
                         </a>
 
                         <!-- Cp2s -->
-                        <a href="https://impiccato-game.vercel.app/" :class="{ 'hidden': !cp2, 'flex': cp2 }"
-                            class="flex flex-col ">
+                        <a v-if="cp2" href="https://impiccato-game.vercel.app/" :class="{'p1':c2 , 'p2':!c2}" class="flex flex-col ">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -300,8 +298,7 @@
                         </a>
 
                         <!-- Cp3s -->
-                        <a href="https://penta-e-commerce.vercel.app/" :class="{ 'hidden': !cp3, 'flex': cp3 }"
-                            class="flex flex-col ">
+                        <a v-if="cp3" href="https://penta-e-commerce.vercel.app/" :class="{'p1':c3 , 'p2':!c3}" class="flex flex-col ">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -365,7 +362,7 @@
 
 
                         <!-- Cp4 -->
-                        <div :class="{ 'hidden': !cp4, 'flex': cp4 }"
+                        <div v-if="cp4" :class="{'p1':c4 , 'p2':!c4}"
                             class="flex flex-col justify-center items-center w-[85vw] h-[80vw] mt-[9.6vw] border-2 border-[rgba(255,255,255,0.45)] rounded-[10vw]">
                             <div class="text-[10vw] font-bold text-[rgba(255,255,255,0.45)] text-nowrap ">COMING </div>
                             <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">01/05/24</span>
@@ -384,16 +381,16 @@
                         </button>
 
                         <!-- pis1 -->
-                        <div v-if="cp1" class="font-extrabold text-[7vw] mt-[-1vw]">DRIBBBLE</div>
+                        <div v-if="cp1" :class="{'p1':c1 , 'p2':!c1}" class="font-extrabold text-[7vw] mt-[-1vw]">DRIBBBLE</div>
+
+                        <!-- pis1 --> 
+                        <div v-if="cp2" :class="{'p1':c2 , 'p2':!c2}" class="font-extrabold text-[7vw] mt-[-1vw]">L'IMPICCATO</div>
 
                         <!-- pis1 -->
-                        <div v-if="cp2" class="font-extrabold text-[7vw] mt-[-1vw]">L'IMPICCATO</div>
+                        <div v-if="cp3" :class="{'p1':c3 , 'p2':!c3}" class="font-extrabold text-[7vw] mt-[-1vw]">P-COMMERCE</div>
 
                         <!-- pis1 -->
-                        <div v-if="cp3" class="font-extrabold text-[7vw] mt-[-1vw]">P-COMMERCE</div>
-
-                        <!-- pis1 -->
-                        <div v-if="cp4" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG</div>
+                        <div v-if="cp4" :class="{'p1':c4 , 'p2':!c4}" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG</div>
 
 
                         <button @click="avanti">
@@ -404,7 +401,7 @@
                     </div>
 
                     <!-- contatore -->
-                    <div class="w-screen flex justify-center items-center text-[3.5vw]">{{ contatoretp }} / 4</div>
+                    <div  class="w-screen flex justify-center items-center text-[3.5vw]">{{ contatoretp }} / 4</div>
 
                 </div>
 
@@ -604,7 +601,11 @@ export default {
             contatorep: 0,
             contatoretp: '1',
             fsin: false,
-            fdes: true
+            fdes: true,
+            c1: false,
+            c2: false,
+            c3: false,
+            c4: false
 
 
         }
@@ -636,7 +637,7 @@ export default {
                     this.cimg2 = true
                     this.cimg3 = false
 
-                    
+
                 }
                 else if (this.constimg == 2) {
                     this.img2 = true
@@ -734,75 +735,6 @@ export default {
 
             }
 
-        },
-
-        indietro() {
-            if (this.contatorep > 0)
-
-                this.contatorep--
-            if (this.contatorep == 0) {
-                this.fdes = true
-                this.contatoretp = '1'
-                this.cp1 = true
-                this.cp2 = false
-                this.cp3 = false
-                this.cp4 = false
-            } else if (this.contatorep == 1) {
-
-                this.contatoretp = '2'
-                this.cp2 = true
-                this.cp1 = false
-                this.cp3 = false
-                this.cp4 = false
-            } else if (this.contatorep == 2) {
-                this.fsin = false
-                this.contatoretp = '3'
-                this.cp3 = true
-                this.cp2 = false
-                this.cp1 = false
-                this.cp4 = false
-            } else if (this.contatorep == 3) {
-                this.contatoretp = '4'
-                this.cp4 = true
-                this.cp3 = false
-                this.cp2 = false
-                this.cp1 = false
-            }
-        },
-
-        avanti() {
-            if (this.contatorep < 3)
-
-                this.contatorep++
-            if (this.contatorep == 0) {
-                this.contatoretp = '1'
-                this.cp1 = true
-                this.cp2 = false
-                this.cp3 = false
-                this.cp4 = false
-            } else if (this.contatorep == 1) {
-                this.fdes = false
-                this.contatoretp = '2'
-                this.cp2 = true
-                this.cp1 = false
-                this.cp3 = false
-                this.cp4 = false
-            } else if (this.contatorep == 2) {
-                this.contatoretp = '3'
-                this.cp3 = true
-                this.cp2 = false
-                this.cp1 = false
-                this.cp4 = false
-            } else if (this.contatorep == 3) {
-                this.fsin = true
-                this.contatoretp = '4'
-                this.cp4 = true
-                this.cp3 = false
-                this.cp2 = false
-                this.cp1 = false
-            }
-
-            console.log(this.contatorep)
         },
 
         più() {
@@ -936,6 +868,127 @@ export default {
             }
         },
 
+        indietro() {
+            if (this.contatorep > 0)
+
+                this.contatorep--
+
+            if (this.contatorep == 0) {
+                this.fdes = true
+                this.c1 = true
+                this.c2 = false
+                this.c3 = false
+                this.c4 = false
+                setTimeout(() => {
+                    this.contatoretp = '1'
+                    this.cp1 = true
+                    this.cp2 = false
+                    this.cp3 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 1) {
+                this.c2 = true
+                this.c1 = false
+                this.c3 = false
+                this.c4 = false
+                setTimeout(() => {
+                    this.contatoretp = '2'
+                    this.cp2 = true
+                    this.cp1 = false
+                    this.cp3 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 2) {
+                this.fsin = false
+                this.c3 = true
+                this.c2 = false
+                this.c1 = false
+                this.c4 = false
+                setTimeout(() => {
+                    this.contatoretp = '3'
+                    this.cp3 = true
+                    this.cp2 = false
+                    this.cp1 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 3) {
+                this.c4 = true
+                this.c3 = false
+                this.c2 = false
+                this.c1 = false
+                setTimeout(() => {
+                    this.contatoretp = '4'
+                    this.cp4 = true
+                    this.cp3 = false
+                    this.cp2 = false
+                    this.cp1 = false
+                }, 500);
+            }
+        },
+
+        avanti() {
+            if (this.contatorep < 3)
+
+                this.contatorep++
+
+            if (this.contatorep == 0) {
+                this.c1 = true
+                this.c2 = false
+                this.c3 = false
+                this.c4 = false
+
+                setTimeout(() => {
+                    this.contatoretp = '1'
+                    this.cp1 = true
+                    this.cp2 = false
+                    this.cp3 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 1) {
+                this.fdes = false
+                this.c2 = true
+                this.c1 = false
+                this.c3 = false
+                this.c4 = false
+                setTimeout(() => {
+                    this.contatoretp = '2'
+                    this.cp2 = true
+                    this.cp1 = false
+                    this.cp3 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 2) {
+                this.c3 = true
+                this.c2 = false
+                this.c1 = false
+                this.c4 = false
+                setTimeout(() => {
+                    this.contatoretp = '3'
+                    this.cp3 = true
+                    this.cp2 = false
+                    this.cp1 = false
+                    this.cp4 = false
+                }, 500);
+            } else if (this.contatorep == 3) {
+                this.fsin = true
+                this.c4 = true
+                this.c3 = false
+                this.c2 = false
+                this.c1 = false
+                setTimeout(() => {
+                    this.contatoretp = '4'
+                    this.cp4 = true
+                    this.cp3 = false
+                    this.cp2 = false
+                    this.cp1 = false
+                }, 500);
+            }
+
+            console.log(this.contatorep)
+        },
+
+
+
 
         tscroll() {
             this.scroll = !this.scroll
@@ -1054,8 +1107,52 @@ body {
     background-color: black;
 }
 
+.p1 {
+    animation-name: p1;
+    animation-duration: 2s;
+    filter: blur(0px);
+    opacity: 1;
+
+}
+
+@keyframes p1 {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+.p2 {
+    animation-name: p2;
+    animation-duration: 0.8s;
+    opacity: 1;
+    filter: blur(8px);
+}
+
+@keyframes p2 {
+    from {
+        opacity: 1;
+        filter: blur(0px);
+
+
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(8px);
+
+    }
+}
+
+
 .devclass {
-    
+
     opacity: 1;
     animation-name: devc;
     animation-duration: 2s;
@@ -1101,7 +1198,7 @@ body {
     animation-name: bvisit;
     animation-duration: 2s;
     border-color: rgba(255, 255, 255, 0.164);
-    
+
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -1121,7 +1218,7 @@ body {
     animation-name: visit;
     animation-duration: 2s;
     color: rgba(255, 255, 255, 0.164);
-    
+
     animation-direction: alternate;
     animation-iteration-count: infinite;
 
