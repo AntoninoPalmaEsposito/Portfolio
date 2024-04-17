@@ -602,7 +602,7 @@ export default {
             contatoretp: '1',
             fsin: false,
             fdes: true,
-            c1: false,
+            c1: true,
             c2: false,
             c3: false,
             c4: false
@@ -932,7 +932,7 @@ export default {
                 this.contatorep++
 
             if (this.contatorep == 0) {
-                this.c1 = true
+                this.c1 = false
                 this.c2 = false
                 this.c3 = false
                 this.c4 = false
@@ -1109,7 +1109,7 @@ body {
 
 .p1 {
     animation-name: p1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     filter: blur(0px);
     opacity: 1;
 
@@ -1130,7 +1130,7 @@ body {
 
 .p2 {
     animation-name: p2;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     opacity: 1;
     filter: blur(8px);
 }
