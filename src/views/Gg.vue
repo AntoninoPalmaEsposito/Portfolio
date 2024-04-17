@@ -211,7 +211,7 @@
 
                             <!-- container -->
                             <div
-                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] border-2 bbc  rounded-[10vw]">
+                                class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(132,132,247)] border-4 bbc  rounded-[10vw]">
 
                                 <!-- img cont -->
                                 <img src="/public/p1.jpg" alt=""
@@ -994,9 +994,9 @@ body {
 
 .bbc {
     animation-name: bbc;
-    animation-duration: 2s;
+    animation-duration: 3s;
     border-color:rgba(255, 255, 255, 0);
-    animation-timing-function: linear;
+    
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -1014,9 +1014,9 @@ body {
 
 .borderv {
     animation-name: bvisit;
-    animation-duration: 2s;
+    animation-duration: 3s;
     border-color:rgba(255, 255, 255, 0.388);
-    animation-timing-function: linear;
+    
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -1034,9 +1034,9 @@ body {
 
 .visita {
     animation-name: visit;
-    animation-duration: 2s;
+    animation-duration: 3s;
     color: rgba(255, 255, 255, 0.388);
-    animation-timing-function: linear;
+    
     animation-direction: alternate;
     animation-iteration-count: infinite;
 
