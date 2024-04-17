@@ -368,7 +368,7 @@
                         <div :class="{ 'hidden': !cp4, 'flex': cp4 }"
                             class="flex flex-col justify-center items-center w-[85vw] h-[80vw] mt-[9.6vw] border-2 border-[rgba(255,255,255,0.45)] rounded-[10vw]">
                             <div class="text-[10vw] font-bold text-[rgba(255,255,255,0.45)] text-nowrap ">COMING </div>
-                            <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">10/04/24</span>
+                            <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">01/05/24</span>
                             <div class="loader scale-[0.6] mt-[0.3vw] bg-red-200"></div>
 
                         </div>
@@ -376,8 +376,25 @@
 
 
 
+                    <!-- TESTO2 -->
+                    <div class="flex items-center justify-between w-screen px-[12vw] pt-[8vw]">
+<button>
+    <img src="../assets/fsin.png" alt="" class="w-[10vw]">
+</button>
+
+
+<button>
+    <img src="../assets/fdes.png" alt="" class="w-[10vw]">
+</button>
+
+                    </div>
+
+
+
+
+
                     <!-- TESTO -->
-                    <div class="flex flex-col items-center   justify-center w-[100vw] h-[45vw] ">
+                    <div class="hidden flex-col items-center   justify-center w-screen h-[45vw] ">
 
                         <!-- p1 -->
                         <div class="flex  items-center justify-center">
