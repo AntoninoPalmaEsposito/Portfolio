@@ -175,7 +175,7 @@
                     <div class="mt-[5vw]">
                         <!-- text -->
                         <div class="text-[4vw] px-[6.5vw]">
-                            Credo fortemente nell'organizzazione.
+                            Credo fortemente nell'organizzazione. <br>
                             Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
                             più veloce e al rispetto
@@ -515,8 +515,8 @@
 
             <!-- 1 descrizione -->
             <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
-                Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
-                ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
+                Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, <br>
+                dove ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
                 programmazione.
             </div>
