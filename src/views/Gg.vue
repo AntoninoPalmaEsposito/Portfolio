@@ -412,30 +412,30 @@
                     class="w-screen flex flex-col text-start pl-[12vw]   ">
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(210,249,232)]">RESIDENZA</div>
-                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal  text-[rgb(213,213,213)]">Bari (BA)
+                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal  ">Bari (BA)
                     </div>
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(187,251,223)]">EMAIL</div>
-                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal  text-[rgb(213,213,213)]">
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal  ">
                         ape.develop3@gmail.com</div>
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(163,250,212)]">NUMERO</div>
-                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal   text-[rgb(213,213,213)]">+39 3426398488
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal   ">+39 3426398488
                     </div>
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(143,247,202)]">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                        class=" text-[4vw]  font-normal underline mb-[3vw] mt-[-2vw] text-[rgb(213,213,213)]">Guarda i miei
+                        class=" text-[4vw]  font-normal underline mb-[3vw] mt-[-2vw] ">Guarda i miei
                         post!</a>
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(124,250,195)]">GITHUB</div>
                     <a href="https://github.com/AntoninoPalmaEsposito"
-                        class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal underline  text-[rgb(213,213,213)]">Scopri
+                        class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal underline  ">Scopri
                         le mie repository!</a>
 
                     <div class=" text-[7vw]  font-extrabold text-[rgb(95,251,183)]">INSTAGRAM</div>
                     <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
-                        class=" text-[4vw]  font-normal underline mt-[-2vw] text-[rgb(213,213,213)]">Visita il mio
+                        class=" text-[4vw]  font-normal underline mt-[-2vw] ">Visita il mio
                         profilo!</a>
 
 
