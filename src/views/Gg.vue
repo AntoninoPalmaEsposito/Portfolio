@@ -202,7 +202,8 @@
                     <div class="flex justify-center items-center  ">
 
                         <!-- Cp1 -->
-                        <a v-if="cp1" href="https://dribbble-replica-html-css.vercel.app/" :class="{'p1':c1 , 'p2':!c1}" class="flex flex-col">
+                        <a v-if="cp1" href="https://dribbble-replica-html-css.vercel.app/" :class="{ 'p1': c1, 'p2': !c1 }"
+                            class="flex flex-col">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -248,7 +249,8 @@
                         </a>
 
                         <!-- Cp2s -->
-                        <a v-if="cp2" href="https://impiccato-game.vercel.app/" :class="{'p1':c2 , 'p2':!c2}" class="flex flex-col ">
+                        <a v-if="cp2" href="https://impiccato-game.vercel.app/" :class="{ 'p1': c2, 'p2': !c2 }"
+                            class="flex flex-col ">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -298,7 +300,8 @@
                         </a>
 
                         <!-- Cp3s -->
-                        <a v-if="cp3" href="https://penta-e-commerce.vercel.app/" :class="{'p1':c3 , 'p2':!c3}" class="flex flex-col ">
+                        <a v-if="cp3" href="https://penta-e-commerce.vercel.app/" :class="{ 'p1': c3, 'p2': !c3 }"
+                            class="flex flex-col ">
 
                             <!-- visita -->
                             <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
@@ -362,7 +365,7 @@
 
 
                         <!-- Cp4 -->
-                        <div v-if="cp4" :class="{'p1':c4 , 'p2':!c4}"
+                        <div v-if="cp4" :class="{ 'p1': c4, 'p2': !c4 }"
                             class="flex flex-col justify-center items-center w-[85vw] h-[80vw] mt-[9.6vw] border-2 border-[rgba(255,255,255,0.45)] rounded-[10vw]">
                             <div class="text-[10vw] font-bold text-[rgba(255,255,255,0.45)] text-nowrap ">COMING </div>
                             <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">01/05/24</span>
@@ -381,16 +384,20 @@
                         </button>
 
                         <!-- pis1 -->
-                        <div v-if="cp1" :class="{'p1':c1 , 'p2':!c1}" class="font-extrabold text-[7vw] mt-[-1vw]">DRIBBBLE</div>
-
-                        <!-- pis1 --> 
-                        <div v-if="cp2" :class="{'p1':c2 , 'p2':!c2}" class="font-extrabold text-[7vw] mt-[-1vw]">L'IMPICCATO</div>
+                        <div v-if="cp1" :class="{ 'p1': c1, 'p2': !c1 }" class="font-extrabold text-[7vw] mt-[-1vw]">
+                            DRIBBBLE</div>
 
                         <!-- pis1 -->
-                        <div v-if="cp3" :class="{'p1':c3 , 'p2':!c3}" class="font-extrabold text-[7vw] mt-[-1vw]">P-COMMERCE</div>
+                        <div v-if="cp2" :class="{ 'p1': c2, 'p2': !c2 }" class="font-extrabold text-[7vw] mt-[-1vw]">
+                            L'IMPICCATO</div>
 
                         <!-- pis1 -->
-                        <div v-if="cp4" :class="{'p1':c4 , 'p2':!c4}" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG</div>
+                        <div v-if="cp3" :class="{ 'p1': c3, 'p2': !c3 }" class="font-extrabold text-[7vw] mt-[-1vw]">
+                            P-COMMERCE</div>
+
+                        <!-- pis1 -->
+                        <div v-if="cp4" :class="{ 'p1': c4, 'p2': !c4 }" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG
+                        </div>
 
 
                         <button @click="avanti">
@@ -401,7 +408,7 @@
                     </div>
 
                     <!-- contatore -->
-                    <div  class="w-screen flex justify-center items-center text-[3.5vw]">{{ contatoretp }} / 4</div>
+                    <div class="w-screen flex justify-center items-center text-[3.5vw]">{{ contatoretp }} / 4</div>
 
                 </div>
 
@@ -491,8 +498,11 @@
 
 
             <!-- sect 1 -->
-            <div class=" px-[5.5vw] pt-[12vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">Mi
-                chiamo Antonino e  non sono solo un Web Developer    v</div>
+            <div
+                class=" px-[5.5vw] pt-[12vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
+                Mi
+                chiamo Antonino e non sono solo un Web Developer <img src="../assets/freccian.png" alt=""
+                    class="w-[4.5vw] inline-block ml-[1.5vw] animate-bounce mb-[-2vw] opacity-50"> </div>
 
             <!-- img 1 home -->
             <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[3vw]">
