@@ -22,15 +22,15 @@
                                     src="../assets/freccia.png" alt="" class="w-[8.5vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[1vw]  underline underline-offset-8 ': devp }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2vw]  underline underline-offset-8 ': devp }"
                                 class="duration-500 mt-[-1vw]">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[1vw] underline underline-offset-8': project }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': project }"
                                 class="duration-500">Projects</button></li>
 
                         <li><button @click="contactsp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[1vw] underline underline-offset-8': contacts }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': contacts }"
                                 class="duration-500">Contacts</button></li>
 
                         <div class="w-[48vw] h-[1vw] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
