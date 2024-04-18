@@ -50,7 +50,7 @@
                 <div v-if="devp1" :class="{ 'opacitys2': !devp, 'opacitys': devp }" class="w-screen flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="text-[7vw] px-[8vw] font-semibold  leading-[9vw]"> <span
+                    <div class="text-[7vw] px-[12vw] font-semibold  leading-[7vw]"> <span
                             class="text-[14vw] font-extrabold">Vision:  </span></div>
 
                     <div class="flex ">
@@ -174,7 +174,7 @@
 
                     <div class="mt-[5vw]">
                         <!-- text -->
-                        <div class="text-[4vw] px-[8vw]">
+                        <div class="text-[4vw] px-[6.5vw]">
                             Credo fortemente nell'organizzazione.
                             Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
@@ -184,11 +184,11 @@
                         </div>
 
 
-                        <div class="text-[4vw] px-[8vw] mt-[3vw]">
+                        <div class="text-[4vw] px-[6.5vw] mt-[3vw]">
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                             Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
 
-                            <div class="text-[4vw] px-[8vw] pt-[3vw]">
+                            <div class="text-[4vw] px-[6.5vw] pt-[3vw]">
                   Sono un umano socievole che apprezza il senso di comunità all’interno del team.
                   Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco.
                 </div>
