@@ -180,17 +180,17 @@
                             sviluppo
                             più veloce e al rispetto
                             di scadenze
-                            prefissate.
+                            prefissate &#9200
                         </div>
 
 
                         <div class="text-[4vw] px-[6.5vw] mt-[3vw]">
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
-                            Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
+                            Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide &#128293</div>
 
                             <div class="text-[4vw] px-[6.5vw] pt-[3vw]">
-                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.
-                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco.
+                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.  <br>
+                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco &#9749
                 </div>
                     </div>
 
