@@ -44,20 +44,20 @@
 
 
             <!-- container section -->
-            <div class="mt-[100px] text-white">
+            <div class="mt-[25vw] text-white">
 
                 <!-- Dev Profile -->
                 <div v-if="devp1" :class="{ 'opacitys2': !devp, 'opacitys': devp }" class="w-screen flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="font-bold  text-[25px] px-[30px]  leading-7"><span
-                            class="text-[60px] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
+                    <div class="font-bold  text-[7vw] px-[7vw]  leading-7"><span
+                            class="text-[15vw] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
 
                     <div class="flex ">
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[6vw]     items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.2)] ">
+                            class=" flex justify-around py-[6vw]     items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.29)] ">
 
 
 
