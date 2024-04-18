@@ -57,7 +57,7 @@
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[6vw]     items-center mt-[20px] mx-[25px] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.29)] ">
+                            class=" flex justify-around py-[6vw]     items-center mt-[5vw] mx-[6.3vw] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.29)] ">
 
 
 
@@ -71,83 +71,83 @@
 
                                     <div v-if="img1" class="my-auto flex flex-col items-center"><img
                                             src="../assets/htmlI.png" alt=""
-                                            :class="{ ' mt-[80%] opp': cimg1, ' opp2': !cimg1 }" class="  ">
-                                        <div v-if="cimg1" class="text-[3vw] text-center mt-[3px]">HTML</div>
+                                            :class="{ ' mt-[9vw] opp': cimg1, ' opp2': !cimg1 }" class="  ">
+                                        <div v-if="cimg1" class="text-[3vw] text-center mt-[0.5vw]">HTML</div>
                                     </div>
 
                                     <div v-if="img2" class="my-auto flex flex-col items-center"><img
                                             src="../assets/cssI.png" alt="" :class="{ '  opp': cimg2, ' opp2': !cimg2 }"
                                             class="  ">
-                                        <div v-if="cimg2" class="text-[3vw] text-center mt-[3px]">CSS</div>
+                                        <div v-if="cimg2" class="text-[3vw] text-center mt-[0.5vw]">CSS</div>
                                     </div>
 
 
                                     <div v-if="img3" class="my-auto flex flex-col items-center"><img
                                             src="../assets/javascriptI.png" alt=""
                                             :class="{ '  opp': cimg3, ' opp2': !cimg3 }" class="  ">
-                                        <div v-if="cimg3" class="text-[3vw] text-center mt-[3px]">JS</div>
+                                        <div v-if="cimg3" class="text-[3vw] text-center mt-[0.5vw]">JS</div>
                                     </div>
 
-                                    <div v-if="img4" class="my-auto flex flex-col items-center"><img
+                                    <div v-if="img4" class="my-auto flex flex-col items-center "><img
                                             src="../assets/tailwindI.png" alt=""
                                             :class="{ '  opp': cimg4, ' opp2': !cimg4 }" class="  ">
-                                        <div v-if="cimg4" class="text-[3vw] text-center mt-[3px]">TAILWIND</div>
+                                        <div v-if="cimg4" class="text-[3vw] text-center mt-[0.5vw]">TAILWIND</div>
                                     </div>
 
 
                                     <div v-if="img5" class="my-auto flex flex-col items-center"><img
                                             src="../assets/vueI.png" alt="" :class="{ '  opp': cimg5, ' opp2': !cimg5 }"
                                             class="  ">
-                                        <div v-if="cimg5" class="text-[3vw] text-center mt-[3px]">VUE.JS</div>
+                                        <div v-if="cimg5" class="text-[3vw] text-center mt-[0.5vw]">VUE.JS</div>
                                     </div>
 
                                     <div v-if="img6" class="my-auto flex flex-col items-center"><img
                                             src="../assets/vsI.png" alt="" :class="{ '  opp': cimg6, ' opp2': !cimg6 }"
                                             class="  ">
-                                        <div v-if="cimg6" class="text-[3vw] text-center mt-[3px]">VSC</div>
+                                        <div v-if="cimg6" class="text-[3vw] text-center mt-[0.5vw]">VSC</div>
                                     </div>
 
                                     <div v-if="img7" class="my-auto flex flex-col items-center"><img
                                             src="../assets/gitI.jpg" alt="" :class="{ '  opp': cimg7, ' opp2': !cimg7 }"
                                             class="  ">
-                                        <div v-if="cimg7" class="text-[3vw] text-center mt-[3px]">GITHUB</div>
+                                        <div v-if="cimg7" class="text-[3vw] text-center mt-[0.5vw]">GITHUB</div>
                                     </div>
 
                                     <div v-if="img8" class="my-auto flex flex-col items-center"><img
                                             src="../assets/figmaI.png" alt=""
                                             :class="{ '  opp': cimg8, ' opp2': !cimg8 }" class="  ">
-                                        <div v-if="cimg8" class="text-[3vw] text-center mt-[3px]">FIGMA</div>
+                                        <div v-if="cimg8" class="text-[3vw] text-center mt-[0.5vw]">FIGMA</div>
                                     </div>
 
                                     <div v-if="img9" class="my-auto flex flex-col items-center"><img
                                             src="../assets/adobeI.png" alt=""
                                             :class="{ '  opp': cimg9, ' opp2': !cimg9 }" class="  ">
-                                        <div v-if="cimg9" class="text-[3vw] text-center mt-[5px]">ADOBE</div>
+                                        <div v-if="cimg9" class="text-[3vw] text-center mt-[0.5vw]">ADOBE</div>
                                     </div>
 
                                     <div v-if="img10" class="my-auto flex flex-col items-center"><img
                                             src="../assets/apil.png" alt=""
                                             :class="{ '  opp': cimg10, ' opp2': !cimg10 }" class="  ">
-                                        <div v-if="cimg10" class="text-[3vw] text-center mt-[3px]">API REST</div>
+                                        <div v-if="cimg10" class="text-[3vw] text-center mt-[0.5vw]">API REST</div>
                                     </div>
 
                                     <div v-if="img11" class="my-auto flex flex-col items-center"><img
                                             src="../assets/google.png" alt=""
                                             :class="{ '  opp': cimg11, ' opp2': !cimg11 }" class="">
-                                        <div v-if="cimg11" class="text-[3vw] text-center ">GOOGLE.A</div>
+                                        <div v-if="cimg11" class="text-[3vw] text-center mt-[0.5vw]">GOOGLE.A</div>
                                     </div>
 
                                     <div v-if="img12" class="my-auto flex flex-col items-center"><img
                                             src="../assets/postman.png" alt=""
                                             :class="{ '  opp': cimg12, ' opp2': !cimg12 }" class="  ">
-                                        <div v-if="cimg12" class="text-[3vw] text-center mt-[3px]">POSTMAN</div>
+                                        <div v-if="cimg12" class="text-[3vw] text-center mt-[0.5vw]">POSTMAN</div>
                                     </div>
 
                                     <div v-if="img13" class="my-auto  flex flex-col items-center"><img
                                             src="../assets/npm.png" alt=""
                                             :class="{ '  opp ': cimg13, ' opp2': !cimg13 }" class="  ">
-                                        <div v-if="cimg13" :class="{ 'mb-[80%]': cimg13 }"
-                                            class="text-[3vw] text-center mb-[3px]">NPM</div>
+                                        <div v-if="cimg13" :class="{ 'mb-[9vw]': cimg13 }"
+                                            class="text-[3vw] text-center mt-[0.5vw]">NPM</div>
                                     </div>
 
                                 </div>
@@ -172,9 +172,9 @@
                     </div>
 
 
-                    <div class="mt-[10px]">
+                    <div class="mt-[6vw]">
                         <!-- text -->
-                        <div class="text-[20px] px-[30px]">Un’analisi accurata porta a un codice più pulito, uno
+                        <div class="text-[4vw] px-[8vw]">Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
                             più veloce e al rispetto
                             di scadenze
@@ -182,10 +182,14 @@
                         </div>
 
 
-                        <div class="text-[20px] px-[30px]">
+                        <div class="text-[4vw] px-[8vw] mt-[3vw]">
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                             Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide.</div>
 
+                            <div class="text-[4vw] px-[8vw] pt-[3vw]">
+                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.
+                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                </div>
                     </div>
 
 
@@ -478,7 +482,7 @@
 
 
         <!-- BODY carta -->
-        <div :class="{ 'top-[-2vw]': scroll, 'top-[220vw]': !scroll }"
+        <div :class="{ 'top-[-2vw]': scroll, 'top-[250vw]': !scroll }"
             class="absolute  left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
 
             <!-- img body -->
