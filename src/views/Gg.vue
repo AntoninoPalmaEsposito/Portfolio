@@ -491,8 +491,8 @@
 
 
             <!-- sect 1 -->
-            <div class=" px-[5vw] pt-[15vw] w-screen leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">Mi
-                chiamo Antonino <br> e non sono solo un <br> Web Developer  v</div>
+            <div class=" px-[5.5vw] pt-[12vw] w-screen leading-[8vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">Mi
+                chiamo Antonino <br> e non sono solo un <br> Web Developer    v</div>
 
             <!-- img 1 home -->
             <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[3vw]">
