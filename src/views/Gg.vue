@@ -22,11 +22,11 @@
                                     src="../assets/freccia.png" alt="" class="w-[8.5vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[3vw]  underline underline-offset-8 ': devp }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2.5vw]  underline underline-offset-8 ': devp }"
                                 class="duration-500 text-start mt-[-1vw]">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[3vw] underline underline-offset-8': project }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2.5vw] underline underline-offset-8': project }"
                                 class="duration-500 text-start">Projects</button></li>
 
                         <li><button @click="contactsp"
