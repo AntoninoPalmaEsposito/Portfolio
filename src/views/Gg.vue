@@ -12,7 +12,7 @@
 
                 <div class="flex items-end">
 
-                    <div class="relative top-[7vw] h-[38vw]  rounded-[50px] mr-[6vw] w-[1vw] bg-[rgb(109,109,109)]">
+                    <div class="relative top-[7vw] h-[40vw]  rounded-[50px] mr-[6vw] w-[1vw] bg-[rgb(109,109,109)]">
                     </div>
 
                     <ul class="flex flex-col items-start w-[40vw]">
@@ -22,16 +22,16 @@
                                     src="../assets/freccia.png" alt="" class="w-[8.5vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2vw]  underline underline-offset-8 ': devp }"
-                                class="duration-500 mt-[-1vw]">Dev. Profile</button></li>
+                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[3vw]  underline underline-offset-8 ': devp }"
+                                class="duration-500 text-start mt-[-1vw]">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': project }"
-                                class="duration-500">Projects</button></li>
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[3vw] underline underline-offset-8': project }"
+                                class="duration-500 text-start">Projects</button></li>
 
                         <li><button @click="contactsp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': contacts }"
-                                class="duration-500">Contacts</button></li>
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[2.5vw] underline underline-offset-8': contacts }"
+                                class="duration-500 text-start">Contacts</button></li>
 
                         <div class="w-[48vw] h-[1vw] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
