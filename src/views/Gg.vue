@@ -491,7 +491,7 @@
 
 
             <!-- sect 1 -->
-            <div class="px-[5vw] pt-[15vw] leading-[7vw] font-extrabold text-[7vw] text-[rgba(0,0,0,0.52)]">Mi
+            <div class="px-[5vw] pt-[15vw] leading-[8vw] font-extrabold text-[8vw] text-[rgba(0,0,0,0.52)]">Mi
                 chiamo Antonino e non sono solo un Web Developer</div>
 
             <!-- img 1 home -->
