@@ -409,7 +409,7 @@
 
                 <!-- Contacts -->
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
-                    class="w-screen flex flex-col text-start pl-[12vw]   ">
+                    class="w-screen flex flex-col text-start mt-[3vw] pl-[12vw]   ">
 
                     <div class=" text-[7vw]  font-extrabold ">RESIDENZA</div>
                     <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Bari (BA)
@@ -463,7 +463,7 @@
 
 
         <!-- NAV carta -->
-        <div @click="tscroll" class="absolute top-0 left-[-4px] z-[-1]">
+        <div @click="tscroll" class="absolute top-0 left-[-0.8vw] z-[-1]">
             <img src="../assets/nav2.png" alt="" class="w-[50vw]">
             <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[15px] left-[20px]">
         </div>
@@ -480,25 +480,25 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[45px] mb-[15px]  w-screen px-[35px]">
+            <div class="flex justify-end mt-[45px] mb-[15px]  w-screen px-[7vw]">
                 <button @click="tscroll" class=" nav flex flex-col scale-90 items-end  ">
-                    <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
-                    <div class="h-[6px] navc w-[45px] mb-[8px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
-                    <div class="h-[6px] navc w-[45px] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                    <div class="h-[1.2vw] navc w-[9vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
 
                 </button>
             </div>
 
 
             <!-- sect 1 -->
-            <div class="px-[25px] pt-[50px] leading-[35px] font-extrabold text-[32px] text-[rgba(0,0,0,0.52)]">Mi
-                chiamo Antonino <br> e non sono solo un Web Developer!</div>
+            <div class="px-[5vw] pt-[15vw] leading-[7vw] font-extrabold text-[7vw] text-[rgba(0,0,0,0.52)]">Mi
+                chiamo Antonino e non sono solo un Web Developer</div>
 
             <!-- img 1 home -->
-            <img src="../assets/disegno.png" alt="" class="px-[16px] w-screen pt-[15px]">
+            <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[3vw]">
 
             <!-- 1 descrizione -->
-            <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[20px] px-[25px] pt-[20px]">
+            <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[4vw]">
                 Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
                 ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
@@ -508,10 +508,10 @@
             <div class="bg-white">
 
                 <!-- img 2 home -->
-                <img src="../assets/sedia.png" alt="" class="px-[20px] mr-[5%] w-[85%] pt-[20px]">
+                <img src="../assets/sedia.png" alt="" class="px-[4vw] mr-[5vw] w-[85vw] pt-[4vw]">
 
                 <!-- 2 descrizione -->
-                <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[20px] px-[25px] pt-[20px] pb-[70px]">
+                <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[4vw] pb-[14vw]">
                     Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi
                     ha
                     fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze. <br>
