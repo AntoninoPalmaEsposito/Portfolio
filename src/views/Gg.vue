@@ -411,31 +411,31 @@
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
                     class="w-screen flex flex-col text-start pl-[12vw]   ">
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60 ">RESIDENZA</div>
-                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-semibold  ">Bari (BA)
+                    <div class=" text-[7vw]  font-extrabold ">RESIDENZA</div>
+                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-semibold text-[rgb(209,248,243)]  ">Bari (BA)
                     </div>
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60 ">EMAIL</div>
-                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-semibold  ">
+                    <div class=" text-[7vw]  font-extrabold  ">EMAIL</div>
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw]  text-[rgb(186,250,241)]  ">
                         ape.develop3@gmail.com</div>
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60 ">NUMERO</div>
-                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-semibold   ">+39 3426398488
+                    <div class=" text-[7vw]  font-extrabold  ">NUMERO</div>
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw]  text-[rgb(163,247,236)]   ">+39 3426398488
                     </div>
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60 ">LINKEDIN</div>
+                    <div class=" text-[7vw]  font-extrabold  ">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                        class=" text-[4vw]  font-semibold underline mb-[3vw] mt-[-2vw] ">Guarda i miei
+                        class=" text-[4vw]   text-[rgb(143,251,237)] underline mb-[3vw] mt-[-2vw] ">Guarda i miei
                         post!</a>
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60 ">GITHUB</div>
+                    <div class=" text-[7vw]  font-extrabold  ">GITHUB</div>
                     <a href="https://github.com/AntoninoPalmaEsposito"
-                        class=" text-[4vw] mb-[3vw] mt-[-2vw] font-semibold underline  ">Scopri
+                        class=" text-[4vw] mb-[3vw] mt-[-2vw]  text-[rgb(122,252,235)] underline  ">Scopri
                         le mie repository!</a>
 
-                    <div class=" text-[7vw]  font-extrabold opacity-60">INSTAGRAM</div>
+                    <div class=" text-[7vw]  font-extrabold ">INSTAGRAM</div>
                     <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
-                        class=" text-[4vw]  font-semibold underline mt-[-2vw] ">Visita il mio
+                        class=" text-[4vw]   text-[rgb(97,255,234)] underline mt-[-2vw] ">Visita il mio
                         profilo!</a>
 
 
