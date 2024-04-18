@@ -480,7 +480,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[55px] mb-[15px]  w-screen px-[7vw]">
+            <div class="flex justify-end mt-[50px] mb-[15px]  w-screen px-[7vw]">
                 <button @click="tscroll" class=" nav flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -491,7 +491,7 @@
 
 
             <!-- sect 1 -->
-            <div class="px-[5vw] pt-[15vw] leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">Mi
+            <div class=" px-[5vw] pt-[15vw] w-screen leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">Mi
                 chiamo Antonino <br> e non sono solo un <br> Web Developer  v</div>
 
             <!-- img 1 home -->
