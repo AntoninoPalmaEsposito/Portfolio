@@ -409,33 +409,33 @@
 
                 <!-- Contacts -->
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
-                    class="w-screen flex flex-col text-center justify-center items-center    ">
+                    class=" flex flex-col text-start justify-center     ">
 
-                    <div class="text-center text-[7vw]  font-bold ">RESIDENZA</div>
-                    <div class="text-center text-[4vw] mt-[-2vw] mb-[1.3vw]  font-semibold  text-[rgb(253,175,154)]">Bari (BA)
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(210,249,232)]">RESIDENZA</div>
+                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal  ">Bari (BA)
                     </div>
 
-                    <div class="text-center text-[7vw]  font-bold ">EMAIL</div>
-                    <div class="text-center text-[4vw] mb-[1.3vw] mt-[-2vw] font-semibold   text-[rgb(195,154,253)]">
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(187,251,223)]">EMAIL</div>
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal  ">
                         ape.develop3@gmail.com</div>
 
-                    <div class="text-center text-[7vw]  font-bold ">NUMERO</div>
-                    <div class="text-center text-[4vw] mb-[1.3vw] mt-[-2vw] font-semibold   text-[rgb(154,253,180)]">+39 3426398488
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(163,250,212)]">NUMERO</div>
+                    <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal   ">+39 3426398488
                     </div>
 
-                    <div class="text-center text-[7vw]  font-bold ">LINKEDIN</div>
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(143,247,202)]">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                        class="text-center text-[4vw]  font-semibold underline mb-[2vw] mt-[-2vw] text-[rgb(248,253,154)]">Guarda i miei
+                        class=" text-[4vw]  font-normal underline mb-[3vw] mt-[-2vw]">Guarda i miei
                         post!</a>
 
-                    <div class="text-center text-[7vw]  font-bold ">GITHUB</div>
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(124,250,195)]">GITHUB</div>
                     <a href="https://github.com/AntoninoPalmaEsposito"
-                        class="text-center text-[4vw] mb-[2vw] mt-[-2vw] font-semibold underline  text-[rgb(154,241,253)]">Scopri
+                        class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal underline  ">Scopri
                         le mie repository!</a>
 
-                    <div class="text-center text-[7vw]  font-bold ">INSTAGRAM</div>
+                    <div class=" text-[7vw]  font-extrabold text-[rgb(95,251,183)]">INSTAGRAM</div>
                     <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
-                        class="text-center text-[4vw]  font-semibold underline mt-[-2vw]  text-[rgb(253,154,200)]">Visita il mio
+                        class=" text-[4vw]  font-normal underline mt-[-2vw] ">Visita il mio
                         profilo!</a>
 
 
