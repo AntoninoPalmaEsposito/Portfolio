@@ -212,8 +212,8 @@
                             class="flex flex-col">
 
                             <!-- visita -->
-                            <span class="text-[5vw] text-[rgba(255,255,255,0.38)]  font-semibold ml-[8vw] mb-[2vw]"><span
-                                    class="border-solid border-b-2 border-[rgba(255,255,255,0.38)] text ">Visita!</span></span>
+                            <span class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
 
                             <!-- container -->
                             <div
@@ -259,8 +259,8 @@
                             class="flex flex-col ">
 
                             <!-- visita -->
-                            <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
-                                    class="border-solid border-b-2  borderv ">Visita!</span></span>
+                            <span class="text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2  text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]">Visita!</span></span>
 
                             <!-- container -->
                             <div
@@ -310,8 +310,8 @@
                             class="flex flex-col ">
 
                             <!-- visita -->
-                            <span class=" visita text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
-                                    class="border-solid border-b-2  borderv ">Visita!</span></span>
+                            <span class="  text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)] ">Visita!</span></span>
 
                             <!-- container -->
                             <div
