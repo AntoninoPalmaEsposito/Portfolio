@@ -478,7 +478,7 @@
 
 
         <!-- BODY carta -->
-        <div :class="{ 'top-[-2.2vw]': scroll, 'top-[220vw]': !scroll }"
+        <div :class="{ 'top-[-2vw]': scroll, 'top-[220vw]': !scroll }"
             class="absolute  left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
 
             <!-- img body -->
@@ -487,7 +487,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[12vw] mb-[3vw]  w-screen px-[7vw]">
+            <div class="flex justify-end mt-[12.5vw] mb-[4vw]  w-screen px-[7vw]">
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
