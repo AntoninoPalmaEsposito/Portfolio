@@ -5,7 +5,7 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[4vw] text-white  font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[2.5vw] text-white  font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
@@ -19,10 +19,10 @@
 
                         <li class=""><button @click="tscroll"
                                 :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
-                                    src="../assets/freccia.png" alt="" class="w-[12vw]"></button></li>
+                                    src="../assets/freccia.png" alt="" class="w-[8.5vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[7vw] border-solid border-b-2': devp }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[7vw] border-solid border-b-2 mt-[-2vw]': devp }"
                                 class="duration-500 ">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
