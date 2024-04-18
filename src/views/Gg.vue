@@ -487,7 +487,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[55px] mb-[15px]  w-screen px-[7vw]">
+            <div class="flex justify-end mt-[50px] mb-[15px]  w-screen px-[7vw]">
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -499,16 +499,16 @@
 
             <!-- sect 1 -->
             <div
-                class=" px-[5.5vw] pt-[12vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
+                class=" px-[5.5vw] pt-[15vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
                 Mi
                 chiamo Antonino e non sono solo un Web Developer <img src="../assets/freccian.png" alt=""
                     class="w-[4.5vw] inline-block ml-[1.5vw] animate-bounce mb-[-2vw] opacity-50"> </div>
 
             <!-- img 1 home -->
-            <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[3vw]">
+            <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[4vw]">
 
             <!-- 1 descrizione -->
-            <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[4vw]">
+            <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
                 Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
                 ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
