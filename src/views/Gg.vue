@@ -22,15 +22,15 @@
                                     src="../assets/freccia.png" alt="" class="w-[8.5vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2vw]  underline underline-offset-8 ': devp }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2vw]  underline underline-offset-[2vw] ': devp }"
                                 class="duration-500 text-start text-nowrap mt-[-1vw]">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': project }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2vw] underline underline-offset-[2vw]': project }"
                                 class="duration-500 text-start">Projects</button></li>
 
                         <li><button @click="contactsp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': contacts }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] mb-[2vw] underline underline-offset-[2vw]': contacts }"
                                 class="duration-500 text-start">Contacts</button></li>
 
                         <div class="w-[48vw] h-[1vw] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
@@ -50,14 +50,14 @@
                 <div v-if="devp1" :class="{ 'opacitys2': !devp, 'opacitys': devp }" class="w-screen flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="font-bold  text-[7vw] px-[7vw]  leading-7"><span
-                            class="text-[15vw] font-extrabold">Credo</span> fortemente nell'organizzazione.</div>
+                    <div class="text-[7vw] px-[8vw] font-semibold  leading-7"><span
+                            class="text-[14vw] font-extrabold">CIAO  </span> parole totalmente a caso  wdwd</div>
 
                     <div class="flex ">
 
                         <!-- card -->
                         <div
-                            class=" flex justify-around py-[6vw]     items-center mt-[5vw] mx-[6.3vw] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.29)] ">
+                            class=" flex justify-around py-[6vw]     items-center mt-[4vw] mx-[6.3vw] w-screen    rounded-[10vw]  bg-[rgba(255,255,255,0.29)] ">
 
 
 
@@ -174,7 +174,9 @@
 
                     <div class="mt-[6vw]">
                         <!-- text -->
-                        <div class="text-[4vw] px-[8vw]">Un’analisi accurata porta a un codice più pulito, uno
+                        <div class="text-[4vw] px-[8vw]">
+                            Credo fortemente nell'organizzazione.
+                            Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
                             più veloce e al rispetto
                             di scadenze
