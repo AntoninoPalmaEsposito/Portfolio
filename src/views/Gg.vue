@@ -472,13 +472,13 @@
         <!-- NAV carta -->
         <div @click="tscroll" class="absolute top-0 left-[-0.8vw] z-[-1]">
             <img src="../assets/nav2.png" alt="" class="w-[50vw]">
-            <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[15px] left-[20px]">
+            <img src="../assets/logo2.png" alt="" class="w-[25vw] absolute top-[3vw] left-[4vw]">
         </div>
 
 
 
         <!-- BODY carta -->
-        <div :class="{ 'top-[-10px]': scroll, 'top-[140vh]': !scroll }"
+        <div :class="{ 'top-[-2.2vw]': scroll, 'top-[220vw]': !scroll }"
             class="absolute  left-[0px] flex flex-col items-center  h-screen duration-[4s] z-[-1]  w-screen ">
 
             <!-- img body -->
@@ -487,7 +487,7 @@
 
 
             <!-- nav scroll -->
-            <div class="flex justify-end mt-[50px] mb-[15px]  w-screen px-[7vw]">
+            <div class="flex justify-end mt-[12vw] mb-[3vw]  w-screen px-[7vw]">
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -521,7 +521,7 @@
                 <img src="../assets/sedia.png" alt="" class="px-[4vw] mr-[5vw] w-[85vw] pt-[4vw]">
 
                 <!-- 2 descrizione -->
-                <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[4vw] pb-[14vw]">
+                <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
                     Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi
                     ha
                     fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze. <br>
