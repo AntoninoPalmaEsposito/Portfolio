@@ -5,35 +5,35 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[15px] text-white  font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[4vw] text-white  font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
             <div class="flex justify-end pr-[5vw] w-screen">
 
                 <div class="flex items-end">
 
-                    <div class="relative top-[34px] h-[40vw]  rounded-[50px] mr-[9vw] w-[4.3px] bg-[rgb(109,109,109)]">
+                    <div class="relative top-[7vw] h-[38vw]  rounded-[50px] mr-[6vw] w-[1vw] bg-[rgb(109,109,109)]">
                     </div>
 
-                    <ul class="flex flex-col items-start scale-110 w-[35vw]">
+                    <ul class="flex flex-col items-start w-[40vw]">
 
-                        <li class="mb-[-10px] ml-[-7px]"><button @click="tscroll"
+                        <li class=""><button @click="tscroll"
                                 :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
-                                    src="../assets/freccia.png" alt="" class="w-[11vw]"></button></li>
+                                    src="../assets/freccia.png" alt="" class="w-[12vw]"></button></li>
 
                         <li><button @click="devpp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[6.5vw] border-solid border-b-4': devp }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !devp, 'text-white text-[7vw] border-solid border-b-2': devp }"
                                 class="duration-500 ">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[6.5vw] border-solid border-b-4': project }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] border-solid border-b-2': project }"
                                 class="duration-500">Projects</button></li>
 
                         <li><button @click="contactsp"
-                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[6.5vw] border-solid border-b-4': contacts }"
+                                :class="{ 'text-[rgba(255,255,255,0.45)]': !contacts, 'text-white text-[7vw] border-solid border-b-2': contacts }"
                                 class="duration-500">Contacts</button></li>
 
-                        <div class="w-[47vw] h-[4px] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
+                        <div class="w-[48vw] h-[1vw] mt-[4vw] ml-[-18vw] rounded-[50px] bg-[rgb(109,109,109)]"></div>
 
 
                     </ul>
@@ -499,7 +499,7 @@
 
             <!-- sect 1 -->
             <div
-                class=" px-[5.5vw] pt-[15vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
+                class=" px-[5.5vw] pt-[14vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
                 Mi
                 chiamo Antonino e non sono solo un Web Developer <img src="../assets/freccian.png" alt=""
                     class="w-[4.5vw] inline-block ml-[1.5vw] animate-bounce mb-[-2vw] opacity-50"> </div>
