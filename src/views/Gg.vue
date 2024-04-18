@@ -481,7 +481,7 @@
 
             <!-- nav scroll -->
             <div class="flex justify-end mt-[45px] mb-[15px]  w-screen px-[7vw]">
-                <button @click="tscroll" class=" nav flex flex-col scale-90 items-end  ">
+                <button @click="tscroll" class=" nav flex flex-col items-end  ">
                     <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw] navc w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw] navc w-[9vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
