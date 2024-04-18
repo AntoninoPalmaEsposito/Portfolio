@@ -5,10 +5,10 @@
 
         <!-- BODY bg -->
         <div
-            class="w-screen relative flex flex-col items-center pt-[2.5vw] text-white  font-semibold text-[5.7vw] z-[-1] ">
+            class="w-screen relative flex flex-col items-center pt-[3vw] text-white  font-semibold text-[5.7vw] z-[-1] ">
 
             <!-- NAV bg -->
-            <div class="flex justify-end pr-[5vw] w-screen">
+            <div class="flex justify-end pr-[3vw]  w-screen">
 
                 <div class="flex items-end">
 
