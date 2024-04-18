@@ -23,7 +23,7 @@
 
                         <li><button @click="devpp"
                                 :class="{ 'text-[rgba(255,255,255,0.45)] ': !devp, 'text-white text-[7vw] mb-[2vw]  underline underline-offset-8 ': devp }"
-                                class="duration-500 text-start mt-[-1vw]">Dev. Profile</button></li>
+                                class="duration-500 text-start text-nowrap mt-[-1vw]">Dev. Profile</button></li>
 
                         <li><button @click="projectp"
                                 :class="{ 'text-[rgba(255,255,255,0.45)]': !project, 'text-white text-[7vw] mb-[2vw] underline underline-offset-8': project }"
