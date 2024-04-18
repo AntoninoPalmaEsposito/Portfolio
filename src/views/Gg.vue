@@ -50,8 +50,8 @@
                 <div v-if="devp1" :class="{ 'opacitys2': !devp, 'opacitys': devp }" class="w-screen flex flex-col   ">
 
                     <!-- h1 -->
-                    <div class="text-[7vw] px-[8vw] font-semibold  leading-7"><span
-                            class="text-[14vw] font-extrabold">CIAO  </span> parole totalmente a caso  wdwd</div>
+                    <div class="text-[7vw] px-[8vw] font-semibold  leading-[9vw]"> <span
+                            class="text-[14vw] font-extrabold">Vision:  </span></div>
 
                     <div class="flex ">
 
@@ -172,7 +172,7 @@
                     </div>
 
 
-                    <div class="mt-[6vw]">
+                    <div class="mt-[5vw]">
                         <!-- text -->
                         <div class="text-[4vw] px-[8vw]">
                             Credo fortemente nell'organizzazione.
@@ -190,7 +190,7 @@
 
                             <div class="text-[4vw] px-[8vw] pt-[3vw]">
                   Sono un umano socievole che apprezza il senso di comunità all’interno del team.
-                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco.
                 </div>
                     </div>
 
