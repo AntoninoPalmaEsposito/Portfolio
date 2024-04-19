@@ -51,7 +51,7 @@
 
                     <!-- h1 -->
                     <div class="text-[7vw] px-[12vw] font-semibold  leading-[7vw]"> <span
-                            class="text-[14vw] font-extrabold">Vision:  </span></div>
+                            class="text-[14vw] font-extrabold">Vision: </span></div>
 
                     <div class="flex ">
 
@@ -188,10 +188,11 @@
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                             Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide &#128293</div>
 
-                            <div class="text-[4vw] px-[6.5vw] pt-[3vw]">
-                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.  <br>
-                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco &#9749
-                </div>
+                        <div class="text-[4vw] px-[6.5vw] pt-[3vw]">
+                            Sono un umano socievole che apprezza il senso di comunità all’interno del team. <br>
+                            Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                            &#9749
+                        </div>
                     </div>
 
 
@@ -208,8 +209,8 @@
                     <div class="flex justify-center items-center  ">
 
                         <!-- Cp1 -->
-                        <a v-if="cp1" href="https://dribbble-replica-html-css.vercel.app/" :class="{ 'p1': c1, 'p2': !c1 }"
-                            class="flex flex-col">
+                        <a v-if="cp1" href="https://dribbble-replica-html-css.vercel.app/"
+                            :class="{ 'p1': c1, 'p2': !c1 }" class="flex flex-col">
 
                             <!-- visita -->
                             <span class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
@@ -402,7 +403,8 @@
                             P-COMMERCE</div>
 
                         <!-- pis1 -->
-                        <div v-if="cp4" :class="{ 'p1': c4, 'p2': !c4 }" class="font-extrabold text-[7vw] mt-[-1vw]">BLOG
+                        <div v-if="cp4" :class="{ 'p1': c4, 'p2': !c4 }" class="font-extrabold text-[7vw] mt-[-1vw]">
+                            BLOG
                         </div>
 
 
@@ -438,7 +440,8 @@
 
                     <div class=" text-[11vw] t4 font-extrabold  ">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                        class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Guarda i miei
+                        class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Guarda i
+                        miei
                         post!</a>
 
                     <div class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
@@ -492,8 +495,16 @@
 
 
 
+
             <!-- nav scroll -->
             <div class="flex justify-end mt-[12.5vw] mb-[4vw]  w-screen px-[7vw]">
+
+                <!-- language -->
+                <div class="h-[7.7vw] font-bold w-[20vw] rounded-[6px] flex border-2 mt-[-0.4vw] mr-[7vw]">
+                    <div class="w-[50%] text-white rounded-l-[6px] text-center bg-[rgba(0,0,0,0.52)]">IT</div>
+                    <div class="w-[50%] text-center text-[rgba(0,0,0,0.52)]">EN</div>
+                </div>
+
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -516,7 +527,8 @@
             <!-- 1 descrizione -->
             <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
                 Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, <br>
-                dove ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi sono
+                dove ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi
+                sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
                 programmazione.
             </div>
@@ -1133,7 +1145,7 @@ body {
 @keyframes t1 {
 
     0% {
-        color:  #e7f5d3;
+        color: #e7f5d3;
     }
 
     25% {
@@ -1145,11 +1157,11 @@ body {
     }
 
     75% {
-        color:  #f9dbca;
+        color: #f9dbca;
     }
 
     100% {
-        color:  #e7f5d3;
+        color: #e7f5d3;
     }
 }
 
@@ -1163,7 +1175,7 @@ body {
 @keyframes t2 {
 
     0% {
-        color:  #dcf7b7;
+        color: #dcf7b7;
     }
 
     25% {
@@ -1175,11 +1187,11 @@ body {
     }
 
     75% {
-        color:  #fac9ac;
+        color: #fac9ac;
     }
 
     100% {
-        color:  #dcf7b7;
+        color: #dcf7b7;
     }
 }
 
@@ -1193,7 +1205,7 @@ body {
 @keyframes t3 {
 
     0% {
-        color:  #d0f799;
+        color: #d0f799;
     }
 
     25% {
@@ -1205,11 +1217,11 @@ body {
     }
 
     75% {
-        color:  #f7b088;
+        color: #f7b088;
     }
 
     100% {
-        color:  #d0f799;
+        color: #d0f799;
     }
 }
 
@@ -1223,7 +1235,7 @@ body {
 @keyframes t4 {
 
     0% {
-        color:  #c3f878;
+        color: #c3f878;
     }
 
     25% {
@@ -1235,11 +1247,11 @@ body {
     }
 
     75% {
-        color:  #f6a06e;
+        color: #f6a06e;
     }
 
     100% {
-        color:  #c3f878;
+        color: #c3f878;
     }
 }
 
@@ -1252,7 +1264,7 @@ body {
 
 @keyframes t5 {
     0% {
-        color:  #b9fc5c;
+        color: #b9fc5c;
     }
 
     25% {
@@ -1264,11 +1276,11 @@ body {
     }
 
     75% {
-        color:  #f48b4d;
+        color: #f48b4d;
     }
 
     100% {
-        color:  #b9fc5c;
+        color: #b9fc5c;
     }
 }
 
@@ -1281,7 +1293,7 @@ body {
 
 @keyframes t6 {
     0% {
-        color:  #aaf93c;
+        color: #aaf93c;
     }
 
     25% {
@@ -1293,11 +1305,11 @@ body {
     }
 
     75% {
-        color:  #f67d36;
+        color: #f67d36;
     }
 
     100% {
-        color:  #aaf93c;
+        color: #aaf93c;
     }
 }
 
