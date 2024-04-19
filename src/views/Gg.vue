@@ -500,10 +500,14 @@
             <div class="flex justify-end mt-[12.5vw] mb-[4vw]  w-screen px-[7vw]">
 
                 <!-- language -->
-                <div class="h-[7.7vw] font-bold w-[20vw] rounded-[6px] flex border-2 mt-[-0.4vw] mr-[7vw]">
-                    <div class="w-[50%] text-white rounded-l-[6px] text-center bg-[rgba(0,0,0,0.52)]">IT</div>
-                    <div class="w-[50%] text-center text-[rgba(0,0,0,0.52)]">EN</div>
-                </div>
+                
+                    <button @click="linguage"
+                        class="h-[7.7vw] font-bold w-[20vw]  flex items-center mt-[-0.4vw] mr-[7vw]">
+                        <div :class="{'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]':linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': !linguage1 }" class="w-[50%] h-[100%] rounded-l-[6px] text-center flex items-center justify-center ">IT</div>
+
+                        <div :class="{'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]':!linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }" class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
+                    </button>
+                
 
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
@@ -633,13 +637,18 @@ export default {
             c1: true,
             c2: false,
             c3: false,
-            c4: false
+            c4: false,
+            linguage1: true
 
 
         }
     },
 
     methods: {
+
+        linguage() {
+            this.linguage1 = !this.linguage1
+        },
 
         meno() {
             if (this.constimg > 0) {
