@@ -424,29 +424,29 @@
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
                     class="w-screen flex flex-col mt-[2vw] items-center   ">
 
-                    <div class=" text-[9vw] t1 font-extrabold ">RESIDENZA</div>
+                    <div class=" text-[11vw] t1 font-extrabold ">RESIDENZA</div>
                     <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Bari (BA)
                     </div>
 
-                    <div class=" text-[9vw] t2 font-extrabold  ">EMAIL</div>
+                    <div class=" text-[11vw] t2 font-extrabold  ">EMAIL</div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal">
                         ape.develop3@gmail.com</div>
 
-                    <div class=" text-[9vw] t3 font-extrabold  ">NUMERO</div>
+                    <div class=" text-[11vw] t3 font-extrabold  ">NUMERO</div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal ">+39 3426398488
                     </div>
 
-                    <div class=" text-[9vw] t4 font-extrabold  ">LINKEDIN</div>
+                    <div class=" text-[11vw] t4 font-extrabold  ">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
                         class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Guarda i miei
                         post!</a>
 
-                    <div class=" text-[9vw] t5 font-extrabold  ">GITHUB</div>
+                    <div class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
                     <a href="https://github.com/AntoninoPalmaEsposito"
                         class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Scopri
                         le mie repository!</a>
 
-                    <div class=" text-[9vw] t6 font-extrabold ">INSTAGRAM</div>
+                    <div class=" text-[11vw] t6 font-extrabold ">INSTAGRAM</div>
                     <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
                         class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visita il mio
                         profilo!</a>
