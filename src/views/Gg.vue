@@ -558,7 +558,8 @@
 
                     <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': !linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }"
                         class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
-                </button>
+                        
+                </button> 
 
 
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
