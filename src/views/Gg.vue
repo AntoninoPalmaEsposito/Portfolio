@@ -1125,151 +1125,151 @@ body {
 
 .t1 {
     animation-name: t1;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t1 {
     0% {
-        color: rgb(175, 252, 239);
+        color: rgb(198, 245, 221);
     }
 
     35% {
-        color: #d1ffaf;
+        color: rgb(242, 206, 248);
     }
 
     70% {
-        color: #d8afff;
+        color:  #e7f5d3;
     }
 
     100% {
-        color: rgb(175, 252, 239);
+        color: rgb(198, 245, 221);
     }
 }
 
 .t2 {
     animation-name: t2;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t2 {
     0% {
-        color: rgb(132, 250, 231);
+        color: rgb(175, 248, 210);
     }
 
     35% {
-        color: #b7fb86;
+        color: rgb(239, 180, 250);
     }
 
     70% {
-        color: #c587ff;
+        color:  #dcf7b7;
     }
 
     100% {
-        color: rgb(137, 248, 230);
+        color: rgb(175, 248, 210);
     }
 }
 
 .t3 {
     animation-name: t3;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t3 {
     0% {
-        color: rgb(105, 255, 230);
+        color: rgb(146, 247, 195);
     }
 
     35% {
-        color: #a6fb69;
+        color: rgb(233, 153, 247);
     }
 
     70% {
-        color: #b96eff;
+        color:  #d0f799;
     }
 
     100% {
-        color: rgb(103, 246, 222);
+        color: rgb(146, 247, 195);
     }
 }
 
 .t4 {
     animation-name: t4;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t4 {
     0% {
-        color: rgb(81, 254, 225);
+        color: rgb(116, 250, 181);
     }
 
     35% {
-        color: #99ff50;
+        color: rgb(231, 130, 249);
     }
 
     70% {
-        color: #ac54ff;
+        color:  #c3f878;
     }
 
     100% {
-        color: rgb(76, 248, 219);
+        color: rgb(116, 250, 181);
     }
 }
 
 .t5 {
     animation-name: t5;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t5 {
     0% {
-        color: rgb(56, 250, 218);
+        color: rgb(84, 247, 163);
     }
 
     35% {
-        color: #85fa32;
+        color: rgb(227, 111, 247);
     }
 
     70% {
-        color: #9f39ff;
+        color:  #b9fc5c;
     }
 
     100% {
-        color: rgb(49, 253, 219);
+        color: rgb(84, 247, 163);
     }
 }
 
 .t6 {
     animation-name: t6;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes t6 {
     0% {
-        color: rgb(30, 248, 211);
+        color: rgb(55, 247, 148);
     }
 
     35% {
-        color: #79ff18;
+        color: rgb(223, 87, 247);
     }
 
     70% {
-        color: #901cfe;
+        color:  #aaf93c;
     }
 
     100% {
-        color: rgb(21, 251, 213);
+        color: rgb(55, 247, 148);
     }
 }
 
