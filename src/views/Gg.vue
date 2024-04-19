@@ -422,7 +422,7 @@
 
                 <!-- Contacts -->
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
-                    class="w-screen flex flex-col text-start mt-[3vw] pl-[12vw]   ">
+                    class="w-screen flex flex-col mt-[3vw] items-center   ">
 
                     <div class=" text-[10vw] t1 font-extrabold ">RESIDENZA</div>
                     <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Bari (BA)
