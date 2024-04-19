@@ -58,16 +58,16 @@
                 </div>
 
                 <!-- lg proj -->
-                <div class="flex flex-col items-center justify-center px-[25px] ">
+                <div class="flex flex-col items-center justify-center px-[25px] mb-[5px] ">
                   <li class="hover:scale-125"><button @click="projecT"><img src="../assets/project.png" alt=""
-                        class="w-[210px]  "></button></li>
+                        class="w-[220px]  "></button></li>
                   <div :class="{ 'opacity-100 , delay-500': projectst }" class=" w-[180px]  opacity-0 duration-1000">
                     <img src="../assets/sottol.png" alt="" class="w-[180px] ">
                   </div>
                 </div>
 
                 <!-- lg contacts -->
-                <div class="flex flex-col items-center justify-center px-[25px] ">
+                <div class="flex flex-col items-center justify-center px-[25px] mb-[3px] ">
                   <li class="hover:scale-125"><button @click="contactS"><img src="../assets/contacts.png" alt=""
                         class="w-[260px] "></button></li>
                   <div :class="{ 'opacity-100 , delay-500': contactst }" class=" w-[180px]  opacity-0 duration-1000">
