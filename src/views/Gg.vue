@@ -174,8 +174,8 @@
 
                     <div class="mt-[5vw]">
                         <!-- text -->
-                        <div class="text-[4vw] px-[6.5vw]">
-                            Credo fortemente nell'organizzazione. <br>
+                        <div v-if="linguage1" class="text-[4vw] px-[6.5vw]">
+                            Credo fortemente nell'organizzazione.
                             Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
                             più veloce e al rispetto
@@ -183,14 +183,28 @@
                             prefissate &#9200
                         </div>
 
+                        <div v-if="!linguage1" class="text-[4vw] px-[6.5vw]">
 
-                        <div class="text-[4vw] px-[6.5vw] mt-[3vw]">
+                            I strongly believe in organisation.
+                            Thorough analysis leads to cleaner code, faster development and adherence to set deadlines &#9200
+                        </div>
+
+
+                        <div v-if="linguage1" class="text-[4vw] px-[6.5vw] mt-[3vw]">
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                             Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide &#128293</div>
 
-                        <div class="text-[4vw] px-[6.5vw] pt-[3vw]">
-                            Sono un umano socievole che apprezza il senso di comunità all’interno del team. <br>
+                            <div v-if="!linguage1" class="text-[4vw] px-[6.5vw] mt-[3vw]">
+                                I am passionate about UX/UI Design and constantly strive to stay up-to-date. I don't like repetitive projects, but I am always looking for new challenges &#128293</div>
+
+                        <div v-if="linguage1" class="text-[4vw] px-[6.5vw] pt-[3vw]">
+                            Sono un umano socievole che apprezza il senso di comunità all’interno del team. 
                             Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                            &#9749
+                        </div>
+
+                        <div v-if="!linguage1" class="text-[4vw] px-[6.5vw] pt-[3vw]">
+                            I am a sociable human being who values a sense of community within the team. I firmly believe in the importance of continuous training and value mutual help
                             &#9749
                         </div>
                     </div>
@@ -213,8 +227,11 @@
                             :class="{ 'p1': c1, 'p2': !c1 }" class="flex flex-col">
 
                             <!-- visita -->
-                            <span class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                            <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
+
+                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
                             <div
@@ -230,12 +247,17 @@
                                 </div>
 
                                 <!-- text e bottom -->
-                                <div
+                                <div  v-if="linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
                                     all’avanguardia nel design
                                     e nel clean-code.
+                                </div>
+
+                                <div v-if="!linguage1"
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
+                                    I chose to take my cue from one of the most popular sites among creatives: Dribbble. I wanted to analyse its style and animations, as it is a site at the forefront of design and clean-code.
                                 </div>
 
                                 <!-- skils -->
@@ -260,8 +282,11 @@
                             class="flex flex-col ">
 
                             <!-- visita -->
-                            <span class="text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
-                                    class="border-solid border-b-2  text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]">Visita!</span></span>
+                            <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
+
+                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
                             <div
@@ -277,11 +302,16 @@
                                 </div>
 
                                 <!-- text e bottom -->
-                                <div
+                                <div v-if="linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Mi sono divertito a ricreare il gioco dell’impiccato, sfidandomi direttamente contro
                                     il computer.
                                     E tu, vieni a fare una partita?
+                                </div>
+
+                                <div v-if="!linguage1"
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
+                                    I had fun recreating the game of hangman, challenging myself directly against the computer. And you, are you coming for a game?
                                 </div>
 
                                 <!-- skils -->
@@ -311,8 +341,11 @@
                             class="flex flex-col ">
 
                             <!-- visita -->
-                            <span class="  text-[5vw] font-semibold ml-[8vw] mb-[2vw]"><span
-                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)] ">Visita!</span></span>
+                            <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
+
+                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                                    class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
                             <div
@@ -328,12 +361,17 @@
                                 </div>
 
                                 <!-- text e bottom -->
-                                <div
+                                <div v-if="linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Per questo progetto, insieme al mio team, abbiamo dato vita a un e-commerce.
                                     Abbiamo creato un file JSON locale per popolare gli articoli e abbiamo adottato
                                     Pinia per gestire
                                     gli stati tra elementi e pagine. Ti va di fare acquisti?
+                                </div>
+
+                                <div v-if="!linguage1"
+                                    class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
+                                    For this project, together with my team, we created an e-commerce. We created a local JSON file to populate the articles and adopted Pinia to manage the states between elements and pages. Feel like shopping?
                                 </div>
 
                                 <!-- skils -->
@@ -426,33 +464,46 @@
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
                     class="w-screen flex flex-col mt-[2vw] items-center   ">
 
-                    <div class=" text-[11vw] t1 font-extrabold ">RESIDENZA</div>
-                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Bari (BA)
+                    <div class=" text-[11vw] t1 font-extrabold ">
+                        <div v-if="linguage1">RESIDENZA</div>
+                        <div v-if="!linguage1">RESIDENCE</div></div>
+        
+                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">IT Bari (BA)
                     </div>
 
                     <div class=" text-[11vw] t2 font-extrabold  ">EMAIL</div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal">
                         ape.develop3@gmail.com</div>
 
-                    <div class=" text-[11vw] t3 font-extrabold  ">NUMERO</div>
+                    <div class=" text-[11vw] t3 font-extrabold  "><div v-if="linguage1">NUMERO</div>
+                        <div v-if="!linguage1">NUMBER</div></div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal ">+39 3426398488
                     </div>
 
                     <div class=" text-[11vw] t4 font-extrabold  ">LINKEDIN</div>
-                    <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+                    <a v-if="linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
                         class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Guarda i
                         miei
                         post!</a>
 
-                    <div class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
-                    <a href="https://github.com/AntoninoPalmaEsposito"
+                        <a v-if="!linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+                        class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Look at my posts!</a>
+
+                    <div  class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
+                    <a v-if="linguage1" href="https://github.com/AntoninoPalmaEsposito"
                         class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Scopri
                         le mie repository!</a>
 
+                        <a v-if="!linguage1" href="https://github.com/AntoninoPalmaEsposito"
+                        class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Check out my repositories!</a>
+
                     <div class=" text-[11vw] t6 font-extrabold ">INSTAGRAM</div>
-                    <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+                    <a v-if="linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
                         class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visita il mio
                         profilo!</a>
+
+                        <a v-if="!linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+                        class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visit my profile!</a>
 
 
 
@@ -500,17 +551,18 @@
             <div class="flex justify-end mt-[12.5vw] mb-[4vw]  w-screen px-[7vw]">
 
                 <!-- language -->
-                
-                    <button @click="linguage"
-                        class="h-[7.7vw] font-bold w-[20vw]  flex items-center mt-[-0.4vw] mr-[7vw]">
-                        <div :class="{'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]':linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': !linguage1 }" class="w-[50%] h-[100%] rounded-l-[6px] text-center flex items-center justify-center ">IT</div>
 
-                        <div :class="{'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]':!linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }" class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
-                    </button>
-                
+                <button @click="linguage" class="h-[7.7vw] font-bold w-[20vw]  flex items-center mt-[-0.4vw] mr-[7vw]">
+                    <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': !linguage1 }"
+                        class="w-[50%] h-[100%] rounded-l-[6px] text-center flex items-center justify-center ">IT</div>
+
+                    <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': !linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }"
+                        class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
+                </button>
+
 
                 <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
-                    <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(79,40,40,0.52)]"></div>
+                    <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
 
@@ -519,22 +571,31 @@
 
 
             <!-- sect 1 -->
-            <div
+            <div v-if="linguage1"
                 class=" px-[5.5vw] pt-[14vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
                 Mi
                 chiamo Antonino e non sono solo un Web Developer <img src="../assets/freccian.png" alt=""
                     class="w-[4.5vw] inline-block ml-[1.5vw] animate-bounce mb-[-2vw] opacity-50"> </div>
 
+            <div v-if="!linguage1"
+                class=" px-[5.5vw] pt-[14vw] w-screen leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">
+                My name is Antonino and I am not only a Web Developer <img src="../assets/freccian.png" alt=""
+                    class="w-[4vw] inline-block  animate-bounce mb-[-3vw] opacity-50"> </div>
+
             <!-- img 1 home -->
             <img src="../assets/disegno.png" alt="" class="px-[3.2vw] w-screen pt-[4vw]">
 
             <!-- 1 descrizione -->
-            <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
-                Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, <br>
-                dove ho studiato arte illustrativa, grafica e progettazione architettonica. <br> Successivamente, mi
+            <div v-if="linguage1" class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
+                Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico,
+                dove ho studiato arte illustrativa, grafica e progettazione architettonica. Successivamente, mi
                 sono
                 iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
                 programmazione.
+            </div>
+
+            <div v-if="!linguage1" class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
+                From a young age I have cultivated a great passion for art. I attended art school, where I studied illustrative art, graphics and architectural design. Later, I enrolled in the Faculty of Architecture, but over the years I developed a strong interest in programming.
             </div>
 
             <div class="bg-white">
@@ -543,15 +604,21 @@
                 <img src="../assets/sedia.png" alt="" class="px-[4vw] mr-[5vw] w-[85vw] pt-[4vw]">
 
                 <!-- 2 descrizione -->
-                <div class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
+                <div v-if="linguage1"
+                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
                     Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi
                     ha
-                    fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze. <br>
+                    fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
                     Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte
                     altre
-                    passioni. <br>
+                    passioni.
                     Adoro il disegno a mano libera, progettare oggetti di design e nel tempo libero mi trasformo in un
                     tatuatore!
+                </div>
+
+                <div v-if="!linguage1"
+                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
+                    I then realised that a career as an architect was not my ideal path. This experience gave me skills in working in a team and a great respect for deadlines. In my spare time, apart from fantasising about how to astound others with new homepages, I have many other passions. I love freehand drawing, designing objects and in my spare time I turn myself into a tattoo artist!
                 </div>
 
             </div>
