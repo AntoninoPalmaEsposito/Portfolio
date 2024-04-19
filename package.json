@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "gsap": "^3.12.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
