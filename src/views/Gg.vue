@@ -558,15 +558,19 @@
 
                     <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': !linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }"
                         class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
-                        
+
                 </button> 
 
 
-                <button @click="tscroll" class=" flex flex-col items-end scale-110 ">
+                <button @click="tscroll" v-if="scroll" class=" flex flex-col items-end scale-110 ">
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] mb-[1.6vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
                     <div class="h-[1.2vw]  w-[9vw] rounded-[50px] bg-[rgba(0,0,0,0.52)]"></div>
+                </button>
 
+                <button @click="tscroll" v-if="!scroll" class=" flex flex-col items-end scale-110 ">
+                    <img src="../assets/fsun.png" alt="" class="w-[8vw] mt-[1vw] mr-[1vw] opacity-50">
+                    
                 </button>
             </div>
 
@@ -1101,7 +1105,7 @@ export default {
                 this.devp = false
                 this.project = false
                 this.contacts = false
-
+                
                 setTimeout(() => {
                     this.devp1 = false;
                 }, 500);
@@ -1120,6 +1124,7 @@ export default {
                 this.devp = true
                 this.project = false
                 this.contacts = false
+                
 
                 setTimeout(() => {
                     this.devp1 = true;
