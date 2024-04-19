@@ -1131,20 +1131,25 @@ body {
 }
 
 @keyframes t1 {
+
     0% {
-        color: rgb(198, 245, 221);
-    }
-
-    35% {
-        color: rgb(242, 206, 248);
-    }
-
-    70% {
         color:  #e7f5d3;
     }
 
-    100% {
+    25% {
         color: rgb(198, 245, 221);
+    }
+
+    50% {
+        color: rgb(242, 206, 248);
+    }
+
+    75% {
+        color:  #f9dbca;
+    }
+
+    100% {
+        color:  #e7f5d3;
     }
 }
 
@@ -1156,20 +1161,25 @@ body {
 }
 
 @keyframes t2 {
+
     0% {
-        color: rgb(175, 248, 210);
-    }
-
-    35% {
-        color: rgb(239, 180, 250);
-    }
-
-    70% {
         color:  #dcf7b7;
     }
 
-    100% {
+    25% {
         color: rgb(175, 248, 210);
+    }
+
+    50% {
+        color: rgb(239, 180, 250);
+    }
+
+    75% {
+        color:  #fac9ac;
+    }
+
+    100% {
+        color:  #dcf7b7;
     }
 }
 
@@ -1181,20 +1191,25 @@ body {
 }
 
 @keyframes t3 {
+
     0% {
-        color: rgb(146, 247, 195);
-    }
-
-    35% {
-        color: rgb(233, 153, 247);
-    }
-
-    70% {
         color:  #d0f799;
     }
 
-    100% {
+    25% {
         color: rgb(146, 247, 195);
+    }
+
+    50% {
+        color: rgb(233, 153, 247);
+    }
+
+    75% {
+        color:  #f7b088;
+    }
+
+    100% {
+        color:  #d0f799;
     }
 }
 
@@ -1206,20 +1221,25 @@ body {
 }
 
 @keyframes t4 {
+
     0% {
-        color: rgb(116, 250, 181);
-    }
-
-    35% {
-        color: rgb(231, 130, 249);
-    }
-
-    70% {
         color:  #c3f878;
     }
 
-    100% {
+    25% {
         color: rgb(116, 250, 181);
+    }
+
+    50% {
+        color: rgb(231, 130, 249);
+    }
+
+    75% {
+        color:  #f6a06e;
+    }
+
+    100% {
+        color:  #c3f878;
     }
 }
 
@@ -1232,19 +1252,23 @@ body {
 
 @keyframes t5 {
     0% {
-        color: rgb(84, 247, 163);
-    }
-
-    35% {
-        color: rgb(227, 111, 247);
-    }
-
-    70% {
         color:  #b9fc5c;
     }
 
-    100% {
+    25% {
         color: rgb(84, 247, 163);
+    }
+
+    50% {
+        color: rgb(227, 111, 247);
+    }
+
+    75% {
+        color:  #f48b4d;
+    }
+
+    100% {
+        color:  #b9fc5c;
     }
 }
 
@@ -1257,19 +1281,23 @@ body {
 
 @keyframes t6 {
     0% {
-        color: rgb(55, 247, 148);
-    }
-
-    35% {
-        color: rgb(223, 87, 247);
-    }
-
-    70% {
         color:  #aaf93c;
     }
 
-    100% {
+    25% {
         color: rgb(55, 247, 148);
+    }
+
+    50% {
+        color: rgb(223, 87, 247);
+    }
+
+    75% {
+        color:  #f67d36;
+    }
+
+    100% {
+        color:  #aaf93c;
     }
 }
 
