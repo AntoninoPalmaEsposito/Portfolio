@@ -424,29 +424,29 @@
                 <div v-if="contacts1" :class="{ 'opacitys2': !contacts, 'opacitys': contacts }"
                     class="w-screen flex flex-col text-start mt-[3vw] pl-[12vw]   ">
 
-                    <div class=" text-[7vw]  font-extrabold ">RESIDENZA</div>
+                    <div class=" text-[10vw] t1 font-extrabold ">RESIDENZA</div>
                     <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Bari (BA)
                     </div>
 
-                    <div class=" text-[7vw]  font-extrabold  ">EMAIL</div>
+                    <div class=" text-[10vw] t2 font-extrabold  ">EMAIL</div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal">
                         ape.develop3@gmail.com</div>
 
-                    <div class=" text-[7vw]  font-extrabold  ">NUMERO</div>
+                    <div class=" text-[10vw] t3 font-extrabold  ">NUMERO</div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal ">+39 3426398488
                     </div>
 
-                    <div class=" text-[7vw]  font-extrabold  ">LINKEDIN</div>
+                    <div class=" text-[10vw] t4 font-extrabold  ">LINKEDIN</div>
                     <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
                         class=" text-[4vw] underline mb-[3vw] mt-[-2vw] font-normal">Guarda i miei
                         post!</a>
 
-                    <div class=" text-[7vw]  font-extrabold  ">GITHUB</div>
+                    <div class=" text-[10vw] t5 font-extrabold  ">GITHUB</div>
                     <a href="https://github.com/AntoninoPalmaEsposito"
                         class=" text-[4vw] mb-[3vw] mt-[-2vw] underline  font-normal">Scopri
                         le mie repository!</a>
 
-                    <div class=" text-[7vw]  font-extrabold ">INSTAGRAM</div>
+                    <div class=" text-[10vw] t6 font-extrabold ">INSTAGRAM</div>
                     <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
                         class=" text-[4vw]  underline mt-[-2vw] font-normal">Visita il mio
                         profilo!</a>
@@ -1122,6 +1122,157 @@ export default {
 body {
     background-color: black;
 }
+
+.t1 {
+    animation-name: t1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t1 {
+    0% {
+        color: rgb(175, 252, 239);
+    }
+
+    35% {
+        color: #d1ffaf;
+    }
+
+    70% {
+        color: #d8afff;
+    }
+
+    100% {
+        color: rgb(175, 252, 239);
+    }
+}
+
+.t2 {
+    animation-name: t2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t2 {
+    0% {
+        color: rgb(132, 250, 231);
+    }
+
+    35% {
+        color: #b7fb86;
+    }
+
+    70% {
+        color: #c587ff;
+    }
+
+    100% {
+        color: rgb(137, 248, 230);
+    }
+}
+
+.t3 {
+    animation-name: t3;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t3 {
+    0% {
+        color: rgb(105, 255, 230);
+    }
+
+    35% {
+        color: #a6fb69;
+    }
+
+    70% {
+        color: #b96eff;
+    }
+
+    100% {
+        color: rgb(103, 246, 222);
+    }
+}
+
+.t4 {
+    animation-name: t4;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t4 {
+    0% {
+        color: rgb(81, 254, 225);
+    }
+
+    35% {
+        color: #99ff50;
+    }
+
+    70% {
+        color: #ac54ff;
+    }
+
+    100% {
+        color: rgb(76, 248, 219);
+    }
+}
+
+.t5 {
+    animation-name: t5;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t5 {
+    0% {
+        color: rgb(56, 250, 218);
+    }
+
+    35% {
+        color: #85fa32;
+    }
+
+    70% {
+        color: #9f39ff;
+    }
+
+    100% {
+        color: rgb(49, 253, 219);
+    }
+}
+
+.t6 {
+    animation-name: t6;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes t6 {
+    0% {
+        color: rgb(30, 248, 211);
+    }
+
+    35% {
+        color: #79ff18;
+    }
+
+    70% {
+        color: #901cfe;
+    }
+
+    100% {
+        color: rgb(21, 251, 213);
+    }
+}
+
 
 .p1 {
     animation-name: p1;
