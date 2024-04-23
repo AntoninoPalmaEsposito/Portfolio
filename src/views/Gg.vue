@@ -15,7 +15,7 @@
                     <div class="relative top-[7vw] h-[40vw]  rounded-[50px] mr-[6vw] w-[1vw] bg-[rgb(109,109,109)]">
                     </div>
 
-                    <ul class="flex flex-col items-start w-[40vw]">
+                    <ul class="flex flex-col items-start w-[40vw] text-start">
 
                         <li class=""><button @click="tscroll"
                                 :class="{ 'opacity-[0.45]': !scroll, 'opacity-1': scroll }" class="duration-500"><img
@@ -577,13 +577,13 @@
 
             <!-- sect 1 -->
             <div v-if="linguage1"
-                class=" px-[5.5vw] pt-[14vw] w-screen leading-[8.5vw] font-extrabold text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
+                class=" px-[5.5vw] pt-[14vw] w-screen leading-[8.5vw] font-extrabold  text-[8.5vw]  text-[rgba(0,0,0,0.52)]">
                 Mi
                 chiamo Antonino e non sono solo un Web Developer <img src="../assets/freccian.png" alt=""
                     class="w-[4.5vw] inline-block ml-[1.5vw] animate-bounce mb-[-2vw] opacity-50"> </div>
 
             <div v-if="!linguage1"
-                class=" px-[5.5vw] pt-[14vw] w-screen leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">
+                class=" px-[5.5vw] pt-[15.5vw] w-screen leading-[8vw] font-extrabold text-[8vw]  text-[rgba(0,0,0,0.52)]">
                 My name is Antonino and I am not only a Web Developer <img src="../assets/freccian.png" alt=""
                     class="w-[4vw] inline-block  animate-bounce mb-[-3vw] opacity-50"> </div>
 
@@ -610,7 +610,7 @@
 
                 <!-- 2 descrizione -->
                 <div v-if="linguage1"
-                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
+                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[10vw]">
                     Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi
                     ha
                     fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
@@ -622,8 +622,14 @@
                 </div>
 
                 <div v-if="!linguage1"
-                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[14vw]">
+                    class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[10vw]">
                     I then realised that a career as an architect was not my ideal path. This experience gave me skills in working in a team and a great respect for deadlines. In my spare time, apart from fantasising about how to astound others with new homepages, I have many other passions. I love freehand drawing, designing objects and in my spare time I turn myself into a tattoo artist!
+                </div>
+
+                <!-- firma -->
+              <div class=" flex justify-center pb-[10vw]">
+                <img src="../assets/firma.png" alt=""
+                  class="firma w-[40vw] ">
                 </div>
 
             </div>
@@ -1216,6 +1222,12 @@ export default {
 body {
     background-color: black;
 }
+
+/* .fon {
+    font-family: Kabel Black Regular;
+    
+    
+} */
 
 .t1 {
     animation-name: t1;

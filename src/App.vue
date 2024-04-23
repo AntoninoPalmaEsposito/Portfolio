@@ -25,5 +25,8 @@ export default {
 </template>
 
 <style>
-
+@font-face {
+  font-family: 'Kabel Black Regular';
+  src: url('./src/fonts/Kabel Black Regular.otf');
+}
 </style>
