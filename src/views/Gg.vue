@@ -186,7 +186,8 @@
                         <div v-if="!linguage1" class="text-[4vw] px-[6.5vw]">
 
                             I strongly believe in organisation.
-                            Thorough analysis leads to cleaner code, faster development and adherence to set deadlines &#9200
+                            Thorough analysis leads to cleaner code, faster development and adherence to set deadlines
+                            &#9200
                         </div>
 
 
@@ -194,17 +195,19 @@
                             Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
                             Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide &#128293</div>
 
-                            <div v-if="!linguage1" class="text-[4vw] px-[6.5vw] mt-[3vw]">
-                                I am passionate about UX/UI Design and constantly strive to stay up-to-date. I don't like repetitive projects, but I am always looking for new challenges &#128293</div>
+                        <div v-if="!linguage1" class="text-[4vw] px-[6.5vw] mt-[3vw]">
+                            I am passionate about UX/UI Design and constantly strive to stay up-to-date. I don't like
+                            repetitive projects, but I am always looking for new challenges &#128293</div>
 
                         <div v-if="linguage1" class="text-[4vw] px-[6.5vw] pt-[3vw]">
-                            Sono un umano socievole che apprezza il senso di comunità all’interno del team. 
+                            Sono un umano socievole che apprezza il senso di comunità all’interno del team.
                             Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
                             &#9749
                         </div>
 
                         <div v-if="!linguage1" class="text-[4vw] px-[6.5vw] pt-[3vw]">
-                            I am a sociable human being who values a sense of community within the team. I firmly believe in the importance of continuous training and value mutual help
+                            I am a sociable human being who values a sense of community within the team. I firmly
+                            believe in the importance of continuous training and value mutual help
                             &#9749
                         </div>
                     </div>
@@ -230,7 +233,7 @@
                             <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
 
-                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                            <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
@@ -247,7 +250,7 @@
                                 </div>
 
                                 <!-- text e bottom -->
-                                <div  v-if="linguage1"
+                                <div v-if="linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
                                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble.
                                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito
@@ -257,7 +260,9 @@
 
                                 <div v-if="!linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
-                                    I chose to take my cue from one of the most popular sites among creatives: Dribbble. I wanted to analyse its style and animations, as it is a site at the forefront of design and clean-code.
+                                    I chose to take my cue from one of the most popular sites among creatives: Dribbble.
+                                    I wanted to analyse its style and animations, as it is a site at the forefront of
+                                    design and clean-code.
                                 </div>
 
                                 <!-- skils -->
@@ -285,7 +290,7 @@
                             <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
 
-                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                            <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
@@ -311,7 +316,8 @@
 
                                 <div v-if="!linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
-                                    I had fun recreating the game of hangman, challenging myself directly against the computer. And you, are you coming for a game?
+                                    I had fun recreating the game of hangman, challenging myself directly against the
+                                    computer. And you, are you coming for a game?
                                 </div>
 
                                 <!-- skils -->
@@ -344,7 +350,7 @@
                             <span v-if="linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visita!</span></span>
 
-                                    <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
+                            <span v-if="!linguage1" class="text-[5vw]  font-semibold ml-[8vw] mb-[2vw]"><span
                                     class="border-solid border-b-2 text-[rgba(255,255,255,0.38)] border-[rgba(255,255,255,0.38)]  ">Visit!</span></span>
 
                             <!-- container -->
@@ -371,7 +377,9 @@
 
                                 <div v-if="!linguage1"
                                     class=" w-[85vw] pt-[4.8vw]  px-[4vw] z-[0] font-semibold mt-[-3vw] text-[3.5vw] text-white leading-[4vw] ">
-                                    For this project, together with my team, we created an e-commerce. We created a local JSON file to populate the articles and adopted Pinia to manage the states between elements and pages. Feel like shopping?
+                                    For this project, together with my team, we created an e-commerce. We created a
+                                    local JSON file to populate the articles and adopted Pinia to manage the states
+                                    between elements and pages. Feel like shopping?
                                 </div>
 
                                 <!-- skils -->
@@ -466,8 +474,9 @@
 
                     <div class=" text-[11vw] t1 font-extrabold ">
                         <div v-if="linguage1">RESIDENZA</div>
-                        <div v-if="!linguage1">RESIDENCE</div></div>
-        
+                        <div v-if="!linguage1">RESIDENCE</div>
+                    </div>
+
                     <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">IT Bari (BA)
                     </div>
 
@@ -475,8 +484,10 @@
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal">
                         ape.develop3@gmail.com</div>
 
-                    <div class=" text-[11vw] t3 font-extrabold  "><div v-if="linguage1">NUMERO</div>
-                        <div v-if="!linguage1">NUMBER</div></div>
+                    <div class=" text-[11vw] t3 font-extrabold  ">
+                        <div v-if="linguage1">NUMERO</div>
+                        <div v-if="!linguage1">NUMBER</div>
+                    </div>
                     <div class=" text-[4vw] mb-[3vw] mt-[-2vw] font-normal ">+39 3426398488
                     </div>
 
@@ -486,24 +497,27 @@
                         miei
                         post!</a>
 
-                        <a v-if="!linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                        class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Look at my posts!</a>
+                    <a v-if="!linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+                        class=" text-[4vw] underline underline-offset-[1vw] mb-[3vw] mt-[-2vw] font-normal">Look at my
+                        posts!</a>
 
-                    <div  class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
+                    <div class=" text-[11vw] t5 font-extrabold  ">GITHUB</div>
                     <a v-if="linguage1" href="https://github.com/AntoninoPalmaEsposito"
                         class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Scopri
                         le mie repository!</a>
 
-                        <a v-if="!linguage1" href="https://github.com/AntoninoPalmaEsposito"
-                        class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Check out my repositories!</a>
+                    <a v-if="!linguage1" href="https://github.com/AntoninoPalmaEsposito"
+                        class=" text-[4vw] mb-[3vw] mt-[-2vw] underline underline-offset-[1vw] font-normal">Check out my
+                        repositories!</a>
 
                     <div class=" text-[11vw] t6 font-extrabold ">INSTAGRAM</div>
                     <a v-if="linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
                         class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visita il mio
                         profilo!</a>
 
-                        <a v-if="!linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
-                        class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visit my profile!</a>
+                    <a v-if="!linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+                        class=" text-[4vw]  underline underline-offset-[1vw] mt-[-2vw] font-normal">Visit my
+                        profile!</a>
 
 
 
@@ -559,7 +573,7 @@
                     <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': !linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }"
                         class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
 
-                </button> 
+                </button>
 
 
                 <button @click="tscroll" v-if="scroll" class=" flex flex-col items-end scale-110 ">
@@ -570,7 +584,7 @@
 
                 <button @click="tscroll" v-if="!scroll" class=" flex flex-col items-end scale-110 ">
                     <img src="../assets/fsun.png" alt="" class="w-[8vw] mt-[1vw] mr-[1vw] opacity-50">
-                    
+
                 </button>
             </div>
 
@@ -600,7 +614,9 @@
             </div>
 
             <div v-if="!linguage1" class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw]">
-                From a young age I have cultivated a great passion for art. I attended art school, where I studied illustrative art, graphics and architectural design. Later, I enrolled in the Faculty of Architecture, but over the years I developed a strong interest in programming.
+                From a young age I have cultivated a great passion for art. I attended art school, where I studied
+                illustrative art, graphics and architectural design. Later, I enrolled in the Faculty of Architecture,
+                but over the years I developed a strong interest in programming.
             </div>
 
             <div class="bg-white">
@@ -623,13 +639,15 @@
 
                 <div v-if="!linguage1"
                     class="font-semibold text-[rgba(0,0,0,0.52)] text-[4vw] px-[5vw] pt-[2vw] pb-[10vw]">
-                    I then realised that a career as an architect was not my ideal path. This experience gave me skills in working in a team and a great respect for deadlines. In my spare time, apart from fantasising about how to astound others with new homepages, I have many other passions. I love freehand drawing, designing objects and in my spare time I turn myself into a tattoo artist!
+                    I then realised that a career as an architect was not my ideal path. This experience gave me skills
+                    in working in a team and a great respect for deadlines. In my spare time, apart from fantasising
+                    about how to astound others with new homepages, I have many other passions. I love freehand drawing,
+                    designing objects and in my spare time I turn myself into a tattoo artist!
                 </div>
 
                 <!-- firma -->
-              <div class=" flex justify-center pb-[10vw]">
-                <img src="../assets/firma.png" alt=""
-                  class="firma w-[40vw] ">
+                <div class=" flex justify-center pb-[10vw]">
+                    <img src="../assets/firma.png" alt="" class="firma w-[40vw] ">
                 </div>
 
             </div>
@@ -706,12 +724,12 @@ export default {
             cimg11: false,
             cimg12: false,
             cimg13: false,
-            fsu: false,
-            fgiu: true,
+            fsu: true,
+            fgiu: false,
             contatorep: 0,
             contatoretp: '1',
-            fsin: false,
-            fdes: true,
+            fsin: true,
+            fdes: false,
             c1: true,
             c2: false,
             c3: false,
@@ -740,8 +758,8 @@ export default {
 
                     this.cimg1 = true
                     this.cimg2 = false
-                    this.fsu = false
-                    this.fgiu = true
+                    this.fsu = true
+                    this.fgiu = false
                 }
                 else if (this.constimg == 1) {
                     this.img1 = true
@@ -861,8 +879,8 @@ export default {
                     this.img2 = true
                     this.img3 = false
 
-                    this.fsu = false
-                    this.fgiu = true
+                    this.fsu = true
+                    this.fgiu = false
 
 
 
@@ -976,8 +994,8 @@ export default {
                     this.cimg12 = false
                     this.cimg13 = true
 
-                    this.fsu = true
-                    this.fgiu = false
+                    this.fsu = false
+                    this.fgiu = true
                 }
 
             }
@@ -989,12 +1007,14 @@ export default {
                 this.contatorep--
 
             if (this.contatorep == 0) {
-                this.fdes = true
+
                 this.c1 = true
                 this.c2 = false
                 this.c3 = false
                 this.c4 = false
                 setTimeout(() => {
+                    this.fdes = false
+                    this.fsin = true
                     this.contatoretp = '1'
                     this.cp1 = true
                     this.cp2 = false
@@ -1014,12 +1034,13 @@ export default {
                     this.cp4 = false
                 }, 500);
             } else if (this.contatorep == 2) {
-                this.fsin = false
                 this.c3 = true
                 this.c2 = false
                 this.c1 = false
                 this.c4 = false
                 setTimeout(() => {
+                    this.fsin = false
+                    this.fdes = false
                     this.contatoretp = '3'
                     this.cp3 = true
                     this.cp2 = false
@@ -1051,7 +1072,6 @@ export default {
                 this.c2 = false
                 this.c3 = false
                 this.c4 = false
-
                 setTimeout(() => {
                     this.contatoretp = '1'
                     this.cp1 = true
@@ -1060,12 +1080,13 @@ export default {
                     this.cp4 = false
                 }, 500);
             } else if (this.contatorep == 1) {
-                this.fdes = false
                 this.c2 = true
                 this.c1 = false
                 this.c3 = false
                 this.c4 = false
                 setTimeout(() => {
+                    this.fdes = false
+                    this.fsin = false
                     this.contatoretp = '2'
                     this.cp2 = true
                     this.cp1 = false
@@ -1085,12 +1106,13 @@ export default {
                     this.cp4 = false
                 }, 500);
             } else if (this.contatorep == 3) {
-                this.fsin = true
                 this.c4 = true
                 this.c3 = false
                 this.c2 = false
                 this.c1 = false
                 setTimeout(() => {
+                    this.fsin = false
+                    this.fdes = true
                     this.contatoretp = '4'
                     this.cp4 = true
                     this.cp3 = false
@@ -1111,7 +1133,7 @@ export default {
                 this.devp = false
                 this.project = false
                 this.contacts = false
-                
+
                 setTimeout(() => {
                     this.devp1 = false;
                 }, 500);
@@ -1130,7 +1152,7 @@ export default {
                 this.devp = true
                 this.project = false
                 this.contacts = false
-                
+
 
                 setTimeout(() => {
                     this.devp1 = true;
