@@ -606,7 +606,7 @@
             <div class="bg-white">
 
                 <!-- img 2 home -->
-                <img src="../assets/sedia.png" alt="" class="px-[4vw] ml-[8vw] w-[85vw] pt-[4vw]">
+                <img src="../assets/sedia.png" alt="" class="px-[4vw] ml-[6.5vw] w-[85vw] pt-[4vw]">
 
                 <!-- 2 descrizione -->
                 <div v-if="linguage1"
