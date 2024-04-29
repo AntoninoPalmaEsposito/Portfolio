@@ -298,7 +298,7 @@
                                 class="relative flex flex-col  items-center w-[85vw] z-10 duration-100 p-[1.5vw]  h-[80vw] bg-[rgb(250,128,128)]   rounded-[10vw]">
 
                                 <!-- img -->
-                                <img src="/public/p2.jpg" alt=""
+                                <img src="/public/p2s.jpg" alt=""
                                     class="w-[85vw] h-[43vw]  rounded-[8.5vw] object-top object-cover">
 
                                 <!-- img cont -->
@@ -421,7 +421,7 @@
                         <div v-if="cp4" :class="{ 'p1': c4, 'p2': !c4 }"
                             class="flex flex-col justify-center items-center w-[85vw] h-[80vw] mt-[9.6vw] border-2 border-[rgba(255,255,255,0.45)] rounded-[10vw]">
                             <div class="text-[10vw] font-bold text-[rgba(255,255,255,0.45)] text-nowrap ">COMING </div>
-                            <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">01/05/24</span>
+                            <span class=" font-bold text-[3.3vw] mt-[-1vw] text-green-400">15/05/24</span>
                             <div class="loader scale-[0.6] mt-[0.3vw] bg-red-200"></div>
 
                         </div>
@@ -566,14 +566,25 @@
 
                 <!-- language -->
 
-                <button @click="linguage" class="h-[7.7vw] font-bold w-[20vw]  flex items-center mt-[-0.4vw] mr-[7vw]">
+               <!--  <button @click="linguage" class="h-[7.7vw] font-bold w-[20vw]  flex items-center mt-[-0.4vw] mr-[7vw]">
                     <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': !linguage1 }"
                         class="w-[50%] h-[100%] rounded-l-[6px] text-center flex items-center justify-center ">IT</div>
 
                     <div :class="{ 'bg-white text-[rgba(0,0,0,0.52)] border-2 border-[rgba(0,0,0,0.52)]': !linguage1, 'bg-[rgba(0,0,0,0.52)] text-white': linguage1 }"
                         class="w-[50%] h-[100%] text-center flex items-center justify-center rounded-r-[6px]">EN</div>
 
-                </button>
+                </button> -->
+
+                <button @click="linguage"
+            class="h-[8vw] font-bold w-[15vw]  flex items-center justify-center mt-[-0.4vw] mr-[5vw] ">
+            <div :class="{ ' text-[rgba(0,0,0,0.6)]': !linguage1, ' text-[rgba(0,0,0,0.75)] text-[4.5vw]': linguage1 }"
+              class="w-[50%] h-[100%]  text-center flex items-center  border-r-[0.5vw] border-[rgba(0,0,0,0.5)]  justify-center text-[3vw] ">
+              <div>IT</div></div>
+
+            <div :class="{ 'text-[rgba(0,0,0,0.6)]': linguage1, 'text-[rgba(0,0,0,0.75)] text-[4.5vw]': !linguage1 }"
+              class="w-[50%] h-[100%] text-center flex items-center border-white border-l-[0.5vw] justify-center text-[3vw] "><div>EN</div></div>
+
+          </button>
 
 
                 <button @click="tscroll" v-if="scroll" class=" flex flex-col items-end scale-110 ">
@@ -1642,6 +1653,44 @@ body {
         filter: blur(10px);
     }
 }
+
+
+.opacitysz {
+    animation-name: opacityscz;
+    animation-duration: 1s;
+}
+
+@keyframes opacityscz {
+    from {
+        opacity: 0;
+        filter: blur(60px);
+
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.opacitys2z {
+    animation-name: opacitysc2z;
+    animation-duration: 0.5s;
+}
+
+@keyframes opacitysc2z {
+    from {
+        opacity: 1;
+        filter: blur(0);
+
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(60px);
+    }
+}
+
 
 .nav {
     animation-name: navbounce;

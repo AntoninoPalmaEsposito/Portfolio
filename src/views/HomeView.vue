@@ -1,615 +1,753 @@
 <template>
 
   <!-- container/input mouse -->
-  <div @wheel="handleMouseWheel" class="hidden md:block w-screen bg-black">
-
-
+  <div class="hidden md:block w-screen bg-black">
 
     <div class="relative">
 
-      <!-- palloncino -->
-      <div><img src="../assets/palloncino.png" alt=""
-          class="absolute bottom-[-300px] animazione z-50 right-[120px] w-[80px]  "></div>
-
-
-
-
-
+      
 
       <div class="relative">
         <!-- nav carta -->
-        <div class=" h-[200px] mb-[-24px] "><img src="../assets/nav.png" alt="" class="h-[130%] w-screen">
+        <div class=""><img src="../assets/nav.png" alt="" class="w-screen mt-[-1vw]">
         </div>
 
-        <!-- ind -->
-        <div class="absolute w-screen  right-0 top-0 z-20   pt-[30px] ">
+        <!-- nav container -->
+        <div class="absolute w-screen flex justify-start items-center right-0 top-0 z-20   pt-[3vw] ">
 
 
-
-          <!-- list -->
-          <div class="relative flex justify-center scale-90 navi  w-screen  pb-[25px]">
-
-            <div class="absolute flex items-center scr w-screen justify-between ml-[-80px]  top-[0px] ">
-
-              <!-- logo -->
-              <button @click="homE">
-                <div class=" logi  w-[185px]"><img src="../assets/logo.png" alt="" class="w-[200px] "></div>
-              </button>
-
-              <ul class=" listi flex  items-end mx-auto w-[1300px] ">
-                <!-- lg home -->
-                <div class="flex flex-col margi items-center justify-center mb-[-2px] ml-[70px]  ">
-                  <li class="hover:scale-125"><button @click="homE"><img src="../assets/home.png" alt=""
-                        class="w-[135px]  "></button>
-                  </li>
-                  <div :class="{ 'opacity-100 , delay-500': homest }" class=" w-[180px]  opacity-0 duration-1000"><img
-                      src="../assets/sottol.png" alt="" class="w-[180px] ">
-                  </div>
-                </div>
-
-                <!-- lg devp -->
-                <div class="flex flex-col items-center justify-center  px-[30px]">
-                  <li class="hover:scale-125"><button @click="devProfile"><img src="../assets/devProfile.png" alt=""
-                        class="w-[260px]   "></button>
-                  </li>
-                  <div :class="{ 'opacity-100 , delay-500': devPst }" class=" w-[180px]  opacity-0 duration-1000"><img
-                      src="../assets/sottol.png" alt="" class="w-[180px] ">
-                  </div>
-                </div>
-
-                <!-- lg proj -->
-                <div class="flex flex-col items-center justify-center px-[25px] mb-[5px] ">
-                  <li class="hover:scale-125"><button @click="projecT"><img src="../assets/project.png" alt=""
-                        class="w-[220px]  "></button></li>
-                  <div :class="{ 'opacity-100 , delay-500': projectst }" class=" w-[180px]  opacity-0 duration-1000">
-                    <img src="../assets/sottol.png" alt="" class="w-[180px] ">
-                  </div>
-                </div>
-
-                <!-- lg contacts -->
-                <div class="flex flex-col items-center justify-center px-[25px] mb-[3px] ">
-                  <li class="hover:scale-125"><button @click="contactS"><img src="../assets/contacts.png" alt=""
-                        class="w-[260px] "></button></li>
-                  <div :class="{ 'opacity-100 , delay-500': contactst }" class=" w-[180px]  opacity-0 duration-1000">
-                    <img src="../assets/sottol.png" alt="" class="w-[180px] ">
-                  </div>
-                </div>
+          <!-- logo -->
+          <button @click="homE" class="hover:scale-125 duration-500">
+            <div class=""><img src="../assets/logo.png" alt="" class="w-[8vw] ml-[3vw] mt-[-0.5vw] "></div>
+          </button>
 
 
-              </ul>
+          <!-- container list nav -->
+          <ul class="flex items-center justify-center ml-[15vw]">
 
+            <!-- lg home -->
+            <div class="flex flex-col items-center justify-center mr-[1.5vw] ">
+
+              <li class="hover:scale-125 duration-500">
+                <button @click="homE">
+                  <img src="../assets/home.png" alt="" class="h-[3.2vw] z-20 ">
+                </button>
+              </li>
+
+              <div :class="{ 'opacity-100 , delay-500': homest }" class="opacity-0 duration-1000"><img
+                  src="../assets/sottol.png" alt="" class="w-[8vw]">
+              </div>
             </div>
 
-          </div>
 
+            <!-- lg devp -->
+            <div class="flex flex-col items-center justify-center mr-[3vw]">
+
+              <li :class="{'devclass1':devclass11}" class="hover:scale-125 duration-500">
+                <button @click="devProfile">
+                  <img src="../assets/devProfile.png" alt="" class="h-[3vw]   ">
+                </button>
+              </li>
+
+              <div :class="{ 'opacity-100 , delay-500': devPst }" class=" opacity-0 duration-1000"><img
+                  src="../assets/sottol.png" alt="" class="w-[8vw] ">
+              </div>
+            </div>
+
+
+            <!-- lg proj -->
+            <div class="flex flex-col items-center justify-center mr-[2.8vw]">
+
+              <li  class="hover:scale-125 duration-500">
+                <button @click="projecT">
+                  <img src="../assets/project.png" alt="" class="h-[2.6vw] mt-[-0.3vw] ">
+                </button>
+              </li>
+
+              <div :class="{ 'opacity-100 , delay-500': projectst }" class=" opacity-0 duration-1000">
+                <img src="../assets/sottol.png" alt="" class="w-[8vw]">
+              </div>
+            </div>
+
+
+            <!-- lg contacts -->
+            <div class="flex flex-col items-center justify-center">
+
+              <li class="hover:scale-125 duration-500">
+                <button @click="contactS">
+                  <img src="../assets/contacts2.png" alt="" class="h-[2.3vw] mt-[-0.1vw] ">
+                </button>
+              </li>
+
+              <div :class="{ 'opacity-100 , delay-500': contactst }" class="opacity-0 duration-1000">
+                <img src="../assets/sottol.png" alt="" class="w-[8vw]">
+              </div>
+            </div>
+
+
+          </ul>
+
+          <!-- linguage -->
+          <button @click="linguage"
+            class="h-[1.7vw] font-bold w-[5vw]  flex items-center mt-[-4.5vw] ml-[19vw] duration-100">
+            <div :class="{ ' text-[rgba(0,0,0,0.6)]': linguage1, ' text-[rgba(0,0,0,0.75)] text-[1.3vw]': !linguage1 }"
+              class="w-[50%] h-[100%]  text-center flex items-center border-r-[0.15vw] border-[rgba(0,0,0,0.75)]  justify-center text-[0.9vw] ">
+              IT</div>
+
+            <div :class="{ 'text-[rgba(0,0,0,0.6)]': !linguage1, 'text-[rgba(0,0,0,0.75)] text-[1.3vw]': linguage1 }"
+              class="w-[50%] h-[100%] text-center flex items-center justify-center text-[0.9vw] ">EN</div>
+
+          </button>
         </div>
+
 
 
         <!-- body carta -->
-        <div class="absolute top-[-50px]">
+        <div :id="customId"
+          :class="scendi, { 'ease-in duration-[3s]': velocitàb, 'ease-out duration-[4s]': !velocitàb }"
+          class="absolute top-[0vw] mt-[-0.25vw] z-10 w-screen   translate-y-6 ">
+
+          <!-- bg white body immagine-->
+
+          <img src="../assets/corpo3.png" alt="" class="relative w-screen h-[47.1vw]">
+          <div class="bg-white w-screen eig2">
+          </div>
 
 
 
-          <div :id="customId" :class="scendi" class=" z-10 w-screen h-screen  translate-y-6  absolute top-[60px] ">
 
-            <!-- contenitore Body -->
-            <div
-              class="absolute w-screen conthome ml-[-30px] resp h-screen top-[100px] z-40 p-[50px] flex flex-col items-center  ">
 
-              <!-- aereoplano -->
-              <div><img src="../assets/aereoplano.png" alt=""
-                  class="absolute bottom-[-400px] animazione5  left-[-400] z-50  w-[200px]  "></div>
 
-              <!-- welcome -->
-              <img v-if="wel" src="../assets/welcome.png" alt="" :class="{ 'animazione3': aanimazione3 }"
-                class="w-[250px] wel absolute top-[315px] left-[43%] z-40 ">
+          <!-- contenitore Body -->
+          <div class="absolute bg-white w-screen top-[8vw] z-40 flex flex-col items-center justify-center px-[20vw]">
 
-              <!-- firma -->
-              <div><img src="../assets/firma.png" alt=""
-                  class="absolute top-[630px] firma  z-60 right-[70px] w-[200px]  "></div>
+            <!-- freccia su -->
+            <button @click="homE" v-if="ffsu" class="absolute top-[0vw] right-[9vw] ">
+              <img src="../assets/fsun.png" alt="" class="opacity-60 w-[2.5vw]">
+            </button>
 
-              <!-- main carta -->
-              <!-- section sup -->
+            <!-- section sup -->
+            <div class="flex justify-center items-start mt-[3vw] text-[rgba(0,0,0,0.77)]">
+              <img src="../assets/disegno.png" alt="" class="w-[26vw] mt-[-0.5vw]">
 
-              <div class="flex justify-center items-start b1 mt-[-15px]">
-                <img src="../assets/disegno.png" alt="" class=" ml-[4%] w-[500px] mt-[15px] ">
+              <div class="text-[1.05vw] font-semibold">
 
-                <div class=" mt-[5px] text-[20px] font-semibold  w-[650px] my-auto   ml-[50px] ">
-                  <span class="  text-[23px] text-nowrap font-bold leading-[80px]">Mi chiamo Antonino, non sono
-                    solo un Web Developer!</span> <br>
+                <span v-if="!linguage1" class="  text-[2.2vw] font-extrabold leading-[1.8vw] text-[rgba(0,0,0,0.56)]">
+                  Mi chiamo Antonino e non sono solo un Web Developer
+                  <img src="../assets/freccian.png" alt="" class="w-[1vw] inline-block  animate-bounce opacity-60">
+                </span>
+
+                <span v-if="linguage1" class="  text-[2.2vw] font-extrabold leading-[1.8vw] text-[rgba(0,0,0,0.56)]">
+                  My name is Antonino and I am not only a Web Developer
+                  <img src="../assets/freccian.png" alt="" class="w-[1vw] inline-block  animate-bounce opacity-60">
+                </span>
+
+                <br>
+                <div v-if="!linguage1" class="mt-[0.7vw]">
                   Fin da giovane ho coltivato una grande passione per l’arte. Ho frequentato l’istituto artistico, dove
                   ho studiato arte illustrativa, grafica e progettazione architettonica. Successivamente, mi sono
                   iscritto alla facoltà di architettura, ma nel corso degli anni ho sviluppato un forte interesse per la
                   programmazione.
                 </div>
 
-              </div>
-
-              <!-- section inf -->
-              <div class="flex justify-center items-center b2">
-                <div class=" font-semibold  text-[20px] w-[800px] my-auto pl-[65px] mt-[90px]">
-                  Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi ha
-                  fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
-                  Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte altre
-                  passioni.
-                  Adoro il disegno a mano libera, progettare oggetti di design e nel tempo libero mi trasformo in un
-                  tatuatore!
+                <div v-if="linguage1" class="mt-[0.7vw]">
+                  From a young age I have cultivated a great passion for art. I attended art school, where I studied
+                  illustrative art, graphics and architectural design. Later, I enrolled in the Faculty of Architecture,
+                  but over the years I developed a strong interest in programming.
                 </div>
-                <img src="../assets/sedia.png" alt="" class="w-[400px] mt-[-30px] ml-[50px] ">
-              </div>
-
-
-
-
-
-              <!-- scroll dis -->
-              <div v-if="scrolle" class="flex justify-center items-center animazione2 absolute top-[700px] left-[45%]">
-                <img src="../assets/scrolldis.png" alt="" class="w-[125px] mt-[-50px]">
-                <img src="../assets/frecciadis.png" alt="" class="w-[40px] mt-[-30px] animate-bounce duration-1000">
-
-              </div>
-
-
-
-
-            </div>
-
-            <!-- bg white body -->
-            <div class="absolute">
-              <img src="../assets/corpo.png" alt="" class="w-screen h-[1100px]">
-              <div class="h-screen w-screen bg-white"></div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- 2 homeview -->
-      <div class=" h-[85vh] w-screen flex items-center mt-[-40px]  bg-black  px-[20px]">
-
-
-
-        <!-- opacity container -->
-        <div :id="bluu" :class="opacity" class="w-[89%] pt-[80px]  pb-[100px]  h-[740px] opacity-[0] duration-1000  ">
-
-
-          <!-- DEV PROFILE -->
-          <div v-if="devP" class="flex flex-col items-center scale-90  ml-[17%] mt-[-30px] ">
-
-            <div class="flex  items-start cdev1 ">
-
-              <!-- section sup -->
-              <div
-                class="relative flex justify-center  ml-0 items-center h-[340px] w-[280px] mt-[30px] rounded-[40px] mr-[25px] z-[0] bg-[rgba(255,255,255,0.2)] ">
-
-                <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[220px]  hover:animate-bounce">
-              </div>
-
-
-              <div class=" w-[800px]    text-[23px] font-semibold text-white mt-[20px]">
-                <span class="font-extrabold  text-[80px]  leading-7">Credo</span>
-                fortemente nell'organizzazione. <br>
-                Un’analisi accurata porta a un codice più pulito, uno sviluppo più veloce e al rispetto di scadenze
-                prefissate. <br>
-                Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato.
-                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide. <br> <br>
-                <div class="mt-[-15px]">
-                  Sono un umano socievole che apprezza il senso di comunità all’interno del team.
-                  Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
-                </div>
-              </div>
-            </div>
-
-
-            <div class="relative w-[100%] px-[70px] text-[25px] font-semibold text-white ">
-              <div>
               </div>
 
             </div>
 
             <!-- section inf -->
-            <div :class="{ 'mt-[-10px]': competenze, 'mt-[15px]': !competenze }" class="duration-500 ">
-              <div class="flex flex-col mr-[5vw]  cdev2 mt-[70px] scale-[0.9]">
-                <h1 :class="{ 'text-white': competenze, 'text-[#ffffff4e]': !competenze }"
-                  class="font-extrabold  text-[40px] duration-500  mt-[-20px]">Competenze</h1>
-                <div @mouseover="competenze = true" @mouseleave="competenze = false"
-                  class="flex flex-col  justify-center items-center">
-                  <div :class="{ 'bg-white , mb-[10px]': competenze, 'bg-[#ffffff4e] , mb-[20px]': !competenze }"
-                    class="h-[7px] w-[1400px] rounded-[50px] duration-500 "></div>
+            <div class="flex justify-between items-center text-[rgba(0,0,0,0.77)] mt-[-1vw]">
 
-
-                  <div class="flex">
-                    <ul class="flex ">
-
-                      <div @mouseenter="html = true" @mouseleave="html = false">
-                        <li class="h-[90px] w-[90px] flex  duration-500 justify-center items-center "><img
-                            src="../assets/htmlI.png" alt="" class="h-[60px]">
-                        </li>
-                        <div :class="{ 'opacity-100': html, 'opacity-0': !html }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">HTML</div>
-                      </div>
-
-                      <div @mouseenter="css = true" @mouseleave="css = false">
-                        <li class="h-[90px] w-[90px] flex duration-500 justify-center items-center "><img
-                            src="../assets/cssI.png" alt="" class="h-[60px]">
-                        </li>
-                        <div :class="{ 'opacity-100': css, 'opacity-0': !css }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">CSS</div>
-                      </div>
-
-                      <div @mouseenter="js = true" @mouseleave="js = false">
-                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
-                            src="../assets/javascriptI.png" alt="" class="h-[60px]">
-                        </li>
-                        <div :class="{ 'opacity-100': js, 'opacity-0': !js }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">JS</div>
-                      </div>
-
-                      <div @mouseenter="tailwind = true" @mouseleave="tailwind = false">
-                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
-                            src="../assets/tailwindI.png" alt="" class="h-[45px]">
-                        </li>
-                        <div :class="{ 'opacity-100': tailwind, 'opacity-0': !tailwind }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">TAILWIND</div>
-                      </div>
-
-                      <div @mouseenter="vue = true" @mouseleave="vue = false">
-                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
-                            src="../assets/vueI.png" alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': vue, 'opacity-0': !vue }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">VUE.JS</div>
-                      </div>
-
-                      <div @mouseenter="vsc = true" @mouseleave="vsc = false">
-                        <li class="h-[90px] w-[90px] flex flex-col duration-500 justify-center items-center "><img
-                            src="../assets/vsI.png" alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': vsc, 'opacity-0': !vsc }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">VSC</div>
-                      </div>
-
-                      <div @mouseenter="github = true" @mouseleave="github = false" class="mr-[-10px]">
-                        <li class="h-[90px] w-[90px]  duration-500 flex flex-center justify-center items-center ">
-                          <img src="../assets/gitI.jpg" alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': github, 'opacity-0': !github }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">GITHUB</div>
-                      </div>
-
-
-                    </ul>
-
-                    <ul class="flex">
-
-                      <div @mouseenter="figma = true" @mouseleave="figma = false" class="">
-                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/figmaI.png"
-                            alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': figma, 'opacity-0': !figma }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">FIGMA</div>
-                      </div>
-
-                      <div @mouseenter="adobe = true" @mouseleave="adobe = false" class="">
-                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/adobeI.png"
-                            alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': adobe, 'opacity-0': !adobe }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">ADOBE</div>
-                      </div>
-
-                      <div @mouseenter="api = true" @mouseleave="api = false" class="ml-[10px]">
-                        <li class="h-[90px] w-[90px]  flex justify-center items-center "><img src="../assets/apil.png"
-                            alt="" class="h-[50px]">
-                        </li>
-                        <div :class="{ 'opacity-100': api, 'opacity-0': !api }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">API REST</div>
-                      </div>
-
-                      <div @mouseenter="google = true" @mouseleave="google = false" class="">
-                        <li class="h-[90px] w-[160px] flex justify-center items-center "><img src="../assets/google.png"
-                            alt="" class="h-[60px] ">
-                        </li>
-                        <div :class="{ 'opacity-100': google, 'opacity-0': !google }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">GOOGLE.A</div>
-                      </div>
-
-                      <div @mouseenter="postman = true" @mouseleave="postman = false" class="">
-                        <li class="h-[90px] w-[90px] flex justify-center items-center "><img src="../assets/postman.png"
-                            alt="" class="h-[60px] ">
-                        </li>
-                        <div :class="{ 'opacity-100': postman, 'opacity-0': !postman }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">POSTMAN</div>
-                      </div>
-
-                      <div @mouseenter="npm = true" @mouseleave="npm = false" class="">
-                        <li class="h-[90px] w-[140px] flex justify-center items-center "><img src="../assets/npm.png"
-                            alt="" class="h-[35px] ">
-                        </li>
-                        <div :class="{ 'opacity-100': npm, 'opacity-0': !npm }"
-                          class="text-white text-center font-semibold duration-500 text-[19px] ">NPM</div>
-                      </div>
-
-                    </ul>
-                  </div>
-                </div>
+              <div v-if="!linguage1" class=" font-semibold  text-[1.05vw] w-[50vw] ml-[1vw] mt-[-4vw]">
+                Ho poi realizzato che la carriera di architetto non era la mia strada ideale. Questa esperienza mi ha
+                fornito abilità nel lavorare in gruppo e un grande rispetto per le scadenze.
+                Nel tempo libero oltre a fantasticare su come sbalordire gli altri con nuove homepage, ho molte altre
+                passioni.
+                Adoro il disegno a mano libera, progettare oggetti di design e nel tempo libero mi trasformo in un
+                tatuatore!
               </div>
+
+              <div v-if="linguage1" class=" font-semibold  text-[1.05vw] w-[50vw] ml-[1vw] mt-[-4vw]">
+                I then realised that a career as an architect was not my ideal path. This experience gave me skills
+                in working in a team and a great respect for deadlines. In my spare time, apart from fantasising
+                about how to astound others with new homepages, I have many other passions. I love freehand drawing,
+                designing objects and in my spare time I turn myself into a tattoo artist!
+              </div>
+
+              <img src="../assets/sedia.png" alt="" class="w-[18vw] ml-[2vw]">
+
+            </div>
+
+            <!-- firma -->
+            <div>
+              <img src="../assets/firma.png" alt="" class="w-[10vw] mt-[-5vw] ">
+            </div>
+
+
+
+            <!-- aereoplano -->
+            <div class><img src="../assets/aereoplano.png" alt=""
+                  class="animazione5  z-50   "></div>
+
+
+            <!-- scroll dis -->
+            <!-- <div v-if="scrolle" class="flex justify-center items-center animazione2 absolute top-[700px] left-[45%]">
+                <img src="../assets/scrolldis.png" alt="" class="w-[125px] mt-[-50px]">
+                <img src="../assets/frecciadis.png" alt="" class="w-[40px] mt-[-30px] animate-bounce duration-1000">
+              </div> -->
+
+            <!-- palloncino -->
+            <div v-if="pallo"><img src="../assets/palloncino.png" alt=""
+          class=" animazione z-50 "></div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+      <!-- 2 homeview -->
+      <div :id="bluu" :class="opacity"
+        class="w-[93.5vw] pl-[13vw] h-[34vw] mt-[-2vw] flex justify-between opacity-[0] duration-1000 bg-black ">
+
+
+        <!-- DEV PROFILE -->
+        <div v-if="devP" :class="{ 'opacitys2z': !devPz, 'opacitysz': devPz }" class="flex flex-col items-center ">
+
+          <div class="flex  items-start mt-[4vw]">
+
+            <!-- section sup sin -->
+            <div
+              class="relative flex justify-center items-center h-[14.9vw] w-[13.5vw] rounded-[2.5vw] z-[0] bg-[rgba(255,255,255,0.2)] ">
+
+              <img src="../assets/pc.png" alt="" class="absolute z-[1] h-[9.5vw] mt-[-0.8vw]">
+            </div>
+
+
+            <!-- sect sup des -->
+            <div class=" text-white ml-[2vw] mt-[-1.5vw]">
+
+              <!-- Vision -->
+              <div class="font-extrabold text-[3.2vw]">Vision:</div>
+
+              <!-- text -->
+              <div v-if="!linguage1" class="w-[45vw] text-[1.1vw]">
+                Credo fortemente nell'organizzazione.
+                Un’analisi accurata porta a un codice più pulito, uno
+                sviluppo
+                più veloce e al rispetto
+                di scadenze
+                prefissate &#9200 <br>
+                Sono appassionato di UX/UI Design e mi impegno costantemente per rimanere aggiornato. <br>
+                Non amo i progetti ripetitivi, ma sono sempre alla ricerca di nuove sfide &#128293 <br> <br>
+                Sono un umano socievole che apprezza il senso di comunità all’interno del team.
+                Credo fermamente nell’importanza della formazione continua e valorizzo l’aiuto reciproco
+                &#9749
+              </div>
+
+              <div v-if="linguage1" class="w-[45vw] text-[1.1vw]">
+                I strongly believe in organisation.
+                Thorough analysis leads to cleaner code, faster development and adherence to set deadlines
+                &#9200 <br>
+                I am passionate about UX/UI Design and constantly strive to stay up-to-date. I don't like
+                repetitive projects, but I am always looking for new challenges &#128293 <br> <br>
+                I am a sociable human being who values a sense of community within the team. I firmly
+                believe in the importance of continuous training and value mutual help
+                &#9749
+              </div>
+
             </div>
           </div>
 
 
 
-          <!-- PROJECT -->
-          <div v-if="project" class="flex justify-center cpro  ml-[300px]  items-center text-white">
 
-            <!-- TESTO -->
-            <div class="flex flex-col mrt text-[40px] justify-center w-[400px] h-[600px] ">
+          <!-- section inf -->
+          <div :class="{ 'mt-[-0.3vw]': competenze, 'mt-[1.5vw]': !competenze }" class="duration-500 ">
+            <div class="flex flex-col  mt-[4vw] ">
+              <h1 v-if="!linguage1" :class="{ 'text-white': competenze, 'text-[#ffffff4e]': !competenze }"
+                class="font-extrabold  text-[2vw] duration-500 mb-[0.3vw] mt-[-1vw]">Competenze</h1>
 
-              <!-- p1 -->
-              <div class="flex  items-center ">
-                <button @click="cp11"
-                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1, 'text-white border-solid border-b-4': cp1 }"
-                  class="text-center mb-[15px]   font-bold">DRIBBBLE</button>
+                <h1 v-if="linguage1" :class="{ 'text-white': competenze, 'text-[#ffffff4e]': !competenze }"
+                class="font-extrabold  text-[2vw] duration-500 mb-[0.3vw] mt-[-1vw]">Skills</h1>
+
+              <div @mouseover="competenze = true" @mouseleave="competenze = false"
+                class="flex flex-col  justify-center items-center">
+                <div :class="{ 'bg-white , mb-[0vw]': competenze, 'bg-[#ffffff4e] , mb-[0.3vw]': !competenze }"
+                  class="h-[0.30vw] w-[73vw] rounded-[50px] duration-500 "></div>
+
+
+                <div class="flex">
+                  <ul class="flex items-center">
+
+                    <div @mouseenter="html = true" @mouseleave="html = false">
+                      <li class="h-[4.8vw] w-[4.8vw] flex  duration-500 justify-center items-center "><img
+                          src="../assets/htmlI.png" alt="" class="h-[2.6vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': html, 'opacity-0': !html }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw]">HTML</div>
+                    </div>
+
+                    <div @mouseenter="css = true" @mouseleave="css = false">
+                      <li class="h-[4.8vw] w-[4.8vw] flex duration-500 justify-center items-center "><img
+                          src="../assets/cssI.png" alt="" class="h-[2.6vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': css, 'opacity-0': !css }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">CSS</div>
+                    </div>
+
+                    <div @mouseenter="js = true" @mouseleave="js = false">
+                      <li class="h-[4.8vw] w-[4.8vw] flex flex-col duration-500 justify-center items-center "><img
+                          src="../assets/javascriptI.png" alt="" class="h-[2.6vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': js, 'opacity-0': !js }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">JS</div>
+                    </div>
+
+                    <div @mouseenter="tailwind = true" @mouseleave="tailwind = false">
+                      <li class="h-[4.8vw] w-[4.8vw] flex flex-col duration-500 justify-center items-center "><img
+                          src="../assets/tailwindI.png" alt="" class="h-[2vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': tailwind, 'opacity-0': !tailwind }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">TAILWIND
+                      </div>
+                    </div>
+
+                    <div @mouseenter="vue = true" @mouseleave="vue = false">
+                      <li class="h-[4.8vw] w-[4.8vw] flex flex-col duration-500 justify-center items-center "><img
+                          src="../assets/vueI.png" alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': vue, 'opacity-0': !vue }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">VUE.JS</div>
+                    </div>
+
+                    <div @mouseenter="vsc = true" @mouseleave="vsc = false">
+                      <li class="h-[4.8vw] w-[4.5vw] flex flex-col duration-500 justify-center items-center "><img
+                          src="../assets/vsI.png" alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': vsc, 'opacity-0': !vsc }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">VSC</div>
+                    </div>
+
+                    <div @mouseenter="github = true" @mouseleave="github = false" class="mr-[-10px]">
+                      <li class="h-[4.8vw] w-[4.8vw]  duration-500 flex flex-center justify-center items-center ">
+                        <img src="../assets/gitI.jpg" alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': github, 'opacity-0': !github }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">GITHUB</div>
+                    </div>
+
+
+                  </ul>
+
+                  <ul class="flex">
+
+                    <div @mouseenter="figma = true" @mouseleave="figma = false" class="">
+                      <li class="h-[4.8vw] w-[4.8vw] flex justify-center items-center "><img src="../assets/figmaI.png"
+                          alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': figma, 'opacity-0': !figma }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">FIGMA</div>
+                    </div>
+
+                    <div @mouseenter="adobe = true" @mouseleave="adobe = false" class="">
+                      <li class="h-[4.8vw] w-[4.5vw] flex justify-center items-center "><img src="../assets/adobeI.png"
+                          alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': adobe, 'opacity-0': !adobe }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">ADOBE</div>
+                    </div>
+
+                    <div @mouseenter="api = true" @mouseleave="api = false" class="ml-[10px]">
+                      <li class="h-[4.8vw] w-[4.5vw]  flex justify-center items-center "><img src="../assets/apil.png"
+                          alt="" class="h-[2.3vw]">
+                      </li>
+                      <div :class="{ 'opacity-100': api, 'opacity-0': !api }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">API REST
+                      </div>
+                    </div>
+
+                    <div @mouseenter="google = true" @mouseleave="google = false" class="">
+                      <li class="h-[4.8vw] w-[6.5vw] flex justify-center items-center "><img src="../assets/google.png"
+                          alt="" class="h-[2.3vw] ">
+                      </li>
+                      <div :class="{ 'opacity-100': google, 'opacity-0': !google }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">GOOGLE.A
+                      </div>
+                    </div>
+
+                    <div @mouseenter="postman = true" @mouseleave="postman = false" class="">
+                      <li class="h-[4.8vw] w-[4.5vw] flex justify-center items-center "><img src="../assets/postman.png"
+                          alt="" class="h-[2.3vw] ">
+                      </li>
+                      <div :class="{ 'opacity-100': postman, 'opacity-0': !postman }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">POSTMAN
+                      </div>
+                    </div>
+
+                    <div @mouseenter="npm = true" @mouseleave="npm = false" class="">
+                      <li class="h-[4.8vw] w-[7vw] flex justify-center items-center "><img src="../assets/npm.png"
+                          alt="" class="h-[1.7vw] ">
+                      </li>
+                      <div :class="{ 'opacity-100': npm, 'opacity-0': !npm }"
+                        class="text-white text-center font-semibold duration-500 text-[0.9vw] mt-[-0.7vw] ">NPM</div>
+                    </div>
+
+                  </ul>
+                </div>
               </div>
-              <!-- p2 -->
-              <div class="flex  items-center">
-                <button @click="cp22"
-                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp2, 'text-white border-solid border-b-4': cp2 }"
-                  class="text-center mb-[15px]  font-bold">L'IMPICCATO</button>
-              </div>
-              <!-- p3 -->
-              <div class="flex  items-center">
-                <button @click="cp33"
-                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp3, 'text-white border-solid border-b-4': cp3 }"
-                  class="text-center mb-[15px] text-nowrap  font-bold">P-COMMERCE</button>
-              </div>
-              <!-- p4 -->
-              <div class="flex  items-center">
-                <button @click="cp44"
-                  :class="{ 'text-[rgba(255,255,255,0.26)]': !cp4, 'text-white border-solid border-b-4': cp4 }"
-                  class="text-center  font-bold">BLOG</button>
-              </div>
+            </div>
+          </div>
+        </div>
 
 
 
+        <!-- PROJECT -->
+        <div v-if="project" :class="{ 'opacitys2z': !projectz, 'opacitysz': projectz }"
+          class="flex justify-center items-center text-white ml-[14.5vw] mt-[1vw]">
 
+          <!-- TESTO -->
+          <div class="flex flex-col text-[2.1vw] justify-center w-[21vw] h-[20vw] ">
+
+            <!-- p1 -->
+            <div class="flex  items-center ">
+              <button @click="cp11"
+                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp1z, 'text-white border-solid border-b-[0.2vw]': cp1z }"
+                class="text-center mb-[0.5vw]   font-extrabold">DRIBBBLE</button>
+            </div>
+            <!-- p2 -->
+            <div class="flex  items-center">
+              <button @click="cp22"
+                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp2z, 'text-white border-solid border-b-[0.2vw]': cp2z }"
+                class="text-center mb-[0.5vw]  font-extrabold">L'IMPICCATO</button>
+            </div>
+            <!-- p3 -->
+            <div class="flex  items-center">
+              <button @click="cp33"
+                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp3z, 'text-white border-solid border-b-[0.2vw]': cp3z }"
+                class="text-center mb-[0.5vw] text-nowrap  font-extrabold">P-COMMERCE</button>
+            </div>
+            <!-- p4 -->
+            <div class="flex  items-center">
+              <button @click="cp44"
+                :class="{ 'text-[rgba(255,255,255,0.26)]': !cp4z, 'text-white border-solid border-b-[0.2vw]': cp4z }"
+                class="text-center mb-[0.5vw]  font-extrabold">BLOG</button>
             </div>
 
-            <!-- CONTENUTO -->
-            <div class="flex justify-center pr-[50px] ml-[-30px] scale-[0.85] items-center w-[600px] h-[600px] ">
+          </div>
 
-              <!-- Cp1 -->
-              <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true"
-                @mouseleave="over1 = false" :class="{ 'hidden': !cp1, 'flex': cp1 }" class="flex flex-col">
-                <div :class="{ 'border-solid border-4': over1 }"
-                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(132,132,247)] rounded-[60px]">
+          <!-- CONTENUTO -->
+          <div class="flex justify-center items-center z-[0]">
+
+            <!-- Cp1 -->
+            <a href="https://dribbble-replica-html-css.vercel.app/" @mouseover="over1 = true" v-if="cp1"
+              @mouseleave="over1 = false" class="flex flex-col items-center">
+              <div :class="{ 'border-white border-[0.25vw]': over1, 'opacitys2z': !cp1z, 'opacitysz': cp1z }"
+                class="rounded-[3.23vw] duration-100">
+                <div
+                  class="relative flex flex-col  items-center w-[25vw] z-10 duration-100  h-[25vw] bg-[rgb(132,132,247)] rounded-[3vw]">
                   <!-- img cont -->
-                  <img src="/public/p1.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                  <img src="/public/p1.jpg" alt="" class="w-[24vw] h-[15vw] mt-[0.5vw] rounded-[2.6vw] object-cover">
 
                   <div
-                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                    class="bg-gradient-to-t from-[rgb(132,132,247)] to-[rgba(255,255,255,0)] absolute top-0  w-[24vw] h-[13.5vw] ">
                   </div>
-                  <div class=" bg-[rgb(132,132,247)]  mt-[-40px] w-[520px] h-[100px]"></div>
+                  <div class=" bg-[rgb(132,132,247)]  mt-[-2vw] w-[24vw] h-[5vw]"></div>
 
                   <!-- text e bottom -->
-                  <div :class="{ 'text-white': over1, 'text-[rgb(230,230,251)]': !over1 }"
-                    class=" w-[470px]  mt-[-80px] font-semibold text-[18px] ">
+                  <div v-if="!linguage1" :class="{ 'text-white': over1, 'text-[rgb(230,230,251)]': !over1 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] ">
                     Ho scelto di prendere spunto da uno dei siti più famosi tra i creativi: Dribbble. <br>
                     Ho voluto analizzare il suo stile e le sue animazioni, dato che è un sito all’avanguardia nel design
                     e nel clean-code.
                   </div>
 
-                  <div class="flex  items-center w-[470px] mt-[15px]  h-[50px]">
+                  <div v-if="linguage1" :class="{ 'text-white': over1, 'text-[rgb(230,230,251)]': !over1 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] mb-[1.5vw] ">
+                    I chose to take my cue from one of the most popular sites among creatives: Dribbble. <br>
+                    I wanted to analyse its style and animations, as it is a site at the forefront of
+                    design and clean-code.
+                  </div>
+
+                  <div class="flex justify-end items-center w-[17vw] mt-[0.22vw]  h-[2.4vw] ml-[4vw] text-[0.7vw]">
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 font-bold rounded-[2vw]  border-solid border-[0.15vw] border-white mr-[1.3vw]">
                       HTML
                     </div>
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw]">
                       CSS</div>
 
                   </div>
                 </div>
-                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                    :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
-                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
-              </a>
+              </div>
+              <div v-if="!linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visita!</span>
+              </div>
 
-              <!-- Cp2 -->
-              <a href="https://impiccato-game.vercel.app/" @mouseover="over2 = true" @mouseleave="over2 = false"
-                :class="{ 'hidden': !cp2, 'flex': cp2 }" class="flex flex-col">
-                <div :class="{ 'border-solid border-4': over2 }"
-                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(250,128,128)] rounded-[60px]">
+              <div v-if="linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over1, 'border-[rgba(255,255,255,0.26)]': !over1 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visit!</span>
+              </div>
+            </a>
+
+
+            <!-- Cp2s -->
+            <a href="https://impiccato-game.vercel.app/" @mouseover="over2 = true" @mouseleave="over2 = false"
+              v-if="cp2" class="flex flex-col items-center">
+              <div :class="{ 'border-white border-[0.25vw]': over2, 'opacitys2z': !cp2z, 'opacitysz': cp2z }"
+                class="rounded-[3.23vw] duration-100">
+                <div
+                  class="relative flex flex-col  items-center w-[25vw] z-10 duration-100  h-[25vw] bg-[rgb(250,128,128)] rounded-[3vw]">
                   <!-- img cont -->
-                  <img src="/public/p2.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                  <img src="/public/p2.jpg" alt="" class="w-[24vw] h-[15vw] mt-[0.5vw] rounded-[2.6vw] object-cover">
 
                   <div
-                    class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                    class="bg-gradient-to-t from-[rgb(250,128,128)] to-[rgba(255,255,255,0)] absolute top-0  w-[24vw] h-[13.5vw] ">
                   </div>
-                  <div class=" bg-[rgb(250,128,128)]  mt-[-40px] w-[520px] h-[100px]"></div>
+                  <div class=" bg-[rgb(250,128,128)]  mt-[-2vw] w-[24vw] h-[5vw]"></div>
 
                   <!-- text e bottom -->
-                  <div :class="{ 'text-white': over2, 'text-[rgb(245,218,218)]': !over2 }"
-                    class=" w-[470px]  mt-[-80px] font-semibold text-[18px] ">
+                  <div v-if="!linguage1" :class="{ 'text-white': over2, 'text-[rgb(245,218,218)]': !over2 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] ">
                     Mi sono divertito a ricreare il gioco dell’impiccato, sfidandomi direttamente contro il computer.
                     <br>
                     E tu, vieni a fare una partita?
                   </div>
 
-                  <div class="flex  items-center w-[470px] mt-[15px]  h-[50px]">
+                  <div v-if="linguage1" :class="{ 'text-white': over2, 'text-[rgb(245,218,218)]': !over2 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] ">
+                    I had fun recreating the game of hangman, challenging myself directly against the
+                                    computer.
+                                    <br> And you, are you coming for a game?
+                  </div>
+
+                  <div class="flex justify-end items-center w-[17vw] mt-[3vw]  h-[2.4vw] ml-[4vw] text-[0.7vw]">
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 font-bold rounded-[2vw]  border-solid border-[0.15vw] border-white mr-[1.3vw]">
                       HTML
                     </div>
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[20px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw] mr-[1.3vw]">
                       TAILWIND</div>
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw] ">
                       JAVASCRIPT</div>
+
                   </div>
-
                 </div>
+              </div>
+              <div v-if="!linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over2, 'border-[rgba(255,255,255,0.26)]': !over2 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visita!</span>
+              </div>
 
-                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                    :class="{ 'text-white border-white': over2, 'border-[rgba(255,255,255,0.26)]': !over2 }"
-                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
-              </a>
+              <div v-if="linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over2, 'border-[rgba(255,255,255,0.26)]': !over2 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visit!</span>
+              </div>
+            </a>
 
-              <!-- Cp3 -->
-              <a href="https://penta-e-commerce.vercel.app/" @mouseover="over3 = true" @mouseleave="over3 = false"
-                :class="{ 'hidden': !cp3, 'flex': cp3 }" class="flex flex-col">
-                <div :class="{ 'border-solid border-4': over3 }"
-                  class="relative flex flex-col  items-center w-[550px] z-10 duration-100  h-[550px] bg-[rgb(77,190,97)] rounded-[60px]">
+
+            <!-- Cp3 -->
+            <a href="https://penta-e-commerce.vercel.app/" @mouseover="over3 = true" @mouseleave="over3 = false"
+              v-if="cp3" class="flex flex-col items-center">
+              <div :class="{ 'border-white border-[0.25vw]': over3, 'opacitys2z': !cp3z, 'opacitysz': cp3z }"
+                class="rounded-[3.23vw] duration-100">
+                <div
+                  class="relative flex flex-col  items-center w-[25vw] z-10 duration-100  h-[25vw] bg-[rgb(77,190,97)] rounded-[3vw]">
                   <!-- img cont -->
-                  <img src="/public/p3.jpg" alt="" class="w-[520px] h-[350px] mt-[15px] rounded-[50px] object-cover">
+                  <img src="/public/p3.jpg" alt="" class="w-[24vw] h-[15vw] mt-[0.5vw] rounded-[2.6vw] object-cover">
 
                   <div
-                    class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[540px] h-[330px] rounded-t-[50px]  ">
+                    class="bg-gradient-to-t from-[rgb(77,190,97)] to-[rgba(255,255,255,0)] absolute top-0  w-[24vw] h-[13.5vw] ">
                   </div>
-                  <div class=" bg-[rgb(77,190,97)]  mt-[-40px] w-[520px] h-[100px]"></div>
+                  <div class=" bg-[rgb(77,190,97)]  mt-[-2vw] w-[24vw] h-[5vw]"></div>
 
                   <!-- text e bottom -->
-                  <div :class="{ 'text-white': over3, 'text-[rgb(222,246,226)]': !over3 }"
-                    class=" w-[470px]  mt-[-100px] font-semibold text-[18px] ">
+                  <div v-if="!linguage1" :class="{ 'text-white': over3, 'text-[rgb(222,246,226)]': !over3 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] ">
                     Per questo progetto, insieme al mio team, abbiamo dato vita a un e-commerce. <br>
                     Abbiamo creato un file JSON locale per popolare gli articoli e abbiamo adottato Pinia per gestire
                     gli stati tra elementi e pagine. Ti va di fare acquisti?
                   </div>
 
-                  <div class="flex justify-center  items-center w-[550px] mt-[10px]  h-[50px]">
+                  <div v-if="linguage1" :class="{ 'text-white': over3, 'text-[rgb(222,246,226)]': !over3 }"
+                    class=" w-[23.5vw]  mt-[-4.5vw] font-semibold text-[0.95vw] ">
+                    For this project, together with my team, we created an e-commerce.  We created a
+                                    local JSON file to populate the articles and adopted Pinia to manage the states
+                                    between elements and pages. <br> Feel like shopping?
+                  </div>
+
+                  <div class="flex justify-end items-center w-[17vw] mt-[0.4vw]  h-[2.4vw] ml-[4vw] text-[0.7vw]">
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 font-bold rounded-[20px]  border-solid border-2 border-white mr-[10px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 font-bold rounded-[2vw]  border-solid border-[0.15vw] border-white mr-[1.3vw]">
                       HTML
                     </div>
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw] mr-[1.3vw]">
                       TAILWIND</div>
+
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
-                      JAVASCRIPT</div>
-                    <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 mr-[10px] border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw] mr-[1.3vw]">
                       VUE.JS</div>
                     <div
-                      class="py-[5px] px-[10px] bg-slate-300 text-slate-500 border-solid border-2 border-white font-bold rounded-[20px]">
+                      class="py-[0.2vw] px-[0.5vw] bg-slate-300 text-slate-500 border-solid border-[0.15vw] border-white font-bold rounded-[2vw] ">
                       PINIA</div>
+
                   </div>
-
                 </div>
-
-                <span class=" text-[rgba(255,255,255,0.26)] text-[25px] ml-[50px] font-semibold mt-[10px]"><span
-                    :class="{ 'text-white border-white': over3, 'border-[rgba(255,255,255,0.26)]': !over3 }"
-                    class="border-solid duration-200 border-b-2   ">Visita!</span></span>
-              </a>
-
-              <!-- Cp4 -->
-              <div :class="{ 'hidden': !cp4, 'flex': cp4 }" class="flex flex-col ">
-                <div class="text-[70px] font-bold text-[rgba(255,255,255,0.26)] text-nowrap ">COMING <span
-                    class="text-nowrap  text-[20px] ml-[-10px] text-green-400">10/04/24</span></div>
-                <div class="loader ml-[50px] bg-red-200"></div>
-
+              </div>
+              <div v-if="!linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over3, 'border-[rgba(255,255,255,0.26)]': !over3 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visita!</span>
               </div>
 
+              <div v-if="linguage1"
+                class=" text-[rgba(255,255,255,0.26)] text-[1.35vw] w-[20vw] flex flex-start  font-semibold mt-[0.4vw]">
+                <span :class="{ 'text-white border-white': over3, 'border-[rgba(255,255,255,0.26)]': !over3 }"
+                  class="border-solid duration-200 border-b-[0.15vw]   ">Visit!</span>
+              </div>
+            </a>
 
 
+            <!-- Cp4 -->
+            <div :class="{ 'hidden': !cp4, 'flex': cp4, 'opacitys2z': !cp4z, 'opacitysz': cp4z }"
+              class="border-[rgba(255,255,255,0.26)] border-[0.25vw] rounded-[3vw] flex items-center justify-center mt-[-2.3vw]">
 
-            </div>
-
-          </div>
-
-
-
-
-
-
-
-          <!-- CONTACTS -->
-          <div v-if="contacts" class="flex justify-center  scale-90 cont pt-[80px] duration-1000 ml-[250px]   text-white">
-            <!-- info1 -->
-            <div class="flex flex-col justify-center  pr-[100px] ">
-
-              <div class="text-[50px]  font-bold ">RESIDENZA</div>
-              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(253,175,154)]">Bari (BA)</div>
-
-              <div class="text-[50px] font-bold mt-[30px] ">EMAIL</div>
-              <div class="text-[25px] mt-[-7px] font-semibold pr-[30px] text-[rgb(195,154,253)]">ape.develop3@gmail.com
+              <div class="flex flex-col items-center justify-center w-[25vw] h-[24.7vw]">
+                <div class="text-[3vw] font-bold text-[rgba(255,255,255,0.26)] text-nowrap ">COMING</div>
+                <div class="text-nowrap font-semibold text-[1vw] text-green-400 mt-[-0.4vw]">15/05/24</div>
+                <div class="loader2 bg-red-200 mt-[0.3vw]"></div>
               </div>
 
-              <div class="text-[50px] mt-[30px] font-bold ">NUMERO</div>
-              <div class="text-[25px] mt-[-7px] font-semibold  text-[rgb(154,253,180)]">+39 3426398488</div>
-
             </div>
 
-            <!-- info2 -->
-            <div class="flex flex-col justify-center  ">
 
-              <div class="text-[50px]  font-bold ">LINKEDIN</div>
-              <a href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
-                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold  text-[rgb(248,253,154)] underline">Guarda
-                i miei post!</a>
-
-              <div class="text-[50px] font-bold mt-[30px] ">GITHUB</div>
-              <a href="https://github.com/AntoninoPalmaEsposito"
-                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(154,241,253)]">Scopri
-                le mie repository!</a>
-
-              <div class="text-[50px] font-bold mt-[30px] ">INSTAGRAM</div>
-              <a href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
-                class="text-[25px] hover:text-[35px] mt-[-7px] font-semibold underline text-[rgb(253,154,200)]">
-                Visita il mio profilo!</a>
-
-
-
-            </div>
 
 
           </div>
 
+        </div>
 
 
-          <!-- TNX -->
-          <div v-if="tnx" class="h-[500px] tnx flex flex-col  justify-center items-center mt-[-30px] ml-[13%]  ">
-            <div class="flex flex-col scale-95">
-              <div class=" text-[80px] font-bold text-nowrap text-white pb-[10px]">
-                Grazie per la visita!
-              </div>
-              <div class=" text-white text-[30px] text-nowrap ml-[20px] font-semibold">Torna a trovarmi, aggiornerò il
-                mio portfolio <br>
-                con nuovi progetti interessanti ;) </div>
+
+
+
+
+
+        <!-- CONTACTS -->
+        <div v-if="contacts" :class="{ 'opacitys2z': !contactsz, 'opacitysz': contactsz }"
+          class="flex justify-center mt-[-3vw] ml-[18vw]  text-white">
+          <!-- info1 -->
+          <div class="flex flex-col justify-center mr-[5vw]">
+
+            <div v-if="!linguage1" class="text-[3vw]  font-extrabold t1 ">RESIDENZA</div>
+            <div v-if="linguage1" class="text-[3vw]  font-extrabold t1 ">RESIDENCE</div>
+            <div class="text-[1.20vw] mt-[-0.6vw]   text-white">IT Bari (BA)</div>
+
+            <div class="text-[3vw]  mt-[1vw] font-extrabold t3">EMAIL</div>
+            <div class="text-[1.20vw] mt-[-0.6vw]   text-white">ape.develop3@gmail.com
             </div>
+
+            <div v-if="!linguage1" class="text-[3vw] mt-[1vw] font-extrabold t5">NUMERO</div>
+            <div v-if="linguage1" class="text-[3vw] mt-[1vw] font-extrabold t5">NUMBER</div>
+            <div class="text-[1.20vw] mt-[-0.6vw]   text-white">+39 3426398488</div>
+
+          </div>
+
+          <!-- info2 -->
+          <div class="flex flex-col justify-center  ">
+
+            <div class="text-[3vw]  font-extrabold t1">INSTAGRAM</div>
+            <a v-if="!linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">
+              Visita il mio profilo!</a>
+              <a v-if="linguage1" href="https://www.instagram.com/tonystark______?igsh=Nnhjaml1bXN5MjBr"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">
+              Visit my profile!</a>
+
+            <div class="text-[3vw] mt-[1vw] font-extrabold t3 ">LINKEDIN</div>
+            <a v-if="!linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">Guarda
+              i miei post!</a>
+              <a v-if="linguage1" href="https://www.linkedin.com/in/antonino-palma-esposito-6a9b382b8/"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">Look at my posts!</a>
+
+            <div class="text-[3vw] mt-[1vw] font-extrabold t5">GITHUB</div>
+            <a v-if="!linguage1" href="https://github.com/AntoninoPalmaEsposito"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">Scopri
+              le mie repository!</a>
+              <a v-if="linguage1" href="https://github.com/AntoninoPalmaEsposito"
+              class="text-[1.20vw] mt-[-0.6vw]  hover:text-[1.5vw] duration-200 text-white underline underline-offset-[0.3vw]">Check out my repositories!</a>
+
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- TNX -->
+        <div v-if="tnx" class="h-[500px] tnx flex flex-col  justify-center items-center mt-[-30px] ml-[13%]  ">
+          <div class="flex flex-col scale-95">
+            <div class=" text-[80px] font-bold text-nowrap text-white pb-[10px]">
+              Grazie per la visita!
+            </div>
+            <div class=" text-white text-[30px] text-nowrap ml-[20px] font-semibold">Torna a trovarmi, aggiornerò il
+              mio portfolio <br>
+              con nuovi progetti interessanti ;) </div>
           </div>
         </div>
 
 
 
         <!-- SCROLLBAR -->
-        <div class=" flex flex-col  tnx items-center ml-[20px] scale-90 ">
-          <div :class="{ 'bg-white': bar, 'bg-[rgba(255,255,255,0.26)]': nobar }"
-            class="w-[18px] h-[80px] rounded-[300px] duration-500 mb-[40px]"></div>
+        <div v-if="bartender" class=" flex flex-col justify-center ">
+          <button @click="devProfile" :class="{ 'bg-white': bar, 'bg-[rgba(255,255,255,0.26)]': nobar }"
+            class="w-[0.8vw] h-[3.8vw] rounded-[300px] duration-500 mb-[1.8vw] hover:scale-125"></button>
 
-          <div :class="{ 'bg-white': bar2, 'bg-[rgba(255,255,255,0.26)]': nobar2 }"
-            class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[40px]"></div>
-          <div :class="{ 'bg-white': bar3, 'bg-[rgba(255,255,255,0.26)]': nobar3 }"
-            class="w-[18px] h-[80px] rounded-[300px]  duration-500 mb-[30px]"></div>
-          <div :class="{ 'text-white': bar4, 'text-[rgba(255,255,255,0.26)]': nobar4 }"
-            class="text-[35px] font-extrabold duration-500">TNX</div>
+          <button @click="projecT" :class="{ 'bg-white': bar2, 'bg-[rgba(255,255,255,0.26)]': nobar2 }"
+            class="w-[0.8vw] h-[3.8vw] rounded-[300px]  duration-500 mb-[1.8vw] hover:scale-125"></button>
+
+          <button @click="contactS" :class="{ 'bg-white': bar3, 'bg-[rgba(255,255,255,0.26)]': nobar3 }"
+            class="w-[0.8vw] h-[3.8vw] rounded-[300px]  duration-500 mb-[4vw] hover:scale-125"></button>
+          <!-- <div :class="{ 'text-white': bar4, 'text-[rgba(255,255,255,0.26)]': nobar4 }"
+            class="text-[35px] font-extrabold duration-500">TNX</div> -->
         </div>
 
 
       </div>
 
 
+
+
+
+
     </div>
 
 
-
-
   </div>
-
-
-
 
 
 </template>
@@ -625,6 +763,9 @@ export default {
       devP: true,
       project: false,
       contacts: false,
+      devPz: true,
+      projectz: false,
+      contactsz: false,
       tnx: false,
       tran1: false,
       tran2: false,
@@ -650,6 +791,10 @@ export default {
       cp2: false,
       cp3: false,
       cp4: false,
+      cp1z: true,
+      cp2z: false,
+      cp3z: false,
+      cp4z: false,
       over1: false,
       over2: false,
       over3: false,
@@ -666,7 +811,13 @@ export default {
       api: false,
       google: false,
       postman: false,
-      npm: false
+      npm: false,
+      ffsu: false,
+      velocitàb: true,
+      linguage1: false,
+      devclass11: false,
+      pallo: false,
+      bartender:false
 
 
     };
@@ -674,10 +825,22 @@ export default {
 
   mounted() {
 
+    setTimeout(() => {
+      this.pallo = true;
+    }, 30000);
+
+    setTimeout(() => {
+      this.pallo = false;
+    }, 49000);
+
     /* welcome style */
     setTimeout(() => {
       this.aanimazione3 = true;
     }, 3000);
+
+    setTimeout(() => {
+      this.devclass11 = true;
+    }, 8000);
 
     setTimeout(() => {
       this.wel = false;
@@ -694,42 +857,89 @@ export default {
 
   methods: {
 
+    linguage() {
+      this.linguage1 = !this.linguage1
+    },
+
     cp11() {
-      this.cp1 = !this.cp1
-      if (this.cp1) {
+      this.cp1z = true
+      this.cp2z = false
+      this.cp3z = false
+      this.cp4z = false
+      setTimeout(() => {
+        this.cp1 = true
         this.cp2 = false
         this.cp3 = false
         this.cp4 = false
-      }
+      }, 500);
+
+
     },
     cp22() {
-      this.cp2 = !this.cp2
-      if (this.cp2) {
+      this.cp2z = true
+      this.cp1z = false
+      this.cp3z = false
+      this.cp4z = false
+      setTimeout(() => {
+        this.cp2 = true
         this.cp1 = false
         this.cp3 = false
         this.cp4 = false
-      }
+      }, 500);
+
+
     },
     cp33() {
-      this.cp3 = !this.cp3
-      if (this.cp3) {
+      this.cp1z = false
+      this.cp2z = false
+      this.cp4z = false
+      this.cp3z = true
+      setTimeout(() => {
+        this.cp3 = true
         this.cp1 = false
         this.cp2 = false
         this.cp4 = false
-      }
+      }, 500);
+
+
     },
     cp44() {
-      this.cp4 = !this.cp4
-      if (this.cp4 == true) {
+      this.cp1z = false
+      this.cp2z = false
+      this.cp3z = false
+      this.cp4z = true
+      setTimeout(() => {
+        this.cp4 = true
         this.cp1 = false
         this.cp2 = false
         this.cp3 = false
-      }
+      }, 500);
+
+
     },
 
     homE() {
-      this.ctt = 60;
+      setTimeout(() => {
+        this.ffsu = false;
+      }, 3000);
+
+      this.velocitàb = false
+
+
+      this.ctt = 0;
       this.opacitys = 0;
+      
+
+      setTimeout(() => {
+        
+        this.devP = false
+        this.project = false
+      this.contacts = false
+      this.tnx = false
+      this.bartender = false
+      
+      }, 500);
+
       this.bar = false;
       this.bar2 = false;
       this.bar3 = false;
@@ -740,19 +950,18 @@ export default {
       this.nobar3 = true;
       this.nobar4 = true;
 
-      this.devP = true
-      this.project = false
-      this.contacts = false
-      this.tnx = false
+      
 
       this.homest = true
       this.devPst = false
       this.projectst = false
       this.contactst = false
+      
+      
 
       const element = document.getElementById(this.customId);
-      element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
-      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.classList.remove('top-[0px]'); 
+      element.style.top = `${this.ctt}px`; 
       element.classList.add(`duration-1000`);
       const blurr = document.getElementById(this.bluu);
       blurr.classList.remove('opacity-[0]');
@@ -763,9 +972,22 @@ export default {
     },
 
     devProfile() {
-      this.ctt = 960;
+      setTimeout(() => {
+        this.ffsu = true;
+      }, 3000);
+
+      this.velocitàb = true
+
+      this.ctt = 50;
       this.opacitys = 1;
-      this.bar = true;
+     
+
+      setTimeout(() => {
+        this.devP = true
+        this.project = false
+        this.contacts = false
+
+        this.bar = true;
       this.bar2 = false;
       this.bar3 = false;
       this.bar4 = false;
@@ -775,10 +997,13 @@ export default {
       this.nobar3 = true;
       this.nobar4 = true;
 
-      this.devP = true
-      this.project = false
-      this.contacts = false
-      this.tnx = false
+      this.bartender = true
+      }, 500);
+
+      this.devPz = true
+      this.projectz = false
+      this.contactsz = false
+
 
       this.homest = false
       this.devPst = true
@@ -787,7 +1012,7 @@ export default {
 
       const element = document.getElementById(this.customId);
       element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
-      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.style.top = `${this.ctt}vw`; // Imposta la posizione in pixel
       element.classList.add(`duration-1000`);
       const blurr = document.getElementById(this.bluu);
       blurr.classList.remove('opacity-[0]');
@@ -798,7 +1023,13 @@ export default {
     },
 
     projecT() {
-      this.ctt = 2410;
+      setTimeout(() => {
+        this.ffsu = true;
+      }, 3000);
+
+      this.velocitàb = true
+
+      this.ctt = 50;
       this.opacitys = 1;
       this.bar = false;
       this.bar2 = true;
@@ -810,10 +1041,17 @@ export default {
       this.nobar3 = true;
       this.nobar4 = true;
 
-      this.devP = false
-      this.project = true
-      this.contacts = false
-      this.tnx = false
+      setTimeout(() => {
+        this.devP = false
+        this.project = true
+        this.contacts = false
+
+        this.bartender = true
+      }, 500);
+
+      this.devPz = false
+      this.projectz = true
+      this.contactsz = false
 
       this.homest = false
       this.devPst = false
@@ -822,7 +1060,7 @@ export default {
 
       const element = document.getElementById(this.customId);
       element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
-      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.style.top = `${this.ctt}vw`; // Imposta la posizione in pixel
       element.classList.add(`duration-1000`);
       const blurr = document.getElementById(this.bluu);
       blurr.classList.remove('opacity-[0]');
@@ -833,7 +1071,13 @@ export default {
     },
 
     contactS() {
-      this.ctt = 3810;
+      setTimeout(() => {
+        this.ffsu = true;
+      }, 3000);
+
+      this.velocitàb = true
+
+      this.ctt = 50;
       this.opacitys = 1;
       this.bar = false;
       this.bar2 = false;
@@ -845,10 +1089,17 @@ export default {
       this.nobar3 = false;
       this.nobar4 = true;
 
-      this.devP = false
-      this.project = false
-      this.contacts = true
-      this.tnx = false
+      setTimeout(() => {
+        this.devP = false
+        this.project = false
+        this.contacts = true
+
+        this.bartender = true
+      }, 500);
+
+      this.devPz = false
+      this.projectz = false
+      this.contactsz = true
 
       this.homest = false
       this.devPst = false
@@ -857,7 +1108,7 @@ export default {
 
       const element = document.getElementById(this.customId);
       element.classList.remove('top-[0px]'); // Rimuovi la classe Tailwind
-      element.style.top = `${this.ctt}px`; // Imposta la posizione in pixel
+      element.style.top = `${this.ctt}vw`; // Imposta la posizione in pixel
       element.classList.add(`duration-1000`);
       const blurr = document.getElementById(this.bluu);
       blurr.classList.remove('opacity-[0]');
@@ -1421,233 +1672,48 @@ export default {
   box-sizing: border-box;
 }
 
-.cdev1 {
-  margin-top: 20px;
-  margin-bottom: -20px;
+
+body {
+  overflow-x: hidden;
 }
 
-@media screen and (max-width: 1640px) {
-  .resp {
-    scale: 0.8;
+.devclass1 {
+  animation-name: devcla;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+}
+
+@keyframes devcla {
+  from {
+    scale: 1;
   }
 
-  .tnx {
-    scale: 0.9;
-  }
-
-  .cont {
-    scale: 0.9;
-    padding-top: 40px;
-    margin-left: 210px;
-  }
-
-  .cdev1 {
-    scale: 0.9;
-  }
-
-  .cpro {
-    scale: 0.8;
-    margin-top: -30px;
-    margin-left: 220px;
-  }
-
-  .cdev2 {
-    scale: 0.8;
-    margin-top: 40px;
-    margin-left: 20px;
-  }
-
-  .navi {
-    scale: 0.85;
-    margin-left: -30px;
-  }
-
-  .logi {
-    margin-left: -60px;
-    margin-right: 80px;
-  }
-
-
-  .conthome {
-    margin-top: -80px;
-
-  }
-
-  .firma {
-    right: -100px;
+  to {
+    scale: 1.15;
   }
 }
 
-@media screen and (max-width: 1430px) {
-  .resp {
-    scale: 0.75;
-  }
 
-  .animazione {
-    scale: 0.85;
-    right: 80px;
-  }
-
-  .tnx {
-    scale: 0.8;
-  }
-
-  .cont {
-    scale: 0.75;
-    padding-top: 60px;
-    margin-left: 190px;
-  }
-
-  .cpro {
-    scale: 0.7;
-    margin-top: -40px;
-    margin-left: 200px;
-  }
-
-  .cdev2 {
-    scale: 0.7;
-    margin-top: -20px;
-    margin-left: 20px;
-  }
-
-  .cdev1 {
-    scale: 0.8;
-    margin-top: 15px;
-    margin-left: -30px;
-  }
-
-  .logi {
-    margin-left: -80px;
-    margin-right: 70px;
-  }
-
-  .navi {
-    scale: 0.8;
-    margin-left: -30px;
-  }
-
-  .conthome {
-    margin-top: -100px;
-  }
-
-  .resp2 {
-    scale: 0.9;
-  }
-
-
-
-  .firma {
-    right: -150px;
-  }
-
-}
-
-@media screen and (max-width: 1270px) {
-  .resp {
-    scale: 0.7;
-  }
-
-  .animazione {
-    scale: 0.7;
-    right: 40px;
-  }
-
-  .tnx {
-    scale: 0.7;
-  }
-
-  .cont {
-    scale: 0.6;
-    height: 450px;
-    margin-left: 130px;
-  }
-
-  .cpro {
-    scale: 0.55;
-    margin-top: -40px;
-    margin-left: 200px;
-  }
-
-  .cdev1 {
-    scale: 0.6;
-    margin-top: 20px;
-    margin-left: -50px;
-  }
-
-  .mrt {
-    margin-right: 80px;
-  }
-
-  .cdev2 {
-    scale: 0.56;
-    margin-top: -85px;
-    margin-left: 20px;
-  }
-
-  .navi {
-
-    margin-right: 25%;
-    margin-top: -20px;
-    margin-left: -40px;
-  }
-
-  .resp2 {
-    scale: 0.95;
-  }
-
-  .conthome {
-    padding: 0;
-    margin-top: -150px;
-    scale: 0.6;
-    margin-left: 0;
-  }
-
-  .b1 {
-    width: 1200px;
-  }
-
-  .b2 {
-    width: 1200px;
-  }
-
-  .firma {
-    right: -200px;
-  }
-
-  .resp3 {
-    scale: 0.6;
-    margin-top: -20px;
-  }
-
-  .scr {
-    width: auto;
-    scale: 0.7;
-    margin-left: 100px;
-  }
-
-  .logi {
-    margin-left: -170px;
-    margin-right: 130px;
-  }
-
-  .wel {
-    top: 270px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .logi {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-
-
+.eig2 {
+  height: calc(100vh - 47.1vw);
+  position: absolute;
+  overflow-y: hidden;
 }
 
 .loader {
-  height: 10px;
-  width: 200px;
+  height: 2vw;
+  width: 38vw;
+  border-radius: 20px;
+  --c: no-repeat linear-gradient(#02ab6a 0 0);
+  background: var(--c), var(--c), #c8d0ce;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+
+.loader2 {
+  height: 0.3vw;
+  width: 7vw;
   border-radius: 20px;
   --c: no-repeat linear-gradient(#02ab6a 0 0);
   background: var(--c), var(--c), #c8d0ce;
@@ -1668,25 +1734,6 @@ export default {
     background-position: 250% 0, 250% 0
   }
 }
-
-
-@media screen and (min-width: 768px) {
- 
-  body::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-body {
-  overflow-y: hidden;
-
-}
-
-
-}
-
-
 
 .animazione2 {
   animation-name: welcome2;
@@ -1725,37 +1772,55 @@ body {
 }
 
 .animazione {
+  position: absolute;
+  bottom: -3vw;
+  right: 9vw;
+  width: 4vw;
   animation-name: palloncino;
-  animation-duration: 15s;
-  animation-delay: 22s;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  opacity: 1;
 }
 
 @keyframes palloncino {
-  from {
-    bottom: -300px;
+  0% {
+    bottom: -3vw;
+    right: 9vw;
+    opacity: 0;
+  
   }
 
-  to {
-    bottom: 1500px;
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100vw;
+    right: 9vw;
   }
 }
 
+
 .animazione5 {
+  position: absolute;
+  width: 9vw;
+  top: -5vw;
+  left: -10vw;
   animation-name: aereoplano;
-  animation-duration: 10s;
-  animation-delay: 11s;
+  animation-duration: 8s;
+  animation-delay: 15s;
   animation-timing-function: linear;
 }
 
 @keyframes aereoplano {
   from {
-    bottom: 800px;
-    left: -600px;
+    top: -4.8vw;
+  left: -10vw;
   }
 
   to {
-    bottom: -400px;
-    left: 1800px;
+    top: 35vw;
+  left: 101vw;
   }
 }
 
