@@ -477,7 +477,9 @@
                         <div v-if="!linguage1">RESIDENCE</div>
                     </div>
 
-                    <div class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">IT Bari (BA)
+                    <div v-if="linguage1" class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Torino / Bari / Taranto
+                    </div>
+                    <div v-if="!linguage1" class=" text-[4vw] mt-[-2vw] mb-[3vw]  font-normal   ">Turin / Bari / Taranto
                     </div>
 
                     <div class=" text-[11vw] t2 font-extrabold  ">EMAIL</div>

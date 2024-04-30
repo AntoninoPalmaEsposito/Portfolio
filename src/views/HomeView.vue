@@ -660,7 +660,8 @@
 
             <div v-if="!linguage1" class="text-[3vw]  font-extrabold t1 ">RESIDENZA</div>
             <div v-if="linguage1" class="text-[3vw]  font-extrabold t1 ">RESIDENCE</div>
-            <div class="text-[1.20vw] mt-[-0.6vw]   text-white">IT Bari (BA)</div>
+            <div v-if="!linguage1" class="text-[1.20vw] mt-[-0.6vw]   text-white">Torino / Bari / Taranto</div>
+            <div v-if="linguage1" class="text-[1.20vw] mt-[-0.6vw]   text-white">Turin / Bari / Taranto</div>
 
             <div class="text-[3vw]  mt-[1vw] font-extrabold t3">EMAIL</div>
             <div class="text-[1.20vw] mt-[-0.6vw]   text-white">ape.develop3@gmail.com
