@@ -565,7 +565,7 @@
 
 
             <!-- Cp3 -->
-            <a href="https://penta-e-commerce.vercel.app/" @mouseover="over3 = true" @mouseleave="over3 = false"
+            <a href="https://penta-commerce.vercel.app/" @mouseover="over3 = true" @mouseleave="over3 = false"
               v-if="cp3" class="flex flex-col items-center">
               <div :class="{ 'border-white border-[0.25vw]': over3, 'opacitys2z': !cp3z, 'opacitysz': cp3z }"
                 class="rounded-[3.23vw] duration-100">

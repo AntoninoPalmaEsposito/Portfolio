@@ -343,7 +343,7 @@
                         </a>
 
                         <!-- Cp3s -->
-                        <a v-if="cp3" href="https://penta-e-commerce.vercel.app/" :class="{ 'p1': c3, 'p2': !c3 }"
+                        <a v-if="cp3" href="https://penta-commerce.vercel.app/" :class="{ 'p1': c3, 'p2': !c3 }"
                             class="flex flex-col ">
 
                             <!-- visita -->
