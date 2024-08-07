@@ -174,7 +174,7 @@
 
                     <div class="mt-[5vw]">
                         <!-- text -->
-                        <div v-if="linguage1" class="text-[4vw] px-[6.5vw]">
+                        <div v-if="linguage1" class="text-[4vw] text-red-400 px-[6.5vw]">
                             Credo fortemente nell'organizzazione.
                             Un’analisi accurata porta a un codice più pulito, uno
                             sviluppo
